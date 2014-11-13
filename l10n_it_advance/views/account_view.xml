@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<openerp>
+	<data>
+
+	    <record id="account_voucher.view_voucher_form_ref" model="ir.ui.view">
+            <field name="name">account.voucher.form.ref</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="account_voucher.view_voucher_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <field name="name" position="before">
+                    <field name="ref_id" on_change="onchange_ref_id(ref_id)"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="account_voucher.view_voucher_form_vendor_ref" model="ir.ui.view">
+            <field name="name">account.voucher.vendor.form.ref</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="account_voucher.view_vendor_receipt_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <field name="name" position="before">
+                    <field name="ref_id"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="account.view_move_line_form_ref" model="ir.ui.view">
+            <field name="name">account.move.line.form.ref</field>
+            <field name="model">account.move.line</field>
+            <field name="inherit_id" ref="account.view_move_line_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <field name="invoice" position="before">
+                    <field name="ref_id" 
+                        attrs="{'invisible': [('invoice', '!=', False)]}"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="account.view_move_form_ref" model="ir.ui.view">
+            <field name="name">account.move.form.ref</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <xpath expr="//tree/field[@name='invoice']" position="before">
+                    <field name="ref_id"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="account.view_bank_statement_form2_ref" model="ir.ui.view">
+            <field name="name">account.bank.statement.form2.ref</field>
+            <field name="model">account.bank.statement</field>
+            <field name="inherit_id" ref="account.view_bank_statement_form2"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <xpath expr="//tree/field[@name='ref']" position="before">
+                    <field name="ref_id"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="account.view_bank_statement_form_ref" model="ir.ui.view">
+            <field name="name">account.bank.statement.form.ref</field>
+            <field name="model">account.bank.statement</field>
+            <field name="inherit_id" ref="account.view_bank_statement_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <xpath expr="//tree/field[@name='ref']" position="before">
+                    <field name="ref_id"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</openerp>
