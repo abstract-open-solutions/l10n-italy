@@ -2,7 +2,7 @@
 <openerp>
 	<data>
 
-	    <record id="account_voucher.view_voucher_form_ref" model="ir.ui.view">
+	    <record id="view_voucher_form_ref" model="ir.ui.view">
             <field name="name">account.voucher.form.ref</field>
             <field name="model">account.voucher</field>
             <field name="inherit_id" ref="account_voucher.view_voucher_form"/>
@@ -14,7 +14,7 @@
             </field>
         </record>
 
-        <record id="account_voucher.view_voucher_form_vendor_ref" model="ir.ui.view">
+        <record id="view_voucher_form_vendor_ref" model="ir.ui.view">
             <field name="name">account.voucher.vendor.form.ref</field>
             <field name="model">account.voucher</field>
             <field name="inherit_id" ref="account_voucher.view_vendor_receipt_form"/>
@@ -26,7 +26,19 @@
             </field>
         </record>
 
-        <record id="account.view_move_line_form_ref" model="ir.ui.view">
+        <record id="view_voucher_form_vendor_payment_ref" model="ir.ui.view">
+            <field name="name">account.voucher.vendor.form.payment.ref</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="account_voucher.view_vendor_payment_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <field name="name" position="before">
+                    <field name="ref_id"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="view_move_line_form_ref" model="ir.ui.view">
             <field name="name">account.move.line.form.ref</field>
             <field name="model">account.move.line</field>
             <field name="inherit_id" ref="account.view_move_line_form"/>
@@ -39,7 +51,7 @@
             </field>
         </record>
 
-        <record id="account.view_move_form_ref" model="ir.ui.view">
+        <record id="view_move_form_ref" model="ir.ui.view">
             <field name="name">account.move.form.ref</field>
             <field name="model">account.move</field>
             <field name="inherit_id" ref="account.view_move_form"/>
@@ -51,7 +63,7 @@
             </field>
         </record>
 
-        <record id="account.view_bank_statement_form2_ref" model="ir.ui.view">
+        <record id="view_bank_statement_form2_ref" model="ir.ui.view">
             <field name="name">account.bank.statement.form2.ref</field>
             <field name="model">account.bank.statement</field>
             <field name="inherit_id" ref="account.view_bank_statement_form2"/>
@@ -63,7 +75,7 @@
             </field>
         </record>
 
-        <record id="account.view_bank_statement_form_ref" model="ir.ui.view">
+        <record id="view_bank_statement_form_ref" model="ir.ui.view">
             <field name="name">account.bank.statement.form.ref</field>
             <field name="model">account.bank.statement</field>
             <field name="inherit_id" ref="account.view_bank_statement_form"/>
