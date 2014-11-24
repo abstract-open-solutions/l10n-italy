@@ -43,6 +43,19 @@ class AccountVoucher(models.Model):
             name = "%s %s" % (model.name, self.ref_id.name)
             self.name = name
 
+    def action_move_line_create(self, cr, uid, ids, context=None):
+        if context is None:
+            context = {}
+
+        res = super(AccountVoucher, self).action_move_line_create(
+            cr, uid, ids, context)
+
+        for voucher in self.browse(cr, uid, ids, context=context):
+            for line in voucher.move_id.line_id:
+                line.ref_id = voucher.ref_id
+
+        return res
+
 
 class AccountMoveLine(models.Model):
 
@@ -56,3 +69,39 @@ class AccountBankStatementLine(models.Model):
     _inherit = 'account.bank.statement.line'
 
     ref_id = fields.Reference(_get_models, string='Referenced Item')
+
+    def process_reconciliation(self, cr, uid, id, mv_line_dicts, context=None):
+
+        if not context:
+            context = {}
+
+        st_line = self.browse(cr, uid, id)
+        for line in mv_line_dicts:
+            line['ref_id'] = '%s,%s' % (
+                st_line.ref_id._model, str(st_line.ref_id.id))
+
+        return super(AccountBankStatementLine, self).process_reconciliation(
+            cr, uid, id, mv_line_dicts, context=None)
+
+
+class AccountBankStatement(models.Model):
+
+    _inherit = 'account.bank.statement'
+
+    def _prepare_move_line_vals(
+        self, cr, uid, st_line, move_id, debit, credit, currency_id=False,
+            amount_currency=False, account_id=False, partner_id=False,
+            context=None):
+
+        if not context:
+            context = {}
+
+        res = super(AccountBankStatement, self)._prepare_move_line_vals(
+            cr, uid, st_line, move_id, debit, credit, currency_id=currency_id,
+            amount_currency=amount_currency, account_id=account_id,
+            partner_id=partner_id, context=context)
+
+        res['ref_id'] = '%s,%s' % (
+            st_line.ref_id._model, str(st_line.ref_id.id))
+
+        return res
