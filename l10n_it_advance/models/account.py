@@ -28,11 +28,20 @@ def _get_models(self):
     return [(model.model, model.display_name) for model in models]
 
 
+class AccountAdvance(models.Model):
+
+    _name = 'account.advance'
+    _description = 'Advance Payment'
+
+    name = fields.Reference(_get_models, string='Referenced Item')
+
+
 class AccountVoucher(models.Model):
 
     _inherit = 'account.voucher'
 
     ref_id = fields.Reference(_get_models, string='Referenced Item')
+    ref_ids = fields.Many2many('account.advance', string='Test')
 
     @api.onchange('ref_id')
     def onchange_ref_id(self):
