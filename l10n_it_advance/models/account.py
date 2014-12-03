@@ -40,8 +40,25 @@ class AccountVoucher(models.Model):
 
     _inherit = 'account.voucher'
 
+    @api.model
+    def _get_advance_account(self):
+        voucher_type = self.env.context.get('type', False)
+        company = self.env.user.company_id
+
+        if voucher_type == 'receipt':
+            advance_account_id = company.received_advance_account_id.id
+        elif voucher_type == 'payment':
+            advance_account_id = company.issued_advance_account_id.id
+        else:
+            advance_account_id = False
+
+        return advance_account_id
+
     ref_id = fields.Reference(_get_models, string='Referenced Item')
     ref_ids = fields.Many2many('account.advance', string='Test')
+    advance_account_id = fields.Many2one(
+        'account.account',
+        string='Advance Account')
 
     @api.onchange('ref_id')
     def onchange_ref_id(self):
@@ -62,6 +79,9 @@ class AccountVoucher(models.Model):
         for voucher in self.browse(cr, uid, ids, context=context):
             for line in voucher.move_id.line_id:
                 line.ref_id = voucher.ref_id
+                if voucher.advance_account_id and line.account_id != \
+                        voucher.account_id:
+                    line.account_id = voucher.advance_account_id.id
 
         return res
 

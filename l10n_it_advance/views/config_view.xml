@@ -13,8 +13,19 @@
                         <label for="id" string="Advance Models"/>
                         <div>
                             <div>
+                                <label for="advance_model_ids"/>
                                 <field name="advance_model_ids" 
                                     widget="many2many_tags"
+                                    class="oe_inline"/>
+                            </div>
+                            <div>
+                                <label for="received_advance_account_id"/>
+                                <field name="received_advance_account_id"
+                                    class="oe_inline"/>
+                            </div>
+                            <div>
+                                <label for="issued_advance_account_id"/>
+                                <field name="issued_advance_account_id"
                                     class="oe_inline"/>
                             </div>
                         </div>

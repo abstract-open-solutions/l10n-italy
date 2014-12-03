@@ -11,6 +11,9 @@
                 <field name="name" position="before">
                     <field name="ref_id" on_change="onchange_ref_id(ref_id)"/>
                 </field>
+                <field name="journal_id" position="after">
+                    <field name="advance_account_id"/>
+                </field>
             </field>
         </record>
 
@@ -23,6 +26,9 @@
                 <field name="name" position="before">
                     <field name="ref_id"/>
                 </field>
+                <field name="journal_id" position="after">
+                    <field name="advance_account_id"/>
+                </field>
             </field>
         </record>
 
@@ -34,6 +40,9 @@
             <field name="arch" type="xml">
                 <field name="name" position="before">
                     <field name="ref_id"/>
+                </field>
+                <field name="journal_id" position="after">
+                    <field name="advance_account_id"/>
                 </field>
             </field>
         </record>
