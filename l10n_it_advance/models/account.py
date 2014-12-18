@@ -19,7 +19,9 @@
 #
 ##############################################################################
 
-from openerp import models, fields, api
+from openerp import models, fields, api, _
+import openerp.addons.decimal_precision as dp
+from openerp.exceptions import Warning
 
 
 @api.model
@@ -33,12 +35,34 @@ class AccountAdvance(models.Model):
     _name = 'account.advance'
     _description = 'Advance Payment'
 
-    name = fields.Reference(_get_models, string='Referenced Item')
+    @api.one
+    def _get_ref_name(self):
+        if self.ref_id:
+            self.name = self.ref_id.name
+
+    @api.one
+    def _get_ref_model(self):
+        if self.ref_id:
+            self.ref_model = self.ref_id._model
+
+    ref_id = fields.Reference(_get_models, string='Referenced Item')
+    name = fields.Char(string='Name', compute='_get_ref_name')
+    voucher_id = fields.Many2one('account.voucher', 'Voucher')
+    amount = fields.Float('Amount', digits=dp.get_precision('Account'))
 
 
 class AccountVoucher(models.Model):
 
     _inherit = 'account.voucher'
+
+    @api.onchange('advanced_amount')
+    def onchange_advance_amount(self):
+        if self.advanced_amount > self.writeoff_amount:
+            raise Warning(
+                _('Impossible to allocate %s, since the difference amount is \
+                %s') % (
+                    self.advanced_amount,
+                    self.writeoff_amount))
 
     @api.model
     def _get_advance_account(self):
@@ -54,11 +78,23 @@ class AccountVoucher(models.Model):
 
         return advance_account_id
 
+    @api.model
+    def _get_advanced_amount(self):
+        amount = 0
+        for advance in self.ref_ids:
+            amount += advance.amount
+        self.advanced_amount = amount
+
     ref_id = fields.Reference(_get_models, string='Referenced Item')
-    ref_ids = fields.Many2many('account.advance', string='Test')
+    ref_ids = fields.One2many(
+        'account.advance', 'voucher_id', string='Related Items')
     advance_account_id = fields.Many2one(
         'account.account',
         string='Advance Account')
+    advanced_amount = fields.Float(
+        'Advanced Amount',
+        digits=dp.get_precision('Account'),
+        compute='_get_advanced_amount')
 
     @api.onchange('ref_id')
     def onchange_ref_id(self):
@@ -68,6 +104,13 @@ class AccountVoucher(models.Model):
             model = model_obj.search([('model', '=', ir_model._name)])
             name = "%s %s" % (model.name, self.ref_id.name)
             self.name = name
+
+    @api.onchange('ref_ids')
+    def onchange_ref_ids(self):
+        amount = 0
+        for advance in self.ref_ids:
+            amount += advance.amount
+        self.advanced_amount = amount
 
     def action_move_line_create(self, cr, uid, ids, context=None):
         if context is None:

@@ -28,12 +28,6 @@ class ResCompany(models.Model):
     advance_model_ids = fields.Many2many(
         'ir.model',
         string='Advance Models')
-    received_advance_account_id = fields.Many2one(
-        'account.account',
-        string='Received Advance Account')
-    issued_advance_account_id = fields.Many2one(
-        'account.account',
-        string='Issued Advance Account')
 
 
 class AccountConfigSettings(models.TransientModel):
@@ -43,14 +37,6 @@ class AccountConfigSettings(models.TransientModel):
         'ir.model',
         string='Advance Models',
         related='company_id.advance_model_ids')
-    received_advance_account_id = fields.Many2one(
-        'account.account',
-        string='Received Advance Account',
-        related='company_id.received_advance_account_id')
-    issued_advance_account_id = fields.Many2one(
-        'account.account',
-        string='Issued Advance Account',
-        related='company_id.issued_advance_account_id')
 
     def onchange_company_id(self, cr, uid, ids, company_id, context=None):
         res = super(AccountConfigSettings, self).onchange_company_id(
@@ -60,14 +46,9 @@ class AccountConfigSettings(models.TransientModel):
                 cr, uid, company_id, context=context)
             res['value'].update({
                 'advance_model_ids': company.advance_model_ids,
-                'received_advance_account_id':
-                company.received_advance_account_id,
-                'issued_advance_account_id': company.issued_advance_account_id,
                 })
         else:
             res['value'].update({
                 'advance_model_ids': False,
-                'received_advance_account_id': False,
-                'issued_advance_account_id': False,
                 })
         return res
