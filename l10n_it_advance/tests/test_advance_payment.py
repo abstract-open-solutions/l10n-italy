@@ -19,5 +19,18 @@
 #
 ##############################################################################
 
-from . import models
-from . import tests
+from openerp.tests import common
+
+
+class TestAdvancePayment(common.TransactionCase):
+    """ Test the creation of a voucher with advance payments
+    """
+
+    def setUp(self):
+        super(TestAdvancePayment, self).setUp()
+
+        pass
+
+    def test_create_advance_payment(self):
+
+        pass

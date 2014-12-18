@@ -19,5 +19,8 @@
 #
 ##############################################################################
 
-from . import models
-from . import tests
+from . import test_advance_payment
+
+checks = [
+    test_advance_payment,
+]
