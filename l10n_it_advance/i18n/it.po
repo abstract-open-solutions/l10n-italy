@@ -1,0 +1,125 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* l10n_it_advance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-12-18 15:01+0000\n"
+"PO-Revision-Date: 2014-12-18 15:01+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_it_advance
+#: model:ir.model,name:l10n_it_advance.model_account_voucher
+msgid "Accounting Voucher"
+msgstr "Voucher contabile"
+
+#. module: l10n_it_advance
+#: field:account.voucher,advance_account_id:0
+msgid "Advance Account"
+msgstr "Conto Anticipazione"
+
+#. module: l10n_it_advance
+#: view:account.config.settings:l10n_it_advance.view_account_config_settings
+#: field:res.company,advance_model_ids:0
+msgid "Advance Models"
+msgstr "Modelli Anticipazione"
+
+#. module: l10n_it_advance
+#: field:account.bank.statement.line,advance_id:0
+#: field:account.move.line,advance_id:0
+#: model:ir.model,name:l10n_it_advance.model_account_advance
+msgid "Advance Payment"
+msgstr "Anticipazione"
+
+#. module: l10n_it_advance
+#: view:account.config.settings:l10n_it_advance.view_account_config_settings
+#: view:account.voucher:l10n_it_advance.view_voucher_form_vendor_payment_ref
+#: view:account.voucher:l10n_it_advance.view_voucher_form_vendor_ref
+msgid "Advance Payments"
+msgstr "Anticipazioni"
+
+#. module: l10n_it_advance
+#: field:account.advance,amount:0
+msgid "Amount"
+msgstr "Importo"
+
+#. module: l10n_it_advance
+#: model:ir.model,name:l10n_it_advance.model_account_bank_statement
+msgid "Bank Statement"
+msgstr "Estratto Conto Bancario"
+
+#. module: l10n_it_advance
+#: model:ir.model,name:l10n_it_advance.model_account_bank_statement_line
+msgid "Bank Statement Line"
+msgstr "Voce del movimento bancario"
+
+#. module: l10n_it_advance
+#: model:ir.model,name:l10n_it_advance.model_res_company
+msgid "Companies"
+msgstr "Aziende"
+
+#. module: l10n_it_advance
+#: field:account.advance,create_uid:0
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: l10n_it_advance
+#: field:account.advance,create_date:0
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: l10n_it_advance
+#: field:account.advance,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_it_advance
+#: code:addons/l10n_it_advance/models/account.py:62
+#, python-format
+msgid "Impossible to allocate %s, since the difference amount is %s"
+msgstr "Impossibile allocare %s, siccome lo sbilancio è %s"
+
+#. module: l10n_it_advance
+#: model:ir.model,name:l10n_it_advance.model_account_move_line
+msgid "Journal Items"
+msgstr "Voci sezionale"
+
+#. module: l10n_it_advance
+#: field:account.advance,write_uid:0
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento da"
+
+#. module: l10n_it_advance
+#: field:account.advance,write_date:0
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: l10n_it_advance
+#: field:account.advance,ref_id:0
+#: field:account.bank.statement.line,ref_id:0
+#: field:account.move.line,ref_id:0
+#: field:account.voucher,ref_id:0
+msgid "Referenced Item"
+msgstr "Documento correlato"
+
+#. module: l10n_it_advance
+#: field:account.voucher,ref_ids:0
+msgid "Related Items"
+msgstr "Documenti correlati"
+
+#. module: l10n_it_advance
+#: field:account.advance,voucher_id:0
+msgid "Voucher"
+msgstr "Voucher"
+
+#. module: l10n_it_advance
+#: field:account.voucher,advanced_amount:0
+msgid "Advanced Amount"
+msgstr "Totale Anticipazioni"
