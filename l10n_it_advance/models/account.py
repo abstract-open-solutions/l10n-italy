@@ -60,7 +60,7 @@ class AccountVoucher(models.Model):
         if self.advanced_amount > self.writeoff_amount:
             raise Warning(
                 _('Impossible to allocate %s, since the difference amount is \
-                %s') % (
+%s') % (
                     self.advanced_amount,
                     self.writeoff_amount))
 
@@ -115,17 +115,24 @@ class AccountVoucher(models.Model):
     def action_move_line_create(self, cr, uid, ids, context=None):
         if context is None:
             context = {}
-
+        move_model = self.pool['account.move.line']
         res = super(AccountVoucher, self).action_move_line_create(
             cr, uid, ids, context)
 
         for voucher in self.browse(cr, uid, ids, context=context):
-            for line in voucher.move_id.line_id:
-                line.ref_id = voucher.ref_id
-                if voucher.advance_account_id and line.account_id != \
-                        voucher.account_id:
-                    line.account_id = voucher.advance_account_id.id
-
+            if voucher.ref_ids:
+                for line in voucher.move_id.line_id:
+                    if not line.reconcile_id\
+                            and line.credit == voucher.writeoff_amount:
+                        for ref in voucher.ref_ids:
+                            new_line = line.copy()
+                            if voucher.type == 'receipt':
+                                new_line.credit = ref.amount
+                            elif voucher.type == 'payment':
+                                new_line.debit = ref.amount
+                            new_line.ref_id = ref.ref_id
+                            new_line.advance_id = ref
+                        move_model.unlink(cr, uid, line.id)
         return res
 
 
@@ -134,6 +141,7 @@ class AccountMoveLine(models.Model):
     _inherit = 'account.move.line'
 
     ref_id = fields.Reference(_get_models, string='Referenced Item')
+    advance_id = fields.Many2one('account.advance', 'Advance Payment')
 
 
 class AccountBankStatementLine(models.Model):
@@ -141,6 +149,7 @@ class AccountBankStatementLine(models.Model):
     _inherit = 'account.bank.statement.line'
 
     ref_id = fields.Reference(_get_models, string='Referenced Item')
+    advance_id = fields.Many2one('account.advance', 'Advance Payment')
 
     def process_reconciliation(self, cr, uid, id, mv_line_dicts, context=None):
 
