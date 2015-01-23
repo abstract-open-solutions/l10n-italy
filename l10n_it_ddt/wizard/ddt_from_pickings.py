@@ -62,7 +62,8 @@ class DdTFromPickings(models.TransientModel):
             raise Warning(
                 _('No stock moves selected. Can\'t create DDT'))
         ddt = self.env['stock.ddt'].create(self.get_ddt_values())
-        ddt.create_lines(self.move_ids)
+        if not ddt.ddt_lines:
+            ddt.create_lines(self.move_ids)
         # ----- Show new ddt
         ir_model_data = self.env['ir.model.data']
         form_res = ir_model_data.get_object_reference('l10n_it_ddt',
