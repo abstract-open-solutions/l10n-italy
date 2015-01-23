@@ -32,13 +32,17 @@ class DdTFromPickings(models.TransientModel):
 
     _name = "ddt.from.pickings"
 
+    picking_ids = fields.Many2many(
+        'stock.picking',
+        default='_get_picking_ids',
+        string='Pickings'
+    )
+
     def _get_picking_ids(self):
         return self.env['stock.picking'].browse(self.env.context['active_ids'])
 
-    picking_ids = fields.Many2many('stock.picking', default=_get_picking_ids)
-
     @api.multi
-    def create_ddt(self):
+    def get_ddt_values(self):
         values = {
             'partner_id': False,
             'parcels': 0,
@@ -46,7 +50,7 @@ class DdTFromPickings(models.TransientModel):
             'goods_description_id': False,
             'transportation_reason_id': False,
             'transportation_method_id': False
-            }
+        }
         partner = False
         for picking in self.picking_ids:
             if partner and partner != picking.partner_id:
@@ -115,7 +119,11 @@ class DdTFromPickings(models.TransientModel):
                     picking.sale_id.transportation_method_id)
                 values['transportation_method_id'] = (
                     transportation_method_id.id)
-        ddt = self.env['stock.ddt'].create(values)
+        return values
+
+    @api.multi
+    def create_ddt(self):
+        ddt = self.env['stock.ddt'].create(self.get_ddt_values())
         for picking in self.picking_ids:
             picking.ddt_id = ddt.id
         # ----- Show new ddt
