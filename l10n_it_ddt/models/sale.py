@@ -22,7 +22,7 @@
 from openerp import fields
 from openerp import models
 from openerp import api
-from openerp import netsvc
+from openerp import workflow
 
 
 class SaleOrder(models.Model):
@@ -105,22 +105,26 @@ class SaleOrder(models.Model):
                 })
         return True
 
-    def _prepare_procurement_group(self, cr, uid, order, context=None):
-        res = super(SaleOrder, self)._prepare_procurement_group(
-            cr, uid, order, context=context)
-        if order.create_ddt:
-            ddt_model = self.pool['stock.ddt']
-            ddt_data = {
-                'partner_id': order.partner_id.id,
-                'delivery_address_id': order.partner_shipping_id and
-                order.partner_shipping_id.id
-                }
-            res['ddt_id'] = ddt_model.create(
-                cr, uid, ddt_data, context=context)
-            ddt_model.browse(cr, uid, res['ddt_id']).updateLines()
-            wf_service = netsvc.LocalService("workflow")
-            wf_service.trg_validate(
-                uid, 'stock.ddt', res['ddt_id'], 'ddt_confirm', cr)
+    def action_ship_create(
+        self, cr, uid, ids, context=None
+    ):
+        res = super(SaleOrder, self).action_ship_create(
+            cr, uid, ids, context=context)
+        for order in self.browse(cr, uid, ids, context):
+            if order.create_ddt:
+                ddt_data = {
+                    'partner_id': order.partner_id.id,
+                    'picking_ids': [(6, 0, [p.id for p in order.picking_ids])],
+                    }
+                ddt_pool = self.pool['stock.ddt']
+                ddt_id = ddt_pool.create(cr, uid, ddt_data, context=context)
+                move_lines = []
+                for picking in order.picking_ids:
+                    move_lines += picking.move_lines
+                ddt_pool.create_lines(
+                    cr, uid, [ddt_id], move_lines, context=context)
+                workflow.trg_validate(
+                    uid, 'stock.ddt', ddt_id, 'ddt_confirm', cr)
         return res
 
     def action_view_ddt(self, cr, uid, ids, context=None):
