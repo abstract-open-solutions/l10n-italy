@@ -58,8 +58,7 @@ class DdTFromPickings(models.TransientModel):
     def create_ddt(self):
         wizard = self[0]
         ddt = self.env['stock.ddt'].create(self.get_ddt_values())
-        if not ddt.ddt_lines:
-            ddt.create_lines(wizard.move_ids)
+        ddt.create_lines(wizard.move_ids)
         # ----- Show new ddt
         ir_model_data = self.env['ir.model.data']
         form_res = ir_model_data.get_object_reference('l10n_it_ddt',
