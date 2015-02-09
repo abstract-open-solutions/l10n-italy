@@ -1,8 +1,9 @@
-- 
+-
   Create sale orders
-- 
+-
   !record {model: sale.order, id: sale_oder_1}:
     partner_id: base.res_partner_18
+    create_ddt: True
     order_line:
       - product_id: product.product_product_5b
         product_uom_qty: 2
@@ -17,7 +18,7 @@
     assert len(self.pool['stock.ddt'].search(cr, uid, [('picking_ids', 'in', [p.id for p in order1.picking_ids])])) == 1, "There must be 1 DDT for order 1"
 -
   I create 2 sale orders, without creating DDT, with invoice on picking
-- 
+-
   !record {model: sale.order, id: sale_oder_2}:
     partner_id: base.res_partner_18
     order_policy: picking
@@ -30,7 +31,7 @@
     order2.create_ddt = False
 -
   !workflow {model: sale.order, action: order_confirm, ref: sale_oder_2}
-- 
+-
   !record {model: sale.order, id: sale_oder_3}:
     partner_id: base.res_partner_18
     order_policy: picking
@@ -46,9 +47,10 @@
   !workflow {model: sale.order, action: order_confirm, ref: sale_oder_3}
 -
   I create a sale order with invoice on picking
-- 
+-
   !record {model: sale.order, id: sale_oder_4}:
     partner_id: base.res_partner_18
+    create_ddt: True
     order_policy: picking
     order_line:
       - product_id: product.product_product_5b

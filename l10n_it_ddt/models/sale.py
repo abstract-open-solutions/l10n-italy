@@ -53,7 +53,7 @@ class SaleOrder(models.Model):
         'stock.ddt',
         string='Related DdTs',
         compute='_get_ddt_ids',
-        )
+    )
     create_ddt = fields.Boolean('Automatically create the DDT')
 
     def onchange_partner_id(self, cr, uid, ids, partner_id, context=None):
@@ -69,10 +69,10 @@ class SaleOrder(models.Model):
                 'goods_description_id'] = partner.goods_description_id.id
             result['value'][
                 'transportation_reason_id'
-                ] = partner.transportation_reason_id.id
+            ] = partner.transportation_reason_id.id
             result['value'][
                 'transportation_method_id'
-                ] = partner.transportation_method_id.id
+            ] = partner.transportation_method_id.id
         return result
 
     def _make_invoice(self, cr, uid, order, lines, context={}):
@@ -83,24 +83,22 @@ class SaleOrder(models.Model):
             'goods_description_id': order.goods_description_id.id,
             'transportation_reason_id': order.transportation_reason_id.id,
             'transportation_method_id': order.transportation_method_id.id,
-            })
+        })
         return inv_id
 
-    def action_ship_create(
-        self, cr, uid, ids, context=None
-    ):
+    def action_ship_create(self, cr, uid, ids, context=None):
         res = super(SaleOrder, self).action_ship_create(
             cr, uid, ids, context=context)
         for order in self.browse(cr, uid, ids, context):
             if order.create_ddt:
                 ddt_data = {
                     'partner_id': order.partner_id.id,
-                    }
+                }
                 ddt_pool = self.pool['stock.ddt']
                 ddt_id = ddt_pool.create(cr, uid, ddt_data, context=context)
                 for picking in order.picking_ids:
                     self.pool.get('stock.picking').write(
-                        cr, uid, [picking.id], {'ddt_id': ddt_id.id})
+                        cr, uid, [picking.id], {'ddt_id': ddt_id})
                     picking.ddt_id = ddt_id
                 workflow.trg_validate(
                     uid, 'stock.ddt', ddt_id, 'ddt_confirm', cr)

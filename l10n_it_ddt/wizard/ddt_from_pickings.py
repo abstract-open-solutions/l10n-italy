@@ -32,14 +32,14 @@ class DdTFromPickings(models.TransientModel):
 
     _name = "ddt.from.pickings"
 
-    picking_ids = fields.Many2many(
-        'stock.picking',
-        default='_get_picking_ids',
-        string='Pickings'
-    )
-
     def _get_picking_ids(self):
         return self.env['stock.picking'].browse(self.env.context['active_ids'])
+
+    picking_ids = fields.Many2many(
+        'stock.picking',
+        default=_get_picking_ids,
+        string='Pickings'
+    )
 
     @api.multi
     def get_ddt_values(self):
@@ -125,6 +125,7 @@ class DdTFromPickings(models.TransientModel):
     def create_ddt(self):
         ddt = self.env['stock.ddt'].create(self.get_ddt_values())
         for picking in self.picking_ids:
+            # assign ddt to picking
             picking.ddt_id = ddt.id
         # ----- Show new ddt
         ir_model_data = self.env['ir.model.data']
