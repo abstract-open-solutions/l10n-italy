@@ -1,26 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
-        <!--template id="report_ddt">
+
+        <template id="delivery_data">
+
+            <style type="text/css">
+                table.delivery_data td h6 { margin: 0; }
+                .signature { min-height: 4em; }
+            </style>
+
+            <table class="table table-condensed table-bordered delivery_data">
+                <tr>
+                    <td>
+                        <h6>Causale del trasporto</h6>
+                        <span t-field="ddt.transportation_reason_id"></span>
+                    </td>
+                    <td>
+                        <h6>Porto</h6>
+                        <span t-field="ddt.carriage_condition_id"></span>
+                    </td>
+                    <td>
+                        <h6>Aspetto esteriore dei beni</h6>
+                        <span t-field="ddt.goods_description_id"></span>
+                    </td>
+                    <td>
+                        <h6>Peso lordo</h6>
+                    </td>
+                    <td>
+                        <h6>Peso netto</h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h6>Vettore</h6>
+                    </td>
+                    <td>
+                        <h6>Del</h6>
+                    </td>
+                    <td>
+                        <h6>Ora ritiro</h6>
+                    </td>
+                    <td>
+                        <h6>Numero colli</h6>
+                        <span t-field="ddt.parcels"></span>
+                    </td>
+                    <td>
+                        <h6>Dimensioni</h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h6>Firma vettore</h6>
+                        <div class="signature"></div>
+                    </td>
+                    <td>
+                        <h6>Firma conducente</h6>
+                        <div class="signature"></div>
+                    </td>
+                    <td>
+                        <h6>Firma destinatario</h6>
+                        <div class="signature"></div>
+                    </td>
+                    <td colspan="2"><h6>Note</h6></td>
+                </tr>
+            </table>
+        </template>
+
+        <template id="report_ddt">
             <t t-call="report.html_container">
                 <t t-foreach="docs" t-as="o">
                     <t t-call="report.external_layout">
                         <div class="page">
-               
+                            <h1>
+                                Delivery note: <span t-field="o.name"></span>
+                            </h1>
+                            <table class="table table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th><strong>Description</strong></th>
+                                        <th class="text-right"><strong>Quantity</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="o.ddt_lines" t-as="line">
+                                        <td><span t-field="line.name"></span></td>
+                                        <td class="text-right"><span t-field="line.product_uom_qty"></span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <t t-call="l10n_it_ddt.delivery_data">
+                                <t t-set="ddt" t-value="o"/>
+                            </t>
                         </div>
                     </t>
-                 </t>
-             </t>
+                </t>
+            </t>
         </template>
 
-        <report 
-            string="DDT" 
-            id="action_report_ddt" 
-            model="stock.ddt" 
+        <report
+            string="DDT"
+            id="action_report_ddt"
+            model="stock.ddt"
             report_type="qweb-pdf"
-            name="l10n_it_ddt.report_ddt" 
-            file="l10n_it_ddt.report_ddt" 
-        /-->
+            name="l10n_it_ddt.report_ddt"
+            file="l10n_it_ddt.report_ddt"/>
 
     </data>
 </openerp>
