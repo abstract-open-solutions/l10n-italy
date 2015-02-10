@@ -66,33 +66,38 @@
             </table>
         </template>
 
+        <template id="report_ddt_document">
+            <t t-call="report.external_layout">
+                <div class="page">
+                    <h1>
+                        Delivery note: <span t-field="o.name"></span>
+                    </h1>
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th><strong>Description</strong></th>
+                                <th class="text-right"><strong>Quantity</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="o.ddt_lines" t-as="line">
+                                <td><span t-field="line.name"></span></td>
+                                <td class="text-right"><span t-field="line.product_uom_qty"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <t t-call="l10n_it_ddt.delivery_data">
+                        <t t-set="ddt" t-value="o"/>
+                    </t>
+                </div>
+            </t>
+        </template>
+
+
         <template id="report_ddt">
             <t t-call="report.html_container">
-                <t t-foreach="docs" t-as="o">
-                    <t t-call="report.external_layout">
-                        <div class="page">
-                            <h1>
-                                Delivery note: <span t-field="o.name"></span>
-                            </h1>
-                            <table class="table table-condensed">
-                                <thead>
-                                    <tr>
-                                        <th><strong>Description</strong></th>
-                                        <th class="text-right"><strong>Quantity</strong></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr t-foreach="o.ddt_lines" t-as="line">
-                                        <td><span t-field="line.name"></span></td>
-                                        <td class="text-right"><span t-field="line.product_uom_qty"></span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <t t-call="l10n_it_ddt.delivery_data">
-                                <t t-set="ddt" t-value="o"/>
-                            </t>
-                        </div>
-                    </t>
+                <t t-foreach="doc_ids" t-as="doc_id">
+                    <t t-raw="translate_doc(doc_id, doc_model, 'partner_id.lang', 'l10n_it_ddt.report_ddt_document')"/>
                 </t>
             </t>
         </template>
