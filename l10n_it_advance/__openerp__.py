@@ -30,7 +30,7 @@
     """,
     'author': 'Abstract',
     'website': 'http://www.abstract.it',
-    'depends': ['account', 'base', 'account_voucher'],
+    'depends': ['base', 'account', 'account_voucher'],
     'data': [
         'views/account_view.xml',
         'views/config_view.xml',

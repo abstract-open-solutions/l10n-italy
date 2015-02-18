@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-18 15:01+0000\n"
-"PO-Revision-Date: 2014-12-18 15:01+0000\n"
+"POT-Creation-Date: 2015-02-18 14:48+0000\n"
+"PO-Revision-Date: 2015-02-18 14:48+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -87,6 +87,11 @@ msgid "Impossible to allocate %s, since the difference amount is %s"
 msgstr "Impossibile allocare %s, siccome lo sbilancio è %s"
 
 #. module: l10n_it_advance
+#: field:res.company,issued_advance_account_id:0
+msgid "Issued Advance Account"
+msgstr "Conto Emissione Anticipi"
+
+#. module: l10n_it_advance
 #: model:ir.model,name:l10n_it_advance.model_account_move_line
 msgid "Journal Items"
 msgstr "Voci sezionale"
@@ -100,6 +105,11 @@ msgstr "Ultimo aggiornamento da"
 #: field:account.advance,write_date:0
 msgid "Last Updated on"
 msgstr "Ultimo aggiornamento il"
+
+#. module: l10n_it_advance
+#: field:res.company,received_advance_account_id:0
+msgid "Received Advance Account"
+msgstr "Conto Ricezione Anticipi"
 
 #. module: l10n_it_advance
 #: field:account.advance,ref_id:0
@@ -119,7 +129,3 @@ msgstr "Documenti correlati"
 msgid "Voucher"
 msgstr "Voucher"
 
-#. module: l10n_it_advance
-#: field:account.voucher,advanced_amount:0
-msgid "Advanced Amount"
-msgstr "Totale Anticipazioni"
