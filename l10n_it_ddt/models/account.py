@@ -40,6 +40,9 @@ class account_invoice(orm.Model):
             'stock.picking.transportation_method',
             'Method of Transportation'),
         'parcels': fields.integer('Number of Packages'),
+        'ddt_id': fields.many2one(
+            'stock.ddt',
+            'DDT'),
     }
 
     def onchange_partner_id(
