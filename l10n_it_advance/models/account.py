@@ -183,7 +183,8 @@ class AccountBankStatement(models.Model):
             amount_currency=amount_currency, account_id=account_id,
             partner_id=partner_id, context=context)
 
-        res['ref_id'] = '%s,%s' % (
-            st_line.ref_id._model, str(st_line.ref_id.id))
+        if st_line.ref_id:
+            res['ref_id'] = '%s,%s' % (
+                st_line.ref_id._model, str(st_line.ref_id.id))
 
         return res
