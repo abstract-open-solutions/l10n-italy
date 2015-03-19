@@ -158,8 +158,9 @@ class AccountBankStatementLine(models.Model):
 
         st_line = self.browse(cr, uid, id)
         for line in mv_line_dicts:
-            line['ref_id'] = '%s,%s' % (
-                st_line.ref_id._model, str(st_line.ref_id.id))
+            if st_line.ref_id:
+                line['ref_id'] = '%s,%s' % (
+                    st_line.ref_id._model, str(st_line.ref_id.id))
 
         return super(AccountBankStatementLine, self).process_reconciliation(
             cr, uid, id, mv_line_dicts, context=None)
