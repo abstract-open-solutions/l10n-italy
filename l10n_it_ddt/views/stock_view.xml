@@ -26,7 +26,7 @@
                         <div class="oe_right oe_button_box" name="buttons"></div>
                         <group>
                             <group>
-                                <field name="sequence" 
+                                <field name="sequence"
                                     domain="[('code', '=', 'stock.ddt')]"
                                     widget="selection"/>
                                 <field name="partner_id"/>
@@ -80,6 +80,28 @@
                     <field name="partner_id"/>
                     <field name="state"/>
                 </tree>
+            </field>
+        </record>
+
+        <record id="stock_ddt_filter" model="ir.ui.view">
+            <field name="name">stock.ddt.filter</field>
+            <field name="model">stock.ddt</field>
+            <field name="arch" type="xml">
+                <search string="DdT">
+                    <field name="name"/>
+                    <field name="date"/>
+                    <field name="delivery_date"/>
+                    <field name="partner_id"/>
+                    <filter name="draft" string="Draft" domain="[('state','=','draft')]" help="Draft DdT"/>
+                    <filter name="confirmed" string="Confirmed" domain="[('state','=','confirmed')]" help="Confirmed DdT"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Partner" context="{'group_by':'partner_id'}"/>
+                        <filter string="Status" context="{'group_by':'state'}"/>
+                        <separator/>
+                        <filter string="Date" context="{'group_by':'date'}"/>
+                        <filter string="Delivery Date" context="{'group_by':'delivery_date'}"/>
+                    </group>
+                </search>
             </field>
         </record>
 
