@@ -78,6 +78,14 @@ class wizard_select_template(orm.TransientModel):
             'context': context,
         }
 
+    def check_zero_lines(self, cr, uid, wizard):
+        if not wizard.line_ids:
+            return True
+        for template_line in wizard.line_ids:
+            if template_line.amount:
+                return True
+        return False
+
     def load_template(self, cr, uid, ids, context=None):
         if context is None:
             context = {}
@@ -87,7 +95,7 @@ class wizard_select_template(orm.TransientModel):
         mod_obj = self.pool.get('ir.model.data')
 
         wizard = self.browse(cr, uid, ids, context=context)[0]
-        if not template_obj.check_zero_lines(cr, uid, wizard):
+        if not self.check_zero_lines(cr, uid, wizard):
             raise orm.except_orm(
                 _('Error !'),
                 _('At least one amount has to be non-zero!'))
