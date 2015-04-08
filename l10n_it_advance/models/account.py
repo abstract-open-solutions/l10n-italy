@@ -118,11 +118,10 @@ class AccountVoucher(models.Model):
         move_model = self.pool['account.move.line']
         res = super(AccountVoucher, self).action_move_line_create(
             cr, uid, ids, context)
-
         for voucher in self.browse(cr, uid, ids, context=context):
             if voucher.ref_ids:
                 for line in voucher.move_id.line_id:
-                    if not line.reconcile_id\
+                    if not line.reconcile_id \
                             and line.credit == voucher.writeoff_amount:
                         for ref in voucher.ref_ids:
                             new_line = line.copy()
@@ -133,6 +132,14 @@ class AccountVoucher(models.Model):
                             new_line.ref_id = ref.ref_id
                             new_line.advance_id = ref
                         move_model.unlink(cr, uid, line.id)
+            elif voucher.ref_id:
+                for line in voucher.move_id.line_id:
+                    if voucher.type == 'receipt':
+                        if line.credit:
+                            line.ref_id = voucher.ref_id
+                    elif voucher.type == 'payment':
+                        if line.debit:
+                            line.ref_id = voucher.ref_id
         return res
 
 
