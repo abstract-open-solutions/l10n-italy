@@ -60,7 +60,7 @@ class AccountVoucher(models.Model):
         if self.advanced_amount > self.writeoff_amount:
             raise Warning(
                 _('Impossible to allocate %s, since the difference amount is \
-%s') % (
+                  %s') % (
                     self.advanced_amount,
                     self.writeoff_amount))
 
@@ -124,13 +124,14 @@ class AccountVoucher(models.Model):
                     if not line.reconcile_id \
                             and line.credit == voucher.writeoff_amount:
                         for ref in voucher.ref_ids:
-                            new_line = line.copy()
-                            if voucher.type == 'receipt':
-                                new_line.credit = ref.amount
-                            elif voucher.type == 'payment':
-                                new_line.debit = ref.amount
-                            new_line.ref_id = ref.ref_id
-                            new_line.advance_id = ref
+                            if ref.amount != 0.0:
+                                new_line = line.copy()
+                                if voucher.type == 'receipt':
+                                    new_line.credit = ref.amount
+                                elif voucher.type == 'payment':
+                                    new_line.debit = ref.amount
+                                new_line.ref_id = ref.ref_id
+                                new_line.advance_id = ref
                         move_model.unlink(cr, uid, line.id)
             elif voucher.ref_id:
                 for line in voucher.move_id.line_id:
