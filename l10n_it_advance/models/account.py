@@ -132,7 +132,8 @@ class AccountVoucher(models.Model):
                                     new_line.debit = ref.amount
                                 new_line.ref_id = ref.ref_id
                                 new_line.advance_id = ref
-                        move_model.unlink(cr, uid, line.id)
+                        if voucher.writeoff_amount != 0.0:
+                            move_model.unlink(cr, uid, line.id)
             elif voucher.ref_id:
                 for line in voucher.move_id.line_id:
                     if voucher.type == 'receipt':
