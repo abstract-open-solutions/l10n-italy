@@ -123,6 +123,7 @@ class AccountVoucher(models.Model):
                 for line in voucher.move_id.line_id:
                     if not line.reconcile_id \
                             and line.credit == voucher.writeoff_amount:
+                        ref_ids_amount = 0.0
                         for ref in voucher.ref_ids:
                             if ref.amount != 0.0:
                                 new_line = line.copy()
@@ -132,8 +133,15 @@ class AccountVoucher(models.Model):
                                     new_line.debit = ref.amount
                                 new_line.ref_id = ref.ref_id
                                 new_line.advance_id = ref
-                        if voucher.writeoff_amount != 0.0:
+                                ref_ids_amount += ref.amount
+                        final_woff = voucher.writeoff_amount - ref_ids_amount
+                        if final_woff == 0:
                             move_model.unlink(cr, uid, line.id)
+                        else:
+                            if voucher.type == 'receipt':
+                                line.credit = final_woff
+                            elif voucher.type == 'payment':
+                                line.debit = final_woff
             elif voucher.ref_id:
                 for line in voucher.move_id.line_id:
                     if voucher.type == 'receipt':
