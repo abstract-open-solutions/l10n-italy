@@ -67,6 +67,7 @@ class StockDdT(models.Model):
 
     _name = 'stock.ddt'
     _description = 'DdT'
+    _inherit = ['mail.thread']
 
     @api.multi
     def get_sequence(self):
