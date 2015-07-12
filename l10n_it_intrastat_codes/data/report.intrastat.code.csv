@@ -1,0 +1,1577 @@
+id,name,description,parent_id:id
+1,1,"Agricoltura, caccia e relativi servizi",
+16110,16110,"Servizi di supporto alla produzione vegetale",1
+16210,16210,"Servizi di supporto alla produzione animale",1
+16310,16310,"Servizi successivi alla raccolta",1
+16410,16410,"Servizi di lavorazione di sementi a fini di moltiplicazione",1
+17010,17010,"Caccia e cattura di animali e servizi associati",1
+2,2,"Silvicoltura e relativi servizi",
+21020,21020,"Servizi vivaistici per piante forestali",2
+24010,24010,"Servizi di supporto per la silvicoltura",2
+3,3,"Pesca, acquacoltura e relativi servizi",
+30071,30071,"Servizi di supporto per la pesca",3
+30072,30072,"Servizi di supporto per l'acquacoltura",3
+9,9,"Servizi di supporto per le attività di estrazione",
+91011,91011,"Servizi di perforazione connessi all'estrazione di petrolio e di gas naturale",9
+91012,91012,"Servizi di costruzione, riparazione e smantellamento di torri di trivellazione e connessi servizi di supporto per l'estrazione di petrolio e di gas naturale",9
+91013,91013,"Servizi di liquefazione e rigassificazione del gas naturale per il trasporto, effettuati sul posto dell'estrazione",9
+99011,99011,"Servizi di supporto per l'estrazione di carbon fossile",9
+99019,99019,"Servizi di supporto per l'estrazione di altri minerali e prodotti di cava, n.c.a.",9
+10,10,"Alimentare e relativi servizi",
+101199,101199,"Attività in subfornitura nell'ambito della produzione di carni trasformate e conservate",10
+101299,101299,"Attività in subfornitura nell'ambito della produzione di carni di pollame trasformate e conservate",10
+101391,101391,"Cottura ed altri servizi connessi alla preparazione di prodotti a base di carne",10
+101399,101399,"Attività in subfornitura nell'ambito della produzione di prodotti a base di carne (anche di volatili)",10
+102091,102091,"Affumicatura ed altri servizi di conservazione e preparazione per la fabbricazione di prodotti a base di pesce",10
+102099,102099,"Attività in subfornitura nell'ambito della produzione di carni di pesce, crostacei e molluschi, trasformate e conservate",10
+103191,103191,"Cottura ed altri servizi connessi alla preparazione di patate e prodotti a base di patate",10
+103199,103199,"Attività in subfornitura nell'ambito della produzione di patate trasformate e conservate",10
+103299,103299,"Attività in subfornitura nell'ambito della produzione dei succhi di frutta e di ortaggi",10
+103991,103991,"Cottura ed altri servizi connessi alla preparazione di conserve di frutta e di ortaggi",10
+103999,103999,"Attività in subfornitura nell'ambito della produzione di altre preparazioni e conserve di frutta e ortaggi",10
+104199,104199,"Attività in subfornitura nell'ambito della produzione degli oli e dei grassi",10
+104299,104299,"Attività in subfornitura nell'ambito della produzione della margarina e dei grassi commestibili simili",10
+105199,105199,"Attività in subfornitura nell'ambito della produzione dei prodotti lattiero-caseari",10
+105299,105299,"Attività in subfornitura nell'ambito della produzione dei gelati",10
+106199,106199,"Attività in subfornitura nell'ambito della produzione dei prodotti della macinazione",10
+106299,106299,"Attività in subfornitura nell'ambito della produzione di amidi e fecole",10
+107199,107199,"Attività in subfornitura nell'ambito della produzione del pane fresco o congelato e dei prodotti di pasticceria",10
+107299,107299,"Attività in subfornitura nell'ambito della produzione delle fette biscottate e dei biscotti",10
+107399,107399,"Attività in subfornitura nell'ambito della produzione di paste alimentari, cuscus e prodotti farinacei simili",10
+108199,108199,"Attività in subfornitura nell'ambito della produzione dello zucchero",10
+108299,108299,"Attività in subfornitura nell'ambito della produzione del cacao, del cioccolato e delle confetterie",10
+108399,108399,"Attività in subfornitura nell'ambito della produzione del caffè e del tè",10
+108499,108499,"Attività in subfornitura nell'ambito della produzione dei condimenti",10
+108599,108599,"Attività in subfornitura nell'ambito della produzione di pasti preparati",10
+108699,108699,"Attività in subfornitura nell'ambito della produzione di preparazioni alimentari omogeneizzate e alimenti dietetici",10
+108999,108999,"Attività in subfornitura nell'ambito della produzione di altri prodotti alimentari n.c.a.",10
+109199,109199,"Attività in subfornitura nell'ambito della produzione di preparazioni per l'alimentazione del bestiame di allevamento",10
+109299,109299,"Attività in subfornitura nell'ambito della produzione di alimenti per animali domestici",10
+11,11,"Bevande e relativi servizi",
+110199,110199,"Attività in subfornitura nell'ambito della produzione delle bevande alcoliche distillate",11
+110299,110299,"Attività in subfornitura nell'ambito della produzione di vini di uve",11
+110399,110399,"Attività in subfornitura nell'ambito della produzione di sidro e di altri vini a base di frutta",11
+110499,110499,"Attività in subfornitura nell'ambito della produzione di altre bevande fermentate non distillate",11
+110599,110599,"Attività in subfornitura nell'ambito della produzione della birra",11
+110699,110699,"Attività in subfornitura nell'ambito della produzione del malto",11
+110799,110799,"Attività in subfornitura nell'ambito della produzione delle acque minerali e bibite Analcoliche",11
+12,12,"Industria del tabacco e relativi servizi",
+120099,120099,"Attività in subfornitura nell'ambito della produzione dei prodotti a base di tabacco",12
+13,13,"Tessile e relativi servizi",
+131093,131093,"Servizi di preparazione delle fibre tessili naturali",13
+131099,131099,"Attività in subfornitura nell'ambito della produzione dei filati",13
+132099,132099,"Attività in subfornitura nell'ambito della produzione dei tessuti",13
+133011,133011,"Servizi di candeggio e tintura delle fibre e dei filati tessili",13
+133012,133012,"Servizi di candeggio dei tessuti e degli articoli tessili (inclusi gli articoli di abbigliamento)",13
+133013,133013,"Servizi di tintura dei tessuti e degli articoli tessili (inclusi gli articoli di abbigliamento)",13
+133014,133014,"Servizi di stampa dei tessuti e degli articoli tessili (inclusi gli articoli di abbigliamento)",13
+133019,133019,"Altri servizi di finissaggio dei tessuti e degli articoli tessili (inclusi gli articoli di abbigliamento)",13
+139199,139199,"Attività in subfornitura nell'ambito della produzione delle stoffe a maglia",13
+139299,139299,"Attività in subfornitura nell'ambito della produzione di manufatti tessili confezionati, esclusi gli articoli di vestiario",13
+139399,139399,"Attività in subfornitura nell'ambito della produzione dei tappeti e di altri rivestimenti del suolo di materie tessili",13
+139499,139499,"Attività in subfornitura nell'ambito della produzione di corde, funi, spago e reti",13
+139599,139599,"Attività in subfornitura nell'ambito della produzione di tessuti non tessuti e articoli in tali materie, esclusi gli articoli di vestiario",13
+139699,139699,"Attività in subfornitura nell'ambito della produzione dei tessuti per uso tecnico e industriale",13
+139999,139999,"Attività in subfornitura nell'ambito della fabbricazione di altri prodotti dell'industria tessile n.c.a.",13
+14,14,"Abbigliamento e relativi servizi",
+141199,141199,"Attività in subfornitura nell'ambito della produzione degli indumenti di cuoio",14
+141299,141299,"Attività in subfornitura nell'ambito della produzione degli indumenti da lavoro",14
+141399,141399,"Attività in subfornitura nell'ambito della produzione di indumenti esterni",14
+141499,141499,"Attività in subfornitura nell'ambito della produzione di biancheria intima",14
+141999,141999,"Attività in subfornitura nell'ambito della produzione di altri articoli di abbigliamento ed accessori",14
+142099,142099,"Attività in subfornitura nell'ambito della produzione di articoli in pelliccia",14
+143199,143199,"Attività in subfornitura nell'ambito della produzione di articoli di calzetteria, a maglia",14
+143999,143999,"Attività in subfornitura nell'ambito della produzione di altri articoli di maglieria",14
+15,15,"Cuoio e relativi servizi",
+151199,151199,"Attività in subfornitura nell'ambito della produzione del cuoio conciato o ulteriormente lavorato",15
+151299,151299,"Attività in subfornitura nell'ambito della produzione di oggetti di selleria e finimenti, articoli da viaggio, borse e simili",15
+152099,152099,"Attività in subfornitura nell'ambito della produzione delle calzature",15
+16,16,"Industria del legno, sughero, paglia e materiali da intreccio (esclusi i mobili) e relativi servizi",
+161091,161091,"Servizi di essiccazione, di impregnazione o di trattamento chimico del legno",16
+161099,161099,"Attività in subfornitura nell'ambito della produzione di legno segato e piallato",16
+162191,162191,"Servizi di finitura di pannelli",16
+162199,162199,"Attività in subfornitura nell'ambito della produzione di fogli da impiallacciatura e di pannelli di legno",16
+162299,162299,"Attività in subfornitura nell'ambito della fabbricazione di pavimenti a parquet assemblati",16
+162399,162399,"Attività in subfornitura nell'ambito della fabbricazione di altri prodotti di carpenteria e di falegnameria per l'edilizia",16
+162499,162499,"Attività in subfornitura nell'ambito della produzione di imballaggi in legno",16
+162991,162991,"Legno e sughero, esclusi i mobili; servizi legati alla fabbricazione di articoli in paglia e materiali da intreccio",16
+162999,162999,"Attività in subfornitura nell'ambito della produzione di altri prodotti in legno, di articoli in sughero, paglia e materiali da intreccio",16
+17,17,"Carta e relativi servizi",
+171199,171199,"Attività in subfornitura nell'ambito della produzione delle paste di legno",17
+171299,171299,"Attività in subfornitura nell'ambito della produzione della carta e del cartone",17
+172199,172199,"Attività in subfornitura nell'ambito della produzione di carta e cartone ondulati e imballaggi di carta e cartone",17
+172299,172299,"Attività in subfornitura nell'ambito della fabbricazione di prodotti di carta e cartone per uso domestico e igienico-sanitario",17
+172399,172399,"Attività in subfornitura nell'ambito della fabbricazione di prodotti cartotecnici",17
+172499,172499,"Attività in subfornitura nell'ambito della produzione della carta da parati",17
+172999,172999,"Attività in subfornitura nell'ambito della produzione di altri articoli di carta e di cartone",17
+18,18,"Servizi di stampa e di registrazione",
+181110,181110,"Servizi di stampa di giornali",18
+181211,181211,"Servizi di stampa di francobolli, marche da bollo, titoli rappresentativi, carte intelligenti, assegni ed altra carta valori e simili",18
+181212,181212,"Servizi di stampa di cataloghi pubblicitari, prospetti, manifesti ed altri stampati pubblicitari",18
+181213,181213,"Servizi di stampa per giornali e pubblicazioni periodiche, con meno di quattro edizioni alla settimana",18
+181214,181214,"Servizi di stampa di libri, lavori cartografici di ogni specie, immagini, incisioni e fotografie, cartoline postali",18
+181215,181215,"Servizi di stampa di etichette",18
+181216,181216,"Servizi di stampa direttamente su plastica, vetro, metallo, legno e ceramica",18
+181219,181219,"Altri servizi di stampa n.c.a.",18
+181310,181310,"Servizi preliminari alla stampa",18
+181330,181330,"Servizi ausiliari connessi alla stampa",18
+181410,181410,"Rilegatura e servizi connessi",18
+182010,182010,"Servizi di riproduzione di supporti audio registrati",18
+182020,182020,"Servizi di riproduzione di supporti video registrati",18
+182030,182030,"Servizi di riproduzione di software",18
+19,19,"Coke, prodotti petroliferi e relativi servizi",
+191099,191099,"Attività in subfornitura nell'ambito della fabbricazione dei prodotti di cokeria",19
+192099,192099,"Attività in subfornitura nell'ambito della fabbricazione dei prodotti petroliferi raffinati",19
+20,20,"Chimica e relativi servizi",
+201199,201199,"Attività in subfornitura nell'ambito della produzione dei gas industriali",20
+201299,201299,"Attività in subfornitura nell'ambito della produzione di coloranti e pigmenti",20
+201399,201399,"Attività in subfornitura nell'ambito della produzione di altri prodotti chimici di base inorganici",20
+201499,201499,"Attività in subfornitura nell'ambito della produzione di altri prodotti chimici di base organici",20
+201599,201599,"Attività in subfornitura nell'ambito della produzione di concimi e composti azotati",20
+201699,201699,"Attività in subfornitura nell'ambito della produzione di materie plastiche in forme Primarie",20
+201799,201799,"Attività in subfornitura nell'ambito della produzione di gomme sintetiche in forme primarie",20
+202099,202099,"Attività in subfornitura nell'ambito della produzione di pesticidi e di altri prodotti chimici per l'agricoltura",20
+203099,203099,"Attività in subfornitura nell'ambito della produzione di pitture, vernici e smalti, inchiostri da stampa e mastici",20
+204199,204199,"Attività in subfornitura nell'ambito della produzione di saponi e detergenti, prodotti per la pulizia e la lucidatura",20
+204299,204299,"Attività in subfornitura nell'ambito della produzione di profumi e di prodotti per toletta",20
+205199,205199,"Attività in subfornitura nell'ambito della produzione di esplosivi",20
+205299,205299,"Attività in subfornitura nell'ambito della produzione di colle",20
+205399,205399,"Attività in subfornitura nell'ambito della produzione di oli essenziali",20
+205999,205999,"Attività in subfornitura nell'ambito della produzione di altri prodotti chimici n.c.a.",20
+206099,206099,"Attività in subfornitura nell'ambito della produzione di fibre sintetiche e artificiali",20
+21,21,"Farmaceutici di base, preparati farmaceutici e relativi servizi",
+211099,211099,"Attività in subfornitura nell'ambito della produzione di prodotti farmaceutici di base",21
+212099,212099,"Attività in subfornitura nell'ambito della produzione di medicinali e preparati farmaceutici",21
+22,22,"Articoli in gomma e in materie plastiche e relativi servizi",
+221199,221199,"Attività in subfornitura nell'ambito della produzione dei copertoni e delle camere d'aria di gomma",22
+221999,221999,"Attività in subfornitura nell'ambito della fabbricazione dei prodotti in gomma",22
+222199,222199,"Attività in subfornitura nell'ambito della produzione di lastre, fogli, tubi e profilati in materie plastiche",22
+222299,222299,"Attività in subfornitura nell'ambito della produzione di imballaggi in materie plastiche",22
+222399,222399,"Attività in subfornitura nell'ambito della produzione di articoli in plastica per l'edilizia",22
+222991,222991,"Servizi di fabbricazione di altri articoli in materie plastiche",22
+222999,222999,"Attività in subfornitura nell'ambito della fabbricazione di altri articoli in materie plastiche",22
+23,23,"Lavorazione di minerali non metalliferi e relativi servizi",
+231199,231199,"Attività in subfornitura nell'ambito della produzione del vetro piano",23
+231299,231299,"Attività in subfornitura nell'ambito della produzione del vetro piano lavorato e trasformato",23
+231391,231391,"Servizi di finitura di bicchieri e di altri oggetti di vetro per la tavola e la cucina",23
+231392,231392,"Servizi di finitura di contenitori di vetro",23
+231399,231399,"Attività in subfornitura nell'ambito della produzione del vetro cavo",23
+231499,231499,"Attività in subfornitura nell'ambito della produzione delle fibre di vetro",23
+231991,231991,"Servizi di finitura di altro vetro, comprese le vetrerie per uso tecnico",23
+231999,231999,"Attività in subfornitura nell'ambito della produzione di altro vetro lavorato, comprese le vetrerie per uso tecnico",23
+232099,232099,"Attività in subfornitura nell'ambito della fabbricazione dei prodotti refrattari",23
+233199,233199,"Attività in subfornitura nell'ambito della produzione delle piastrelle e lastre in ceramica per pavimenti e rivestimenti",23
+233299,233299,"Attività in subfornitura nell'ambito della produzione di mattoni, tegole ed altri prodotti per l'edilizia, in terracotta",23
+234199,234199,"Attività in subfornitura nell'ambito della fabbricazione dei prodotti in ceramica per usi domestici e ornamentali",23
+234299,234299,"Attività in subfornitura nell'ambito della produzione dei sanitari in ceramica",23
+234399,234399,"Attività in subfornitura nell'ambito della produzione di isolatori e pezzi isolanti in ceramica",23
+234499,234499,"Attività in subfornitura nell'ambito della fabbricazione di altri prodotti ceramici per uso tecnico e industriale",23
+234999,234999,"Attività in subfornitura nell'ambito della fabbricazione di altri prodotti ceramici",23
+235199,235199,"Attività in subfornitura nell'ambito della produzione del cemento",23
+235299,235299,"Attività in subfornitura nell'ambito della produzione di calce e gesso",23
+236199,236199,"Attività in subfornitura nell'ambito della fabbricazione dei prodotti in calcestruzzo per l'edilizia",23
+236299,236299,"Attività in subfornitura nell'ambito della fabbricazione dei prodotti in gesso per l'edilizia",23
+236399,236399,"Attività in subfornitura nell'ambito della produzione del calcestruzzo pronto per l'uso",23
+236499,236499,"Attività in subfornitura nell'ambito della produzione della malta",23
+236599,236599,"Attività in subfornitura nell'ambito della fabbricazione dei prodotti in fibrocemento",23
+236999,236999,"Attività in subfornitura nell'ambito della fabbricazione di altri prodotti in calcestruzzo, gesso o cemento",23
+237099,237099,"Attività in subfornitura nell'ambito della produzione delle pietre tagliate, modellate e finite",23
+239199,239199,"Attività in subfornitura nell'ambito della fabbricazione dei prodotti abrasivi",23
+239999,239999,"Attività in subfornitura nell'ambito della fabbricazione di altri prodotti in minerali non metalliferi n.c.a.",23
+24,24,"Metallurgia e relativi servizi",
+241099,241099,"Attività in subfornitura nell'ambito della produzione di ferro, ghisa e acciaio di prima trasformazione e ferroleghe",24
+242099,242099,"Attività in subfornitura nell'ambito della produzione di tubi e profilati cavi in acciaio e relative guarnizioni",24
+243199,243199,"Attività in subfornitura nell'ambito della produzione delle barre trafilate a freddo",24
+243299,243299,"Attività in subfornitura nell'ambito della produzione dei nastri laminati a freddo",24
+243399,243399,"Attività in subfornitura nell'ambito della produzione dei prodotti ottenuti a freddo o piegati",24
+243499,243499,"Attività in subfornitura nell'ambito della produzione dei fili trafilati a freddo",24
+244199,244199,"Attività in subfornitura nell'ambito della produzione dei metalli preziosi",24
+244299,244299,"Attività in subfornitura nell'ambito della produzione dell'alluminio",24
+244399,244399,"Attività in subfornitura nell'ambito della produzione di piombo, zinco e stagno",24
+244499,244499,"Attività in subfornitura nell'ambito della produzione del rame",24
+244599,244599,"Attività in subfornitura nell'ambito della produzione di altri metalli non ferrosi",24
+244699,244699,"Attività in subfornitura nell'ambito della produzione di combustibili nucleari trattati",24
+245111,245111,"Servizi di fusione di ghisa malleabile",24
+245112,245112,"Servizi di fusione di ghisa a grafite sferoidale",24
+245113,245113,"Servizi di fusione di ghisa grigia",24
+245199,245199,"Attività in subfornitura nell'ambito della fusione di ferro",24
+245210,245210,"Servizi di fusione di acciaio",24
+245310,245310,"Servizi di fusione di metalli leggeri",24
+245410,245410,"Servizi di fusione di altri metalli non ferrosi",24
+25,25,"Lavorazione di prodotti in metallo (esclusi macchine e impianti) e relativi servizi",
+251199,251199,"Attività in subfornitura nell'ambito della fabbricazioni di strutture metalliche e parti di strutture",25
+251299,251299,"Attività in subfornitura nell'ambito della produzione di porte e finestre di metallo",25
+252199,252199,"Attività in subfornitura nell'ambito della produzione di radiatori e caldaie per il riscaldamento centrale",25
+252999,252999,"Attività in subfornitura nell'ambito della produzione di cisterne, serbatoi e recipienti di metallo",25
+253099,253099,"Attività in subfornitura nell'ambito della produzione di generatori di vapore (escluse le caldaie per il riscaldamento centrale)",25
+254099,254099,"Attività in subfornitura nell'ambito della produzione di armi e munizioni",25
+255011,255011,"Servizi di fucinatura dei metalli",25
+255012,255012,"Servizi di stampaggio dei metalli",25
+255013,255013,"Altri servizi di profilatura dei metalli",25
+256111,256111,"Servizi di rivestimento dei metalli con materiali metallici",25
+256112,256112,"Servizi di rivestimento dei metalli con materiali non metallici",25
+256121,256121,"Servizi di trattamento a caldo dei metalli (diversi dai rivestimenti con materiali metallici)",25
+256122,256122,"Altri servizi di trattamento superficiale dei metalli",25
+256210,256210,"Servizi di tornitura di parti metalliche",25
+256220,256220,"Altri servizi di lavorazione meccanica",25
+257199,257199,"Attività in subfornitura nell'ambito della produzione degli articoli di coltelleria e posateria",25
+257299,257299,"Attività in subfornitura nell'ambito della produzione di serrature e cerniere",25
+257399,257399,"Attività in subfornitura nell'ambito della produzione degli utensili",25
+259199,259199,"Attività in subfornitura nell'ambito della produzione dei bidoni in acciaio e contenitori analoghi",25
+259299,259299,"Attività in subfornitura nell'ambito della produzione degli imballaggi in metallo leggero",25
+259399,259399,"Attività in subfornitura nell'ambito della produzione dei prodotti fabbricati con fili metallici, catene e molle",25
+259499,259499,"Attività in subfornitura nell'ambito della produzione di dispositivi di fissaggio e viterie",25
+259999,259999,"Attività in subfornitura nell'ambito della fabbricazione di altri prodotti in metallo n.c.a.",25
+26,26,"Computer, elettronica e ottica; elettromedicale, misurazione, orologi e relativi servizi",
+261191,261191,"Servizi connessi con la fabbricazione di circuiti integrati elettronici",26
+261199,261199,"Attività in subfornitura nell'ambito della produzione dei componenti elettronici",26
+261291,261291,"Servizi connessi con la stampa di circuiti",26
+261299,261299,"Attività in subfornitura nell'ambito della produzione delle schede elettroniche",26
+262091,262091,"Servizi di fabbricazione di elaboratori elettronici e unità periferiche",26
+262099,262099,"Attività in subfornitura nell'ambito della produzione di elaboratori elettronici e unità periferiche",26
+263099,263099,"Attività in subfornitura nell'ambito della produzione di apparecchiature per le comunicazioni",26
+264099,264099,"Attività in subfornitura nell'ambito della fabbricazione dei prodotti elettronici di consumo",26
+265199,265199,"Attività in subfornitura nell'ambito della produzione di apparecchi di misurazione, prova e navigazione",26
+265299,265299,"Attività in subfornitura nell'ambito della produzione dell'orologeria",26
+266091,266091,"Servizi di fabbricazione di strumenti per la medicina",26
+266099,266099,"Attività in subfornitura nell'ambito della produzione di apparecchi elettromedicali, di apparecchi per irradiazione e per elettroterapia",26
+267099,267099,"Attività in subfornitura nell'ambito della produzione di strumenti ottici e di attrezzature fotografiche",26
+268099,268099,"Attività in subfornitura nell'ambito della produzione di supporti magnetici e ottici",26
+27,27,"Apparecchiature elettriche e relativi servizi",
+271199,271199,"Attività in subfornitura nell'ambito della produzione di motori, generatori e trasformatori elettrici",27
+271299,271299,"Attività in subfornitura nell'ambito della produzione delle apparecchiature per la distribuzione e il controllo dell'elettricità",27
+272099,272099,"Attività in subfornitura nell'ambito della produzione di batterie ed accumulatori",27
+273199,273199,"Attività in subfornitura nell'ambito della produzione dei cavi di fibre ottiche",27
+273299,273299,"Attività in subfornitura nell'ambito della produzione di altri fili e cavi elettrici ed elettronici",27
+273399,273399,"Attività in subfornitura nell'ambito della produzione di spine, prese e connettori",27
+274099,274099,"Attività in subfornitura nell'ambito della produzione di apparecchi elettrici per l'illuminazione",27
+275199,275199,"Attività in subfornitura nell'ambito della produzione degli elettrodomestici",27
+275299,275299,"Attività in subfornitura nell'ambito della produzione degli apparecchi non elettrici per uso domestico",27
+279099,279099,"Attività in subfornitura nell'ambito della produzione di altri apparecchi elettrici",27
+28,28,"Macchine ed apparecchi meccanici n.c.a. e relativi servizi",
+281199,281199,"Attività in subfornitura nell'ambito della produzione di motori e turbine, esclusi i motori per autoveicoli, per motocicli e per l'aviazione",28
+281299,281299,"Attività in subfornitura nell'ambito della produzione di macchinari ad energia idraulica",28
+281399,281399,"Attività in subfornitura nell'ambito della produzione di altre pompe e compressori",28
+281499,281499,"Attività in subfornitura nell'ambito della produzione di altre rubinetterie e valvole",28
+281599,281599,"Attività in subfornitura nell'ambito della produzione di cuscinetti, ingranaggi e organi di trasmissione",28
+282199,282199,"Attività in subfornitura nell'ambito della produzione dei forni e bruciatori",28
+282299,282299,"Attività in subfornitura nell'ambito della produzione di macchine ed apparecchi di sollevamento e di movimentazione",28
+282391,282391,"Servizi di fabbricazione di macchine per ufficio e macchine contabili (esclusi elaboratori elettronici e unità periferiche)",28
+282399,282399,"Attività in subfornitura nell'ambito della produzione di macchine e attrezzature per ufficio (esclusi elaboratori elettronici e unità periferiche)",28
+282499,282499,"Attività in subfornitura nell'ambito della produzione di utensili elettrici portatili",28
+282599,282599,"Attività in subfornitura nell'ambito della produzione di attrezzature, di uso non domestico, per la refrigerazione e la ventilazione",28
+282999,282999,"Attività in subfornitura nell'ambito della produzione di altre macchine di impiego generale n.c.a.",28
+283099,283099,"Attività in subfornitura nell'ambito della produzione di macchine per l'agricoltura e la silvicoltura",28
+284199,284199,"Attività in subfornitura nell'ambito della produzione delle macchine per la formatura dei metalli",28
+284999,284999,"Attività in subfornitura nell'ambito della produzione di altre macchine utensili",28
+289199,289199,"Attività in subfornitura nell'ambito della produzione delle macchine per la metallurgia",28
+289299,289299,"Attività in subfornitura nell'ambito della produzione delle macchine da miniera, cava e cantiere",28
+289399,289399,"Attività in subfornitura nell'ambito della produzione di macchine per la lavorazione dei prodotti alimentari, delle bevande e del tabacco",28
+289499,289499,"Attività in subfornitura nell'ambito della produzione di macchine per le industrie tessili, dell'abbigliamento e del cuoio",28
+289599,289599,"Attività in subfornitura nell'ambito della produzione delle macchine per l'industria della carta e del cartone",28
+289699,289699,"Attività in subfornitura nell'ambito della produzione di macchine per la lavorazione di materie plastiche e gomma",28
+289999,289999,"Attività in subfornitura nell'ambito della produzione di altre macchine per impieghi speciali n.c.a.",28
+29,29,"Autoveicoli, rimorchi e semirimorchi e relativi servizi",
+291099,291099,"Attività in subfornitura nell'ambito della produzione degli autoveicoli",29
+292040,292040,"Servizi di rimessa in efficienza, assemblaggio, allestimento e carrozzeria per autoveicoli",29
+292050,292050,"Servizi di allestimento per roulotte e mobilhome",29
+292099,292099,"Attività in subfornitura nell'ambito della produzione di carrozzerie per autoveicoli",29
+293199,293199,"Attività in subfornitura nell'ambito della produzione di attrezzature elettriche ed elettroniche per autoveicoli",29
+293291,293291,"Servizi in subfornitura di assemblaggio di set completi per autoveicoli",29
+293292,293292,"Servizi di assemblaggio di parti ed accessori n.c.a. di autoveicoli",29
+293299,293299,"Attività in subfornitura nell'ambito della produzione di altre parti e di accessori per autoveicoli",29
+30,30,"Altri mezzi di trasporto e relativi servizi",
+301192,301192,"Servizi di allestimento di navi e di piattaforme e congegni galleggianti",30
+301199,301199,"Attività in subfornitura nell'ambito della produzione di navi e congegni galleggianti",30
+301299,301299,"Attività in subfornitura nell'ambito della produzione delle imbarcazioni da diporto e sportive",30
+302091,302091,"Servizi di rimessa in efficienza e allestimento (""completamento"") di locomotive e materiale rotabile ferrotranviario",30
+302099,302099,"Attività in subfornitura nell'ambito della produzione di locomotive e materiale rotabile ferro-tranviario",30
+303060,303060,"Servizi di revisione e di trasformazione di aeromobili e relativi motori",30
+303099,303099,"Attività in subfornitura nell'ambito della produzione di aeromobili, veicoli spaziali e relativi dispositivi",30
+304099,304099,"Attività in subfornitura nell'ambito della produzione di veicoli militari da combattimento",30
+309199,309199,"Attività in subfornitura nell'ambito della produzione dei motocicli",30
+309299,309299,"Attività in subfornitura nell'ambito della produzione di biciclette e di veicoli per invalidi",30
+309999,309999,"Attività in subfornitura nell'ambito della produzione di altri mezzi di trasporto n.c.a.",30
+31,31,"Mobili e relativi servizi",
+310091,310091,"Servizi di imbottitura di sedie e sedili",31
+310099,310099,"Attività in subfornitura nell'ambito della produzione di mobili per sedersi, loro parti; parti di mobili",31
+310199,310199,"Attività in subfornitura nell'ambito della produzione dei mobili per uffici e negozi",31
+310299,310299,"Attività in subfornitura nell'ambito della produzione dei mobili per cucina",31
+310399,310399,"Attività in subfornitura nell'ambito della produzione dei materassi",31
+310991,310991,"Servizi di finitura di mobili nuovi (esclusa l'imbottitura di sedie e sedili)",31
+310999,310999,"Attività in subfornitura nell'ambito della produzione di altri mobili",31
+32,32,"Altre industrie manifatturiere e relativi servizi",
+321199,321199,"Attività in subfornitura nell'ambito della produzione di monete",32
+321299,321299,"Attività in subfornitura nell'ambito della produzione di gioielli e articoli di oreficeria",32
+321399,321399,"Attività in subfornitura nell'ambito della produzione di articoli di bigiotteria",32
+322099,322099,"Attività in subfornitura nell'ambito della produzione di strumenti musicali",32
+323099,323099,"Attività in subfornitura nell'ambito della produzione di articoli sportivi",32
+324099,324099,"Attività in subfornitura nell'ambito della produzione di giochi e giocattoli",32
+325099,325099,"Attività in subfornitura nell'ambito della produzione di strumenti ed apparecchi utilizzati in medicina, chirurgia e ortopedia",32
+329199,329199,"Attività in subfornitura nell'ambito della produzione di scope e spazzole",32
+329960,329960,"Servizi di tassidermia",32
+329999,329999,"Attività in subfornitura nell'ambito della produzione di altri prodotti n.c.a.",32
+33,33,"Servizi di riparazione e installazione di macchinari e apparecchi",
+331111,331111,"Servizi di riparazione e manutenzione di elementi da costruzione in metallo",33
+331112,331112,"Servizi di riparazione e manutenzione di cisterne, serbatoi e contenitori in metallo",33
+331113,331113,"Servizi di riparazione e manutenzione di generatori di vapore (escluse le caldaie ad acqua calda per il riscaldamento centrale)",33
+331114,331114,"Servizi di riparazione e manutenzione di armi e munizioni",33
+331119,331119,"Servizi di riparazione e manutenzione di altri prodotti in metallo",33
+331211,331211,"Servizi di riparazione e manutenzione di motori e turbine (esclusi i motori per autoveicoli, per motocicli e per l'aviazione)",33
+331212,331212,"Servizi di riparazione e manutenzione di macchinari ad energia idraulica, altre pompe e compressori, rubinetti e valvole",33
+331213,331213,"Servizi di riparazione e manutenzione di cuscinetti, ingranaggi e organi di trasmissione",33
+331214,331214,"Servizi di riparazione e manutenzione di forni e bruciatori",33
+331215,331215,"Servizi di riparazione e manutenzione di macchine ed apparecchi di sollevamento e di movimentazione",33
+331216,331216,"Servizi di riparazione e manutenzione di macchine e attrezzature per ufficio (esclusi elaboratori elettronici e unità periferiche)",33
+331217,331217,"Servizi di riparazione e manutenzione di utensili elettrici portatili",33
+331218,331218,"Servizi di riparazione e manutenzione di impianti di ventilazione e di raffreddamento di uso non domestico",33
+331219,331219,"Servizi di riparazione e manutenzione di altre macchine di impiego generale n.c.a.",33
+331221,331221,"Servizi di riparazione e manutenzione di macchine per l'agricoltura e la silvicoltura",33
+331222,331222,"Servizi di riparazione e manutenzione di macchine per la formatura dei metalli e di macchine utensili",33
+331223,331223,"Servizi di riparazione e manutenzione di macchine per la metallurgia",33
+331224,331224,"Servizi di riparazione e manutenzione di macchine da miniera, cava e cantiere",33
+331225,331225,"Servizi di riparazione e manutenzione di macchine per la lavorazione dei prodotti alimentari, delle bevande e del tabacco",33
+331226,331226,"Servizi di riparazione e manutenzione di macchine per le industrie tessili, dell'abbigliamento e del cuoio",33
+331227,331227,"Servizi di riparazione e manutenzione di macchine per l'industria della carta e del cartone",33
+331228,331228,"Servizi di riparazione e manutenzione di macchine per la lavorazione di materie plastiche e gomma",33
+331229,331229,"Servizi di riparazione e manutenzione di altre macchine per impieghi speciali",33
+331311,331311,"Servizi di riparazione e manutenzione di strumenti ed apparecchi di misurazione, di prova e di navigazione",33
+331312,331312,"Servizi di riparazione e manutenzione di apparecchi elettromedicali, di apparecchi per irradiazione e per elettroterapia",33
+331313,331313,"Servizi di riparazione e manutenzione di strumenti ottici e di attrezzature fotografiche professionali",33
+331319,331319,"Servizi di riparazione e manutenzione di altri apparecchi elettronici professionali",33
+331411,331411,"Servizi di riparazione e manutenzione di motori, generatori e trasformatori elettrici e di apparecchi per la distribuzione e il controllo dell'elettricità",33
+331419,331419,"Servizi di riparazione e manutenzione di altri apparecchi elettrici professionali",33
+331510,331510,"Servizi di riparazione e manutenzione di navi e imbarcazioni",33
+331610,331610,"Servizi di riparazione e manutenzione di aeromobili e veicoli spaziali",33
+331711,331711,"Servizi di riparazione e manutenzione di locomotive e materiale rotabile ferrotranviario",33
+331719,331719,"Servizi di riparazione e manutenzione di altri mezzi di trasporto n.c.a.",33
+331910,331910,"Servizi di riparazione di altri apparecchi",33
+332011,332011,"Servizi di installazione di generatori di vapore, escluse le caldaie ad acqua calda per il riscaldamento centrale, compresi i servizi di installazione di sistemi di tubazioni metalliche negli stabilimenti industriali",33
+332012,332012,"Servizi di installazione di altri prodotti in metallo, esclusi macchine e apparecchi",33
+332021,332021,"Servizi di installazione di macchine per ufficio e macchine contabili",33
+332029,332029,"Servizi di installazione di altre macchine di impiego generale n.c.a.",33
+332031,332031,"Servizi di installazione di macchine e attrezzature industriali per l'agricoltura",33
+332032,332032,"Servizi di installazione di macchine per la formatura dei metalli",33
+332033,332033,"Servizi di installazione di macchinari e di impianti per l'industria metallurgica",33
+332034,332034,"Servizi di installazione di macchinari e di impianti da miniera",33
+332035,332035,"Servizi di installazione di macchinari e di impianti industriali per la lavorazione dei prodotti alimentari, delle bevande e del tabacco",33
+332036,332036,"Servizi d'installazione di macchinari e di impianti per l'industria tessile, dell'abbigliamento e del cuoio",33
+332037,332037,"Servizi di installazione di macchinari e di impianti per l'industria della carta e del cartone",33
+332038,332038,"Servizi di installazione di macchinari e di impianti per l'industria delle materie plastiche e della gomma",33
+332039,332039,"Servizi di installazione di altre macchine per impieghi speciali",33
+332041,332041,"Servizi di installazione di apparecchi medicali professionali e di strumenti ottici e di precisione",33
+332042,332042,"Servizi di installazione di apparecchi elettronici professionali",33
+332050,332050,"Servizi di installazione di apparecchi elettrici",33
+332060,332060,"Servizi di installazione di apparecchiature per il controllo dei processi industriali",33
+332070,332070,"Servizi di installazione di altri prodotti n.c.a.",33
+35,35,"Energia elettrica, gas, vapore e aria condizionata",
+351110,351110,"Energia elettrica",35
+351210,351210,"Servizi di trasporto di energia elettrica",35
+351310,351310,"Servizi di distribuzione di energia elettrica",35
+351410,351410,"Servizi di vendita di energia elettrica",35
+352110,352110,"Gas di carbon fossile, gas d'acqua, gas di gasogeno e gas simili, esclusi i gas di petrolio",35
+352210,352210,"Servizi di distribuzione di combustibili gassosi mediante condutture",35
+352310,352310,"Servizi di vendita di gas mediante condutture",35
+353011,353011,"Vapore e acqua calda",35
+353012,353012,"Servizi di distribuzione di vapore e di acqua calda tramite rete",35
+353021,353021,"Ghiaccio, anche per raffreddamento (per usi non alimentari)",35
+353022,353022,"Servizi di fornitura di aria e acqua refrigerate",35
+36,36,"Acqua naturale",
+360011,360011,"Acqua potabile",36
+360012,360012,"Acqua non potabile",36
+360020,360020,"Servizi di trattamento e distribuzione dell'acqua tramite rete",36
+360030,360030,"Servizi di vendita dell'acqua tramite rete",36
+37,37,"Servizi di smaltimento delle acque di scarico",
+370011,370011,"Servizi di evacuazione e di trattamento delle acque di scarico",37
+370012,370012,"Servizi di trattamento di pozzi neri e fosse settiche",37
+370020,370020,"Fanghi di depurazione",37
+38,38,"Servizi di raccolta, trattamento e smaltimento dei rifiuti; servizi di recupero dei materiali",
+381111,381111,"Servizi di raccolta di rifiuti urbani non pericolosi riciclabili",38
+381119,381119,"Servizi di raccolta di altri rifiuti non pericolosi, di provenienza diversa",38
+381121,381121,"Servizi di raccolta di rifiuti urbani non pericolosi non riciclabili",38
+381129,381129,"Servizi di raccolta di altri rifiuti non pericolosi non riciclabili",38
+381131,381131,"Rifiuti municipali non riciclabili, non pericolosi",38
+381139,381139,"Altri rifiuti non riciclabili, non pericolosi",38
+381141,381141,"Navi ed altri congegni galleggianti destinati a smantellamento",38
+381149,381149,"Carcasse, diverse da navi ed altri congegni galleggianti, destinate alla demolizione",38
+381151,381151,"Rifiuti di vetro",38
+381152,381152,"Rifiuti di carta e cartone",38
+381153,381153,"Copertoni usati, di gomma",38
+381154,381154,"Altri rifiuti di gomma",38
+381155,381155,"Rifiuti di materie plastiche",38
+381156,381156,"Rifiuti di materie tessili",38
+381157,381157,"Rifiuti di cuoio",38
+381158,381158,"Cascami metallici non pericolosi",38
+381159,381159,"Altri rifiuti riciclabili, non pericolosi n.c.a.",38
+381161,381161,"Servizi di trasporto di rifiuti non pericolosi riciclabili",38
+381169,381169,"Servizi di trasporto di altri rifiuti non pericolosi",38
+381211,381211,"Servizi di raccolta di residui medicinali pericolosi e altri biorifiuti pericolosi",38
+381212,381212,"Servizi di raccolta di altri rifiuti pericolosi industriali",38
+381213,381213,"Servizi di raccolta di rifiuti urbani pericolosi",38
+381221,381221,"Elementi combustibili (cartucce) esausti (irradiati) di reattori nucleari",38
+381222,381222,"Residui farmaceutici",38
+381223,381223,"Altri residui medicinali pericolosi",38
+381224,381224,"Residui chimici pericolosi",38
+381225,381225,"Residui di oli",38
+381226,381226,"Cascami metallici pericolosi",38
+381227,381227,"Cascami ed avanzi di pile, di batterie di pile e di accumulatori elettrici",38
+381229,381229,"Altri rifiuti pericolosi",38
+381230,381230,"Servizi di trasporto di rifiuti pericolosi",38
+382110,382110,"Servizi di trattamento dei rifiuti non pericolosi destinati allo smaltimento finale",38
+382121,382121,"Servizi di discarica controllata",38
+382122,382122,"Altri servizi di discarica",38
+382123,382123,"Servizi di incenerimento dei rifiuti non pericolosi",38
+382129,382129,"Servizi di smaltimento di altri rifiuti non pericolosi",38
+382130,382130,"Residui di solventi organici",38
+382140,382140,"Ceneri e residui di incenerimento dei rifiuti",38
+382211,382211,"Servizi di trattamento delle scorie nucleari",38
+382219,382219,"Servizi di trattamento di altri residui pericolosi",38
+382221,382221,"Servizi di smaltimento delle scorie nucleari",38
+382229,382229,"Servizi di smaltimento di altri residui pericolosi",38
+383111,383111,"Servizi di demolizione di navi",38
+383112,383112,"Servizi di demolizione di carcasse, escluse navi ed altri congegni galleggianti",38
+383211,383211,"Servizi di recupero delle materie metalliche selezionate",38
+383212,383212,"Servizi di recupero delle materie non metalliche selezionate",38
+383221,383221,"Metalli preziosi sotto forma di materie prime secondarie",38
+383222,383222,"Metalli ferrosi sotto forma di materie prime secondarie",38
+383223,383223,"Rame sotto forma di materie prime secondarie",38
+383224,383224,"Nichel sotto forma di materie prime secondarie",38
+383225,383225,"Alluminio sotto forma di materie prime secondarie",38
+383229,383229,"Altre materie prime secondarie metalliche",38
+383231,383231,"Vetro sotto forma di materie prime secondarie",38
+383232,383232,"Carta e cartone sotto forma di materie prime secondarie",38
+383233,383233,"Materie plastiche sotto forma di materie prime secondarie",38
+383234,383234,"Gomma sotto forma di materie prime secondarie",38
+383235,383235,"Materie tessili sotto forma di materie prime secondarie",38
+383239,383239,"Altre materie prime secondarie non metalliche",38
+39,39,"Servizi di decontaminazione ed altri servizi di trattamento dei rifiuti",
+390011,390011,"Servizi di decontaminazione e pulizia di terreni e di depurazione di acque sotterranee",39
+390012,390012,"Servizi di decontaminazione e di bonifica delle acque superficiali",39
+390013,390013,"Servizi di decontaminazione e di pulizia dell'aria",39
+390014,390014,"Servizi di decontaminazione degli edifici",39
+390021,390021,"Servizi di confinamento, controllo e monitoraggio della decontaminazione del sito ed altri servizi di decontaminazione",39
+390022,390022,"Altri servizi di decontaminazione",39
+390023,390023,"Altri servizi specializzati di controllo dell'inquinamento",39
+41,41,"Edifici ed opere di edilizia civile",
+410010,410010,"Edilizia abitativa",41
+410020,410020,"Fabbricati non residenziali",41
+410030,410030,"Lavori di costruzione di fabbricati residenziali (nuovi lavori, aggiunte, modifiche e lavori di restauro)",41
+410040,410040,"Lavori di costruzione di fabbricati non residenziali (nuovi lavori, aggiunte, modifiche e lavori di restauro)",41
+42,42,"Lavori di costruzione ed opere di genio civile",
+421110,421110,"Autostrade, strade, strade urbane, altri passaggi per veicoli e pedoni e piste di campi di aviazione",42
+421120,421120,"Lavori di costruzione di autostrade, strade, strade urbane, altri passaggi per veicoli e pedoni e piste di campi di aviazione",42
+421210,421210,"Linee ferroviarie e metropolitane",42
+421220,421220,"Lavori di costruzione di linee ferroviarie e metropolitane",42
+421310,421310,"Ponti e gallerie",42
+421320,421320,"Lavori di costruzione di ponti e gallerie",42
+422111,422111,"Condotte per grandi distanze per il trasporto di fluidi",42
+422112,422112,"Condotte locali per il trasporto di fluidi",42
+422113,422113,"Sistemi di irrigazione (canali); condutture e tubi per la distribuzione dell'acqua; impianti di trattamento delle acque, impianti di smaltimento delle acque di scarico e stazioni di pompaggio",42
+422121,422121,"Lavori di costruzione di condotte per grandi distanze",42
+422122,422122,"Lavori di costruzione di condotte locali, inclusi lavori accessori",42
+422123,422123,"Lavori di costruzione di sistemi di irrigazione (canali), condutture e tubi per la distribuzione dell'acqua, impianti di trattamento delle acque, impianti di smaltimento delle acque di scarico e stazioni di pompaggio",42
+422124,422124,"Trivellazione di pozzi d'acqua e lavori di installazione di fosse settiche",42
+422211,422211,"Linee elettriche e linee di comunicazione per grandi distanze",42
+422212,422212,"Linee elettriche e linee di comunicazione locali",42
+422213,422213,"Centrali elettriche",42
+422221,422221,"Lavori di costruzione di linee elettriche per grandi distanze e linee di comunicazione",42
+422222,422222,"Lavori di costruzione di linee elettriche e linee di comunicazione locali",42
+422223,422223,"Lavori di costruzione di centrali elettriche",42
+429110,429110,"Strutture costiere e portuali, dighe, chiuse ed altre strutture idromeccaniche",42
+429120,429120,"Lavori di costruzione di strutture costiere e portuali, dighe, chiuse ed altre strutture idromeccaniche",42
+429911,429911,"Impianti per attività estrattive e manifatturiere",42
+429912,429912,"Impianti sportivi e ricreativi",42
+429919,429919,"Altre opere di genio civile n.c.a.",42
+429921,429921,"Lavori di costruzione per attività estrattive e manifatturiere",42
+429922,429922,"Lavori di costruzione di strutture per stadi e terreni sportivi",42
+429929,429929,"Lavori di costruzione per altre opere di genio civile n.c.a.",42
+43,43,"Opere specializzate",
+431110,431110,"Lavori di demolizione",43
+431211,431211,"Lavori di preparazione del suolo e del terreno",43
+431212,431212,"Lavori di scavo e di movimento terra",43
+431310,431310,"Lavori di trivellazione e perforazione",43
+432110,432110,"Lavori di installazione di impianti elettrici",43
+432211,432211,"Lavori di installazione di impianti idraulici e fognature",43
+432212,432212,"Lavori di installazione di impianti di riscaldamento, ventilazione e condizionamento dell'aria",43
+432220,432220,"Lavori di installazione di raccordi per il gas",43
+432911,432911,"Lavori di isolamento",43
+432912,432912,"Lavori di installazione di recinzioni e cancellate",43
+432919,432919,"Altri lavori di installazione n.c.a.",43
+433110,433110,"Lavori di intonacatura",43
+433210,433210,"Posa in opera di infissi",43
+433310,433310,"Posa in opera di piastrelle",43
+433321,433321,"Opere in terrazzo, marmo, granito e ardesia",43
+433329,433329,"Posa in opera di altri rivestimenti per pavimenti e muri, e di carta da parati n.c.a.",43
+433410,433410,"Lavori di tinteggiatura",43
+433420,433420,"Posa in opera di vetrate",43
+433911,433911,"Posa in opera di elementi ornamentali",43
+433919,433919,"Altri lavori di completamento e di finitura degli edifici n.c.a.",43
+439111,439111,"Costruzione di ossature di tetti",43
+439119,439119,"Altri lavori di copertura",43
+439910,439910,"Lavori di impermeabilizzazione",43
+439920,439920,"Lavori di ponteggio",43
+439930,439930,"Lavori di palificazione e costipazione del terreno",43
+439940,439940,"Opere in calcestruzzo",43
+439950,439950,"Lavori di installazione di elementi in acciaio",43
+439960,439960,"Lavori in muratura e posa in opera di mattoni",43
+439970,439970,"Lavori di montaggio e installazione di opere prefabbricate",43
+439990,439990,"Opere specializzate n.c.a.",43
+45,45,"Servizi di vendita all'ingrosso e al dettaglio e di riparazione di autoveicoli e motocicli",
+451111,451111,"Servizi di vendita all'ingrosso di autoveicoli per il trasporto di persone",45
+451112,451112,"Servizi di vendita all'ingrosso di autoveicoli per il trasporto speciale di persone, ad esempio ambulanze, minibus ed altri e veicoli fuoristrada (di peso inferiore o uguale a 3,5 t)",45
+451121,451121,"Servizi di vendita al dettaglio in esercizi specializzati di autoveicoli nuovi per il trasporto di persone",45
+451122,451122,"Servizi di vendita al dettaglio in esercizi specializzati di autoveicoli usati, per il trasporto di persone",45
+451123,451123,"Servizi di vendita al dettaglio in esercizi specializzati di autoveicoli nuovi per il trasporto speciale di persone, ad esempio ambulanze, minibus ed altri e veicoli fuoristrada (di peso inferiore o uguale a 3,5 t)",45
+451124,451124,"Servizi di vendita al dettaglio in esercizi specializzati di autoveicoli usati, per il trasporto speciale di persone, ad esempio ambulanze, minibus ed altri e veicoli fuoristrada (di peso inferiore o uguale a 3,5 t)",45
+451131,451131,"Servizi di vendita al dettaglio di automobili e di autoveicoli leggeri via Internet",45
+451139,451139,"Altri servizi di vendita al dettaglio di automobili e di autoveicoli leggeri n.c.a.",45
+451141,451141,"Servizi di vendita all'ingrosso per conto terzi di automobili e di autoveicoli leggeri via Internet",45
+451149,451149,"Altri servizi di vendita all'ingrosso per conto terzi di automobili e di autoveicoli leggeri",45
+451911,451911,"Servizi di vendita all'ingrosso di autocarri, furgoni, rimorchi, semirimorchi e autobus",45
+451912,451912,"Servizi di vendita all'ingrosso di veicoli da campeggio quali roulotte e motorhome",45
+451921,451921,"Servizi di vendita al dettaglio in esercizi specializzati di autocarri, furgoni, rimorchi, semirimorchi e autobus",45
+451922,451922,"Servizi di vendita al dettaglio in esercizi specializzati di veicoli da campeggio quali roulotte e motorhome",45
+451931,451931,"Servizi di vendita al dettaglio di altri autoveicoli via Internet",45
+451939,451939,"Altri servizi di vendita al dettaglio di autoveicoli n.c.a.",45
+451941,451941,"Servizi di vendita all'ingrosso per conto terzi di altri autoveicoli via Internet",45
+451949,451949,"Altri servizi di vendita all'ingrosso per conto terzi di altri autoveicoli",45
+452011,452011,"Servizi di manutenzione e riparazione ordinaria (esclusi i servizi di riparazione del sistema elettrico, pneumatici e carrozzeria) di automobili e di autoveicoli leggeri",45
+452012,452012,"Servizi di riparazione del sistema elettrico di automobili e di autoveicoli leggeri",45
+452013,452013,"Servizi di riparazione dei pneumatici (comprese regolazione ed equilibratura) di automobili e di autoveicoli leggeri",45
+452014,452014,"Servizi di riparazione della carrozzeria e servizi simili (portiere, serrature, finestrini, riverniciatura, riparazione a seguito di collisione) di automobili e di autoveicoli leggeri",45
+452021,452021,"Servizi di manutenzione e riparazione ordinaria (esclusi i servizi di riparazione del sistema elettrico e della carrozzeria) di altri autoveicoli",45
+452022,452022,"Servizi di riparazione del sistema elettrico di altri autoveicoli",45
+452023,452023,"Servizi di riparazione della carrozzeria e servizi simili (portiere, serrature, finestrini, riverniciatura, riparazione a seguito di collisione) di altri autoveicoli",45
+452030,452030,"Lavaggio e lucidatura di autoveicoli e servizi simili",45
+453111,453111,"Servizi di vendita all'ingrosso di copertoni e camere d'aria di pneumatici in gomma",45
+453112,453112,"Servizi di vendita all'ingrosso di altre parti e altri accessori di autoveicoli",45
+453120,453120,"Servizi di vendita all'ingrosso per conto terzi di parti e accessori di autoveicoli",45
+453211,453211,"Servizi di vendita al dettaglio in esercizi specializzati di pneumatici",45
+453212,453212,"Servizi di vendita al dettaglio in esercizi specializzati di altre parti e altri accessori di autoveicoli",45
+453221,453221,"Servizi di vendita al dettaglio di parti e accessori di autoveicoli via Internet",45
+453222,453222,"Servizi di vendita al dettaglio di parti e accessori di autoveicoli per corrispondenza",45
+453229,453229,"Altri servizi di vendita al dettaglio di parti e accessori di autoveicoli n.c.a.",45
+454010,454010,"Servizi di vendita all'ingrosso di motocicli, accessori e pezzi di ricambio",45
+454020,454020,"Servizi di vendita al dettaglio in esercizi specializzati di motocicli, accessori e pezzi di ricambio",45
+454030,454030,"Altri servizi di vendita al dettaglio di motocicli, accessori e pezzi di ricambio",45
+454040,454040,"Servizi di vendita all'ingrosso per conto terzi di motocicli, accessori e pezzi di ricambio",45
+454050,454050,"Servizi di manutenzione e riparazione di motocicli",45
+46,46,"Servizi di vendita all'ingrosso, escluso quello di autoveicoli e di motocicli",
+461111,461111,"Servizi di vendita all'ingrosso per conto terzi di animali vivi",46
+461112,461112,"Servizi di vendita all'ingrosso per conto terzi di fiori e piante",46
+461119,461119,"Servizi di vendita all'ingrosso per conto terzi di altre materie prime agricole, di altre materie prime tessili e di altri semilavorati",46
+461211,461211,"Servizi di vendita all'ingrosso per conto terzi di combustibili solidi, liquidi, gassosi e di prodotti derivati",46
+461212,461212,"Servizi di vendita all'ingrosso per conto terzi di minerali metalliferi e metalli in forme primarie",46
+461213,461213,"Servizi di vendita all'ingrosso per conto terzi di prodotti chimici industriali, di fertilizzanti e di prodotti chimici per l'agricoltura",46
+461311,461311,"Servizi di vendita all'ingrosso per conto terzi di legname e di prodotti di legno",46
+461312,461312,"Servizi di vendita all'ingrosso per conto terzi di materiali da costruzione",46
+461411,461411,"Servizi di vendita all'ingrosso per conto terzi di elaboratori elettronici, software, apparecchiature elettroniche e per telecomunicazioni e altre attrezzature per ufficio",46
+461412,461412,"Servizi di vendita all'ingrosso per conto terzi di navi, aeromobili ed altri mezzi di trasporto n.c.a.",46
+461419,461419,"Servizi di vendita all'ingrosso per conto terzi di altri macchinari e impianti industriali n.c.a.",46
+461511,461511,"Servizi di vendita all'ingrosso per conto terzi di mobili",46
+461512,461512,"Servizi di vendita all'ingrosso per conto terzi di apparecchi radio, televisori e apparecchi video",46
+461513,461513,"Servizi di vendita all'ingrosso per conto terzi di ferramenta e utensileria portatile",46
+461519,461519,"Servizi di vendita all'ingrosso per conto terzi di articoli per la casa e posaterie n.c.a.",46
+461611,461611,"Servizi di vendita all'ingrosso per conto terzi di prodotti tessili",46
+461612,461612,"Servizi di vendita all'ingrosso per conto terzi di abbigliamento, di pellicce e di calzature",46
+461613,461613,"Servizi di vendita all'ingrosso per conto terzi di articoli in cuoio e di accessori da viaggio",46
+461711,461711,"Servizi di vendita all'ingrosso per conto terzi di prodotti alimentari",46
+461712,461712,"Servizi di vendita all'ingrosso per conto terzi di bevande",46
+461713,461713,"Servizi di vendita all'ingrosso per conto terzi di tabacco",46
+461811,461811,"Servizi di vendita all'ingrosso per conto terzi di prodotti farmaceutici, medicali, di cosmetici e di articoli di profumeria e di prodotti per la pulizia",46
+461812,461812,"Servizi di vendita all'ingrosso per conto terzi di giochi e giocattoli, articoli sportivi, biciclette, libri, giornali, riviste e articoli di cancelleria, strumenti musicali, orologi e gioielli, attrezzature fotografiche e strumenti ottici",46
+461819,461819,"Servizi di vendita all'ingrosso per conto terzi di altri prodotti particolari n.c.a.",46
+461910,461910,"Servizi di vendita all'ingrosso per conto terzi di vari prodotti senza prevalenza di alcuno",46
+462111,462111,"Servizi di vendita all'ingrosso di cereali",46
+462112,462112,"Servizi di vendita all'ingrosso di sementi (esclusi semi oleosi)",46
+462113,462113,"Servizi di vendita all'ingrosso di semi e frutti oleosi",46
+462114,462114,"Servizi di vendita all'ingrosso di alimenti per il bestiame (mangimi)",46
+462119,462119,"Servizi di vendita all'ingrosso di altre materie prime agricole n.c.a.",46
+462120,462120,"Servizi di vendita all'ingrosso di tabacco grezzo",46
+462210,462210,"Servizi di vendita all'ingrosso di fiori e piante",46
+462310,462310,"Servizi di vendita all'ingrosso di animali vivi",46
+462410,462410,"Servizi di vendita all'ingrosso di pelli, anche per pellicceria, e cuoio",46
+463111,463111,"Servizi di vendita all'ingrosso di frutta e ortaggi freschi",46
+463112,463112,"Servizi di vendita all'ingrosso di preparazioni di frutta e ortaggi",46
+463211,463211,"Servizi di vendita all'ingrosso di carne, pollame incluso",46
+463212,463212,"Servizi di vendita all'ingrosso di prodotti a base di carne, prodotti avicoli inclusi",46
+463311,463311,"Servizi di vendita all'ingrosso di prodotti lattiero-caseari",46
+463312,463312,"Servizi di vendita all'ingrosso di uova",46
+463313,463313,"Servizi di vendita all'ingrosso di oli e grassi commestibili",46
+463411,463411,"Servizi di vendita all'ingrosso di succhi, acque minerali, bibite analcoliche ed altre bevande non alcoliche",46
+463412,463412,"Servizi di vendita all'ingrosso di bevande alcoliche",46
+463510,463510,"Servizi di vendita all'ingrosso di prodotti del tabacco",46
+463611,463611,"Servizi di vendita all'ingrosso di zucchero",46
+463612,463612,"Servizi di vendita all'ingrosso di prodotti di panetteria e pasticceria",46
+463613,463613,"Servizi di vendita all'ingrosso di cioccolato e dolciumi",46
+463710,463710,"Servizi di vendita all'ingrosso di caffè, tè, cacao e spezie",46
+463810,463810,"Servizi di vendita all'ingrosso di pesci, crostacei e molluschi",46
+463821,463821,"Servizi di vendita all'ingrosso di preparati omogeneizzati e di alimenti dietetici",46
+463829,463829,"Servizi di vendita all'ingrosso di altri prodotti alimentari n.c.a.",46
+463911,463911,"Servizi di vendita all'ingrosso non specializzato di prodotti alimentari surgelati",46
+463912,463912,"Servizi di vendita all'ingrosso non specializzato di prodotti alimentari non surgelati, bevande e tabacco",46
+464111,464111,"Servizi di vendita all'ingrosso di filati",46
+464112,464112,"Servizi di vendita all'ingrosso di tessuti",46
+464113,464113,"Servizi di vendita all'ingrosso di biancheria per la casa, tende ed altri articoli per la casa in materie tessili",46
+464114,464114,"Servizi di vendita all'ingrosso di merceria",46
+464211,464211,"Servizi di vendita all'ingrosso di articoli di abbigliamento",46
+464212,464212,"Servizi di vendita all'ingrosso di calzature",46
+464311,464311,"Servizi di vendita all'ingrosso di elettrodomestici, eccetto apparecchi radio, televisori e attrezzature fotografiche",46
+464312,464312,"Servizi di vendita all'ingrosso di apparecchi radio, televisori, apparecchi video e lettori DVD",46
+464313,464313,"Servizi di vendita all'ingrosso di dischi, nastri audio e video, CD e DVD (escl. Supporti non registrati)",46
+464314,464314,"Servizi di vendita all'ingrosso di articoli fotografici ed ottici",46
+464411,464411,"Servizi di vendita all'ingrosso di articoli di vetro, porcellana e ceramica",46
+464412,464412,"Servizi di vendita all'ingrosso di prodotti per la pulizia",46
+464510,464510,"Servizi di vendita all'ingrosso di profumi e cosmetici",46
+464611,464611,"Servizi di vendita all'ingrosso di prodotti farmaceutici di base e di preparati farmaceutici",46
+464612,464612,"Servizi di vendita all'ingrosso di strumenti e apparecchi chirurgici, medicali ed ortopedici",46
+464711,464711,"Servizi di vendita all'ingrosso di mobili per la casa",46
+464712,464712,"Servizi di vendita all'ingrosso di apparecchi per l'illuminazione",46
+464713,464713,"Servizi di vendita all'ingrosso di tappeti",46
+464810,464810,"Servizi di vendita all'ingrosso di orologi e di articoli di gioielleria",46
+464911,464911,"Servizi di vendita all'ingrosso di posaterie e utensili in metallo per la casa",46
+464912,464912,"Servizi di vendita all'ingrosso di articoli in vimini, sughero, articoli da bottaio ed altri articoli in legno",46
+464919,464919,"Servizi di vendita all'ingrosso di articoli e apparecchi domestici n.c.a.",46
+464921,464921,"Servizi di vendita all'ingrosso di libri",46
+464922,464922,"Servizi di vendita all'ingrosso di riviste e giornali",46
+464923,464923,"Servizi di vendita all'ingrosso di prodotti cartotecnici",46
+464931,464931,"Servizi di vendita all'ingrosso di strumenti musicali",46
+464932,464932,"Servizi di vendita all'ingrosso di giochi e giocattoli",46
+464933,464933,"Servizi di vendita all'ingrosso di articoli sportivi (incluse biciclette)",46
+464934,464934,"Servizi di vendita all'ingrosso di articoli in cuoio e accessori da viaggio",46
+464935,464935,"Servizi di vendita all'ingrosso di francobolli e monete",46
+464936,464936,"Servizi di vendita all'ingrosso di souvenir e opere d'arte",46
+464939,464939,"Servizi di vendita all'ingrosso di altri beni di consumo n.c.a.",46
+465110,465110,"Servizi di vendita all'ingrosso di elaboratori elettronici, apparecchiature informatiche periferiche e software",46
+465211,465211,"Servizi di vendita all'ingrosso di apparecchiature e parti di apparecchiature per telecomunicazioni",46
+465212,465212,"Servizi di vendita all'ingrosso di apparecchiature e componenti elettronici",46
+465213,465213,"Servizi di vendita all'ingrosso di nastri audio e video e dischetti, dischi magnetici ed ottici CD e DVD vergini",46
+466111,466111,"Servizi di vendita all'ingrosso di macchine, attrezzature e accessori per l'agricoltura e la silvicoltura, inclusi i trattori",46
+466112,466112,"Servizi di vendita all'ingrosso di macchinari, attrezzature e accessori per prati e giardini",46
+466211,466211,"Servizi di vendita all'ingrosso di macchine utensili per la lavorazione del legno",46
+466212,466212,"Servizi di vendita all'ingrosso di macchine utensili per la lavorazione dei metalli",46
+466219,466219,"Servizi di vendita all'ingrosso di macchine utensili per la lavorazione di altri materiali",46
+466310,466310,"Servizi di vendita all'ingrosso di macchine per l'estrazione, le costruzioni e il genio civile",46
+466410,466410,"Servizi di vendita all'ingrosso di macchine per l'industria tessile, di macchine per cucire e per maglieria",46
+466510,466510,"Servizi di vendita all'ingrosso di attrezzature e mobili per ufficio",46
+466610,466610,"Servizi di vendita all'ingrosso di altre macchine e attrezzature per ufficio",46
+466911,466911,"Servizi di vendita all'ingrosso di attrezzature di trasporto, esclusi gli autoveicoli, i motocicli e le biciclette",46
+466912,466912,"Servizi di vendita all'ingrosso di forniture per macchine e attrezzature",46
+466913,466913,"Servizi di vendita all'ingrosso di attrezzature per il sollevamento e la movimentazione",46
+466914,466914,"Servizi di vendita all'ingrosso di macchine per le industrie alimentari, delle bevande e del tabacco",46
+466915,466915,"Servizi di vendita all'ingrosso di macchine, apparecchi e materiali elettrici di uso professionale",46
+466916,466916,"Servizi di vendita all'ingrosso di armi e munizioni",46
+466919,466919,"Servizi di vendita all'ingrosso di altre macchine, apparecchi e attrezzature di impiego generale e speciale",46
+467111,467111,"Servizi di vendita all'ingrosso di combustibili solidi",46
+467112,467112,"Servizi di vendita all'ingrosso di carburanti per autoveicoli, inclusi carburanti per aeromobili",46
+467113,467113,"Servizi di vendita all'ingrosso di altri combustibili liquidi e gassosi e di prodotti derivati",46
+467211,467211,"Servizi di vendita all'ingrosso di minerali di ferro",46
+467212,467212,"Servizi di vendita all'ingrosso di minerali non ferrosi",46
+467213,467213,"Servizi di vendita all'ingrosso di ferro e acciaio in forme primarie",46
+467214,467214,"Servizi di vendita all'ingrosso di metalli non ferrosi in forme primarie",46
+467311,467311,"Servizi di vendita all'ingrosso di legname grezzo",46
+467312,467312,"Servizi di vendita all'ingrosso di prodotti della prima trasformazione del legno",46
+467313,467313,"Servizi di vendita all'ingrosso di apparecchi igienico-sanitari",46
+467314,467314,"Servizi di vendita all'ingrosso di vernici, colori e lacche",46
+467315,467315,"Servizi di vendita all'ingrosso di vetro piano",46
+467316,467316,"Servizi di vendita all'ingrosso di altri materiali da costruzione",46
+467317,467317,"Servizi di vendita all'ingrosso di carte da parati",46
+467318,467318,"Servizi di vendita all'ingrosso di rivestimenti per pavimenti (escl. tappeti)",46
+467411,467411,"Servizi di vendita all'ingrosso di ferramenta",46
+467412,467412,"Servizi di vendita all'ingrosso di apparecchi e accessori per impianti idraulici e di riscaldamento",46
+467413,467413,"Servizi di vendita all'ingrosso di utensili a mano",46
+467511,467511,"Servizi di vendita all'ingrosso di fertilizzanti e di prodotti chimici per l'agricoltura",46
+467512,467512,"Servizi di vendita all'ingrosso di prodotti chimici industriali",46
+467611,467611,"Servizi di vendita all'ingrosso di carta e cartone",46
+467612,467612,"Servizi di vendita all'ingrosso di fibre tessili",46
+467613,467613,"Servizi di vendita all'ingrosso di materie plastiche e gomma in forme primarie",46
+467619,467619,"Servizi di vendita all'ingrosso di prodotti intermedi, esclusi quelli agricoli, n.c.a.",46
+467710,467710,"Servizi di vendita all'ingrosso di rottami e cascami",46
+469010,469010,"Servizi di vendita all'ingrosso non specializzato",46
+47,47,"Servizi di vendita al dettaglio, escluso quello di autoveicoli e di motocicli",
+470011,470011,"Servizi di vendita al dettaglio di frutta e ortaggi freschi",47
+470012,470012,"Servizi di vendita al dettaglio di preparazioni di frutta e ortaggi",47
+470013,470013,"Servizi di vendita al dettaglio di carni",47
+470014,470014,"Servizi di vendita al dettaglio di prodotti a base di carne",47
+470015,470015,"Servizi di vendita al dettaglio di pesci, crostacei e molluschi",47
+470016,470016,"Servizi di vendita al dettaglio di prodotti di panetteria",47
+470017,470017,"Servizi di vendita al dettaglio di dolciumi",47
+470018,470018,"Servizi di vendita al dettaglio di prodotti lattiero-caseari",47
+470019,470019,"Servizi di vendita al dettaglio di uova",47
+470021,470021,"Servizi di vendita al dettaglio di caffè, tè, cacao e spezie",47
+470022,470022,"Servizi di vendita al dettaglio di oli e grassi commestibili",47
+470023,470023,"Servizi di vendita al dettaglio di preparati omogeneizzati e di alimenti dietetici",47
+470024,470024,"Servizi di vendita al dettaglio di altri prodotti alimentari n.c.a.",47
+470025,470025,"Servizi di vendita al dettaglio di bevande alcoliche",47
+470026,470026,"Servizi di vendita al dettaglio di altre bevande",47
+470027,470027,"Servizi di vendita al dettaglio di prodotti del tabacco",47
+470031,470031,"Servizi di vendita al dettaglio di elaboratori elettronici, unità periferiche e software",47
+470032,470032,"Servizi di vendita al dettaglio di attrezzature di telecomunicazione",47
+470033,470033,"Servizi di vendita al dettaglio di apparecchi audiovisivi",47
+470041,470041,"Servizi di vendita al dettaglio di ferramenta",47
+470042,470042,"Servizi di vendita al dettaglio di vernici, colori e lacche",47
+470043,470043,"Servizi di vendita al dettaglio di vetro piano",47
+470044,470044,"Servizi di vendita al dettaglio di attrezzature per prati e giardini",47
+470045,470045,"Servizi di vendita al dettaglio di apparecchi e accessori per impianti idraulici e di riscaldamento",47
+470046,470046,"Servizi di vendita al dettaglio di articoli igienico-sanitari",47
+470047,470047,"Servizi di vendita al dettaglio di utensili a mano",47
+470049,470049,"Servizi di vendita al dettaglio di materiali da costruzione n.c.a.",47
+470051,470051,"Servizi di vendita al dettaglio di tessili",47
+470052,470052,"Servizi di vendita al dettaglio di tende e tendine",47
+470053,470053,"Servizi di vendita al dettaglio di carte da parati, rivestimenti per pavimenti e tappeti",47
+470054,470054,"Servizi di vendita al dettaglio di elettrodomestici",47
+470055,470055,"Servizi di vendita al dettaglio di mobili",47
+470056,470056,"Servizi di vendita al dettaglio di articoli per l'illuminazione",47
+470057,470057,"Servizi di vendita al dettaglio di articoli in legno, sughero e vimini",47
+470058,470058,"Servizi di vendita al dettaglio di strumenti e spartiti musicali",47
+470059,470059,"Servizi di vendita al dettaglio di stoviglie, cristalleria da tavola, porcellane e vasellame, posate e articoli e apparecchi per la casa, non elettrici, n.c.a.",47
+470061,470061,"Servizi di vendita al dettaglio di libri",47
+470062,470062,"Servizi di vendita al dettaglio di giornali e riviste",47
+470063,470063,"Servizi di vendita al dettaglio di prodotti cartotecnici",47
+470064,470064,"Servizi di vendita al dettaglio di apparecchi per la registrazione del suono e delle immagini",47
+470065,470065,"Servizi di vendita al dettaglio di attrezzature sportive",47
+470066,470066,"Servizi di vendita al dettaglio di attrezzature per campeggio",47
+470067,470067,"Servizi di vendita al dettaglio di giochi e giocattoli",47
+470068,470068,"Servizi di vendita al dettaglio di francobolli e monete",47
+470069,470069,"Servizi di vendita al dettaglio di souvenir e opere d'arte",47
+470071,470071,"Servizi di vendita al dettaglio di articoli di abbigliamento",47
+470072,470072,"Servizi di vendita al dettaglio di calzature",47
+470073,470073,"Servizi di vendita al dettaglio di articoli in cuoio e accessori da viaggio",47
+470074,470074,"Servizi di vendita al dettaglio di prodotti farmaceutici",47
+470075,470075,"Servizi di vendita al dettaglio di articoli medicali e ortopedici",47
+470076,470076,"Servizi di vendita al dettaglio di cosmetici e di articoli di profumeria",47
+470077,470077,"Servizi di vendita al dettaglio di fiori, piante e semi",47
+470078,470078,"Servizi di vendita al dettaglio di fertilizzanti e di prodotti chimici per l'agricoltura",47
+470079,470079,"Servizi di vendita al dettaglio di animali domestici e alimenti per animali domestici",47
+470081,470081,"Servizi di vendita al dettaglio di carburante per autotrazione",47
+470082,470082,"Servizi di vendita al dettaglio di orologi e di articoli di gioielleria",47
+470083,470083,"Servizi di vendita al dettaglio di attrezzature fotografiche, ottiche e di precisione, servizi di ottici",47
+470084,470084,"Servizi di vendita al dettaglio di prodotti per la pulizia",47
+470085,470085,"Servizi di vendita al dettaglio di olio combustibile per uso domestico, gas in bombole, carbone e legna da ardere",47
+470086,470086,"Servizi di vendita al dettaglio di altri prodotti di consumo non alimentari n.c.a.",47
+470087,470087,"Servizi di vendita al dettaglio di materie prime agricole n.c.a.",47
+470088,470088,"Servizi di vendita al dettaglio di macchinari e attrezzature n.c.a.",47
+470089,470089,"Servizi di vendita al dettaglio di prodotti non di consumo diversi da quelli alimentari n.c.a.",47
+470091,470091,"Servizi di vendita al dettaglio di oggetti di antiquariato",47
+470092,470092,"Servizi di vendita al dettaglio di libri di seconda mano",47
+470099,470099,"Servizi di vendita al dettaglio di altri articoli di seconda mano",47
+49,49,"Servizi di trasporto terrestre e di trasporto mediante condotte",
+491011,491011,"Servizi di trasporto ferroviario per turismo",49
+491019,491019,"Altri servizi di trasporto ferroviario interurbano di passeggeri",49
+492011,492011,"Servizi di trasporto ferroviario di merci in vagoni frigoriferi",49
+492012,492012,"Servizi di trasporto ferroviario di prodotti petroliferi mediante carri cisterna",49
+492013,492013,"Servizi di trasporto ferroviario di liqiudi e gas mediante vagoni cisterna",49
+492014,492014,"Servizi di trasporto ferroviario di container intermodali",49
+492015,492015,"Servizi di trasporto ferroviario di corrispondenza e pacchi",49
+492016,492016,"Servizi di trasporto ferroviario di merci solide alla rinfusa",49
+492019,492019,"Altri servizi di trasporto ferroviario di merci",49
+493110,493110,"Servizi di trasporto ferroviario urbano e suburbano di passeggeri",49
+493121,493121,"Servizi di trasporto stradale urbano e suburbano, regolare, di passeggeri",49
+493122,493122,"Servizi di trasporto stradale urbano e suburbano, a modalità mista, regolare, di passeggeri",49
+493211,493211,"Servizi di taxi",49
+493212,493212,"Servizi di noleggio di autovetture con autista",49
+493911,493911,"Servizi di trasporto stradale interurbano, regolare, di passeggeri",49
+493912,493912,"Servizi di trasporto stradale interurbano speciale, regolare, di passeggeri",49
+493913,493913,"Altri servizi di trasporto stradale speciale, regolare, di passeggeri",49
+493920,493920,"Servizi di trasporto di passeggeri mediante funicolari, funivie e sciovie",49
+493931,493931,"Servizi di noleggio di autobus e autopullman con autista",49
+493932,493932,"Servizi di trasporto stradale di passeggeri per turismo",49
+493933,493933,"Servizi charter locali di autobus e autopullman, non regolari",49
+493934,493934,"Servizi charter di autobus e autopullman, non regolari, per grandi distanze",49
+493935,493935,"Servizi di trasporto stradale di passeggeri mediante veicoli a trazione umana o animale",49
+493939,493939,"Servizi di trasporto terrestre di passeggeri, n.c.a.",49
+494111,494111,"Servizi di trasporto di merci su strada in veicoli frigoriferi",49
+494112,494112,"Servizi di trasporto di merci su strada di prodotti petroliferi in autocisterne o semirimorchi cisterna",49
+494113,494113,"Servizi di trasporto di merci su strada di altri liquidi o gas alla rinfusa in autocisterne o semirimorchi cisterna",49
+494114,494114,"Servizi di trasporto stradale di container intermodali",49
+494115,494115,"Servizi di trasporto stradale di merci solide alla rinfusa",49
+494116,494116,"Servizi di trasporto stradale di animali vivi",49
+494117,494117,"Servizi di trasporto stradale di merci mediante veicoli a trazione umana o animale",49
+494118,494118,"Servizi di trasporto stradale di corrispondenza e pacchi",49
+494119,494119,"Altri servizi di trasporto stradale di merci",49
+494120,494120,"Servizi di noleggio di furgoni con autista",49
+494211,494211,"Servizi di trasloco per privati",49
+494219,494219,"Altri servizi di trasloco",49
+495011,495011,"Servizi di trasporto mediante condotte di petrolio greggio o raffinato e di prodotti del petrolio",49
+495012,495012,"Servizi di trasporto mediante condotte di gas naturale",49
+495019,495019,"Servizi di trasporto mediante condotte di altri prodotti",49
+50,50,"Servizi di trasporto marittimo e per vie d'acqua",
+501011,501011,"Servizi di trasporto marittimo e di cabotaggio di passeggeri su navi traghetto",50
+501012,501012,"Servizi di trasporto marittimo e di cabotaggio di passeggeri su navi da crociera",50
+501019,501019,"Altri servizi di trasporto marittimo e di cabotaggio di passeggeri",50
+501020,501020,"Servizi di noleggio di imbarcazioni per il trasporto marittimo e di cabotaggio di passeggeri, con operatore",50
+502011,502011,"Servizi di trasporto marittimo e di cabotaggio di merci congelate o refrigerate mediante navi frigorifero",50
+502012,502012,"Servizi di trasporto marittimo e di cabotaggio di petrolio greggio mediante navi cisterna",50
+502013,502013,"Servizi di trasporto marittimo e di cabotaggio di altri liquidi o gas alla rinfusa mediante navi cisterna",50
+502014,502014,"Servizi di trasporto marittimo e di cabotaggio di container intermodali tramite navi container",50
+502015,502015,"Servizi di trasporto marittimo e di cabotaggio di merci solide alla rinfusa",50
+502019,502019,"Altri servizi di trasporto marittimo e di cabotaggio di merci",50
+502021,502021,"Servizi di noleggio di imbarcazioni per il trasporto marittimo e di cabotaggio di merci, con operatore",50
+502022,502022,"Servizi di rimorchio e spinta in mare aperto e in acque costiere",50
+503011,503011,"Servizi di trasporto di passeggeri per vie d'acqua interne su navi traghetto",50
+503012,503012,"Servizi di trasporto di passeggeri per vie d'acqua interne su imbarcazioni da crociera",50
+503013,503013,"Servizi di turismo su imbarcazioni da diporto",50
+503019,503019,"Altri servizi di trasporto di passeggeri per vie d'acqua interne",50
+503020,503020,"Servizi di noleggio di imbarcazioni per il trasporto di passeggeri, per vie d'acqua interne, con operatore",50
+504011,504011,"Servizi di trasporto per vie d'acqua interne di merci congelate o refrigerate mediante navi frigorifere",50
+504012,504012,"Servizi di trasporto per vie d'acqua interne di petrolio greggio mediante navi cisterna",50
+504013,504013,"Servizi di trasporto per vie d'acqua interne di altri liquidi e gas alla rinfusa mediante navi cisterna",50
+504014,504014,"Servizi di trasporto per vie d'acqua interne di container intermodali tramite navi container",50
+504019,504019,"Altri servizi di trasporto di merci per vie d'acqua interne",50
+504021,504021,"Servizi di noleggio di imbarcazioni per il trasporto di merci, per vie d'acqua interne, con operatore",50
+504022,504022,"Servizi di rimorchio e spinta su vie d'acqua interne",50
+51,51,"Servizi di trasporto aereo",
+511011,511011,"Servizi di trasporto aereo interno, di linea, di passeggeri",51
+511012,511012,"Servizi di trasporto aereo interno, non di linea, di passeggeri, escluso per turismo",51
+511013,511013,"Servizi di trasporto aereo internazionale, di linea, di passeggeri",51
+511014,511014,"Servizi di trasporto aereo internazionale, non di linea, di passeggeri",51
+511015,511015,"Servizi di trasporto aereo, non di linea, di passeggeri, per turismo",51
+511020,511020,"Servizi di noleggio di mezzi di trasporto aereo di passeggeri, con operatore",51
+512111,512111,"Servizi di trasporto aereo, di linea, di container intermodali",51
+512112,512112,"Servizi di trasporto aereo di corrispondenza e pacchi",51
+512113,512113,"Servizi di trasporto aereo, di linea, di altre merci",51
+512114,512114,"Servizi di trasporto aereo, non di linea, di altre merci",51
+512120,512120,"Servizi di noleggio di mezzi di trasporto aereo di merci, con operatore",51
+512211,512211,"Servizi di trasporto spaziale di passeggeri",51
+512212,512212,"Servizi di trasporto spaziale di merci",51
+52,52,"Servizi di magazzinaggio e di supporto per i trasporti",
+521011,521011,"Servizi di magazzinaggio in celle frigorifere",52
+521012,521012,"Servizi di magazzinaggio di liquidi o gas alla rinfusa",52
+521013,521013,"Servizi di magazzinaggio di cereali",52
+521019,521019,"Altri servizi di deposito e magazzinaggio",52
+522111,522111,"Servizi ferroviari di rimorchio o spinta",52
+522119,522119,"Altri servizi connessi al trasporto ferroviario",52
+522121,522121,"Servizi di gestione di autostazioni",52
+522122,522122,"Servizi di gestione di autostrade",52
+522123,522123,"Servizi di gestione di ponti e gallerie",52
+522124,522124,"Servizi di parcheggio",52
+522125,522125,"Servizi di rimorchio per veicoli privati e commerciali",52
+522129,522129,"Altri servizi connessi al trasporto su strada",52
+522130,522130,"Servizi connessi ai trasporti tramite condutture",52
+522211,522211,"Servizi di gestione di porti e idrovie (esclusa movimentazione merci) in acque marittime e costiere",52
+522212,522212,"Servizi di gestione di porti e idrovie (esclusa movimentazione merci) in vie d'acqua interne",52
+522213,522213,"Servizi di pilotaggio e di ancoraggio in acque marittime e costiere",52
+522214,522214,"Servizi di pilotaggio e di ancoraggio in vie d'acqua interne",52
+522215,522215,"Servizi di salvataggio e recupero di imbarcazioni in acque marittime e costiere",52
+522216,522216,"Servizi di salvataggio e recupero di imbarcazioni in vie d'acqua interne",52
+522219,522219,"Altri servizi connessi al trasporto marittimo e per vie d'acqua",52
+522311,522311,"Servizi di gestione di aeroporti (esclusa movimentazione merci)",52
+522312,522312,"Servizi di controllo del traffico aereo",52
+522319,522319,"Altri servizi connessi al trasporto aereo",52
+522320,522320,"Servizi connessi al trasporto spaziale",52
+522411,522411,"Servizi di movimentazione dei container nei porti",52
+522412,522412,"Altri servizi di movimentazione dei container",52
+522413,522413,"Altri servizi di movimentazione merci nei porti",52
+522419,522419,"Altri servizi di movimentazione merci",52
+522911,522911,"Servizi degli agenti marittimi",52
+522912,522912,"Altri servizi di brokeraggio di merci",52
+522919,522919,"Altri servizi delle agenzie di trasporto di merci",52
+522920,522920,"Altri servizi di supporto per i trasporti n.c.a.",52
+53,53,"Servizi postali e di corriere",
+531011,531011,"Servizi postali con obbligo di servizio universale in materia di giornali e periodici",53
+531012,531012,"Servizi postali con obbligo di servizio universale in materia di corrispondenza",53
+531013,531013,"Servizi postali con obbligo di servizio universale in materia di pacchi e pacchetti",53
+531014,531014,"Servizi di sportello presso gli uffici postali",53
+531019,531019,"Altri servizi postali con obbligo di servizio universale",53
+532011,532011,"Servizi di corriere multimodale",53
+532012,532012,"Servizi di consegna a domicilio di generi alimentari",53
+532019,532019,"Altri servizi postali e di corriere n.c.a.",53
+55,55,"Servizi di alloggio",
+551010,551010,"Servizi di alloggio in camere o unità abitative per turisti, con servizio domestico giornaliero (esclusa la multiproprietà)",55
+552011,552011,"Servizi di alloggio in camere o unità abitative per turisti, in ostelli per giovani e bungalow per vacanze",55
+552012,552012,"Servizi di alloggio in camere o unità abitative per turisti, in alloggi in multipropietà",55
+552019,552019,"Altri servizi di alloggio in camere o unità abitative per turisti, senza servizio domestico giornaliero",55
+553011,553011,"Servizi in aree di campeggio",55
+553012,553012,"Servizi in aree adibite a parcheggio per veicoli e roulotte",55
+559011,559011,"Servizi di alloggio in camere o unità abitative per studenti, in residence e internati",55
+559012,559012,"Servizi di alloggio in camere o unità abitative per lavoratori, in ostelli o campi per lavoratori",55
+559013,559013,"Servizi di vagone letto su treni o altri mezzi di trasporto",55
+559019,559019,"Altri servizi di alloggio n.c.a.",55
+56,56,"Servizi di ristorazione e di vendita di bevande",
+561011,561011,"Servizi di ristorazione con servizio completo di ristorante",56
+561012,561012,"Servizi di ristorazione su vagoni ristorante ferroviari e su navi",56
+561013,561013,"Servizi di ristorazione in esercizi self-service",56
+561019,561019,"Altri servizi di ristorazione",56
+562111,562111,"Servizi di catering per feste private",56
+562119,562119,"Altri servizi di catering per manifestazioni",56
+562911,562911,"Servizi contrattuali di ristorazione per conto di imprese di trasporti",56
+562919,562919,"Altri servizi contrattuali di ristorazione collettiva",56
+562920,562920,"Servizi di mense",56
+563010,563010,"Servizi di vendita di bevande",56
+58,58,"Servizi di editoria",
+581111,581111,"Libri di testo didattici",58
+581112,581112,"Edizioni professionali, tecniche e scolastiche in forma di libri",58
+581113,581113,"Libri per l'infanzia",58
+581114,581114,"Dizionari ed enciclopedie",58
+581115,581115,"Atlanti ed altri lavori cartografici in forma di libri",58
+581116,581116,"Lavori cartografici di ogni specie, non in forma di libri",58
+581119,581119,"Altri libri, opuscoli e stampati simili",58
+581120,581120,"Pubblicazioni su dischi, nastri o altri supporti materiali",58
+581130,581130,"Pubblicazioni on line",58
+581141,581141,"Spazi pubblicitari in pubblicazioni su supporto cartaceo",58
+581142,581142,"Spazi pubblicitari in pubblicazioni su supporto elettronico",58
+581150,581150,"Edizione di libri per conto terzi",58
+581160,581160,"Servizi di concessione di licenze per pubblicazioni",58
+581210,581210,"Guide telefoniche e indirizzari elettronici stampati o su supporto mediatico",58
+581220,581220,"Guide telefoniche e indirizzari elettronici on line",58
+581230,581230,"Servizi di concessione di licenze per l'utilizzo di guide telefoniche e indirizzari elettronici",58
+581310,581310,"Giornali su carta",58
+581320,581320,"Giornali on line",58
+581331,581331,"Spazi pubblicitari in giornali su carta",58
+581332,581332,"Spazi pubblicitari in giornali on line",58
+581411,581411,"Giornali e pubblicazioni periodiche su carta, di informazione generale",58
+581412,581412,"Giornali e pubblicazioni periodiche su carta, di informazione commerciale, professionale e accademica",58
+581419,581419,"Altri giornali e pubblicazioni periodiche su carta",58
+581420,581420,"Giornali e pubblicazioni periodiche on line",58
+581431,581431,"Spazi pubblicitari in giornali e pubblicazioni periodiche su carta",58
+581432,581432,"Spazi pubblicitari in giornali e pubblicazioni periodiche on line",58
+581440,581440,"Servizi di concessione di licenze per giornali e pubblicazioni periodiche",58
+581911,581911,"Cartoline stampate con auguri o simili",58
+581912,581912,"Immagini, incisioni e fotografie stampate",58
+581913,581913,"Decalcomanie, calendari stampati",58
+581914,581914,"Francobolli, marche da bollo e simili, non obliterati; carta bollata; assegni; biglietti di banca, titoli azionari od obbligazioni e titoli simili",58
+581915,581915,"Stampati pubblicitari, cataloghi commerciali e simili",58
+581919,581919,"Altri stampati",58
+581921,581921,"Contenuti per adulti on line",58
+581929,581929,"Altri contenuti on line n.c.a.",58
+581930,581930,"Servizi di concessione di licenze per altri stampati",58
+582110,582110,"Giochi per computer pronti per l'uso",58
+582120,582120,"Download di giochi per computer",58
+582130,582130,"Giochi on line",58
+582140,582140,"Servizi di concessione di licenze per l'utilizzo di giochi per computer",58
+582911,582911,"Sistemi operativi pronti per l'uso",58
+582912,582912,"Software di rete pronti per l'uso",58
+582913,582913,"Software di gestione di banca dati pronti per l'uso",58
+582914,582914,"Software di strumenti di sviluppo e di linguaggi di programmazione, pronti per l'uso",58
+582921,582921,"Applicazioni commerciali e domestiche generali, pronte per l'uso",58
+582929,582929,"Altro software applicativo, pronto per l'uso",58
+582931,582931,"Download di software per sistemi",58
+582932,582932,"Download di software applicativo",58
+582940,582940,"Software on line",58
+582950,582950,"Servizi di concessione di licenze per l'utilizzo di software",58
+59,59,"Servizi di produzione di pellicole cinematografiche, di video e di programmi televisivi; edizione di registrazioni sonore e edizioni musicali",
+591111,591111,"Servizi di produzione di pellicole cinematografiche",59
+591112,591112,"Servizi di produzione di pellicole cinematografiche e di video promozionali o pubblicitari",59
+591113,591113,"Altri servizi di produzione di programmi televisivi",59
+591121,591121,"Originali di pellicole cinematografiche, video e programmi televisivi",59
+591122,591122,"Pellicole cinematografiche",59
+591123,591123,"Contenuti di film e altri video su disco, nastro o altri supporti materiali",59
+591124,591124,"Download di film e altri video",59
+591130,591130,"Vendita di spazi pubblicitari in prodotti cinematografici, video e televisivi",59
+591211,591211,"Servizi di redazione audiovisiva",59
+591212,591212,"Servizi di trasferimento e duplicazione di master",59
+591213,591213,"Servizi di correzione cromatica e di restauro in tecnica digitale",59
+591214,591214,"Servizi per gli effetti visivi",59
+591215,591215,"Servizi per l'animazione",59
+591216,591216,"Servizi di scrittura di didascalie, titolazione e sottotitolazione",59
+591217,591217,"Servizi di editing e di progettazione audio",59
+591219,591219,"Altri servizi di postproduzione di pellicole cinematografiche, di video e di programmi televisivi",59
+591311,591311,"Servizi di concessione di licenze per diritti cinematografici e relative royalties",59
+591312,591312,"Altri servizi di distribuzione di pellicole cinematografiche, di video e di programmi televisivi",59
+591410,591410,"Servizi di proiezione cinematografica",59
+592011,592011,"Servizi di registrazione sonora",59
+592012,592012,"Servizi di registrazione dal vivo",59
+592013,592013,"Originali di registrazioni sonore",59
+592021,592021,"Servizi di produzione di programmi radiofonici",59
+592022,592022,"Originali di programmi radiofonici",59
+592031,592031,"Partiture a stampa",59
+592032,592032,"Spartiti elettronici",59
+592033,592033,"Dischi, nastri o altri supporti materiali audio musicali",59
+592034,592034,"Altri dischi e nastri audio",59
+592035,592035,"Download di musica",59
+592040,592040,"Servizi di concessione di licenze per l'utilizzo di originali acustici",59
+60,60,"Servizi di programmazione e di emissione radiofonica e televisiva",
+601011,601011,"Servizi di radioprogrammazione e radiodiffusione",60
+601012,601012,"Originali di emissioni radiofoniche",60
+601020,601020,"Programmi di canali radio",60
+601030,601030,"Spazi pubblicitari in radio",60
+602011,602011,"Servizi di diffusione di programmi televisivi on line (escl. programmi a pagamento)",60
+602012,602012,"Altri servizi di diffusione di programmi televisivi (escl. programmi a pagamento)",60
+602013,602013,"Servizi di diffusione di programmi televisivi on line a pagamento",60
+602014,602014,"Altri servizi di diffusione di programmi televisivi a pagamento",60
+602020,602020,"Originali di programmi televisivi",60
+602031,602031,"Programmi di canali televisivi (esclusa TV a pagamento)",60
+602032,602032,"Programmi di canali televisivi a pagamento",60
+602040,602040,"Spazi pubblicitari in TV",60
+61,61,"Servizi di telecomunicazione",
+611011,611011,"Servizi di telefonia fissa - accesso e uso",61
+611012,611012,"Servizi di telefonia fissa - caratteristiche di chiamata",61
+611013,611013,"Servizi di reti private per sistemi di telecomunicazione cablati",61
+611020,611020,"Servizi di carrier per telecomunicazioni cablate",61
+611030,611030,"Servizi di trasmissione dati tramite reti di telecomunicazioni cablate",61
+611041,611041,"Servizi di dorsale (backbone) di Internet",61
+611042,611042,"Servizi di accesso a Internet a banda stretta tramite reti cablate",61
+611043,611043,"Servizi di accesso a Internet a banda larga tramite reti cablate",61
+611049,611049,"Altri servizi di telecomunicazioni tramite Internet via cavo",61
+611051,611051,"Servizi di distribuzione di programmi a domicilio tramite infrastruttura cablata, pacchetto di programmi base",61
+611052,611052,"Servizi di distribuzione di programmi a domicilio tramite infrastruttura cablata, pacchetto di programmi a scelta",61
+611053,611053,"Servizi di distribuzione di programmi a domicilio tramite infrastruttura cablata, pay-per-view (pagati a consumo)",61
+612011,612011,"Servizi di telecomunicazioni mobili - accesso e uso",61
+612012,612012,"Servizi di telecomunicazioni mobili - caratteristiche di chiamata",61
+612013,612013,"Servizi di reti private per sistemi di telecomunicazioni wireless",61
+612020,612020,"Servizi di carrier per telecomunicazioni wireless",61
+612030,612030,"Servizi di trasmissione dati tramite reti di telecomunicazioni wireless",61
+612041,612041,"Servizi di accesso a Internet a banda stretta tramite reti wireless",61
+612042,612042,"Servizi di accesso a Internet a banda larga tramite reti wireless",61
+612049,612049,"Altri servizi di telecomunicazione wireless tramite Internet",61
+612050,612050,"Servizi di distribuzione di programmi a domicilio tramite reti wireless",61
+613010,613010,"Servizi di telecomunicazioni via satellite, esclusa la distribuzione di programmi a domicilio via satellite",61
+613020,613020,"Diffusione di programmi a domicilio via satellite",61
+619010,619010,"Altri servizi di telecomunicazione",61
+62,62,"Programmazione informatica, consulenze e servizi connessi",
+620111,620111,"Servizi di progettazione e sviluppo di TI per applicazioni",62
+620112,620112,"Servizi di progettazione e sviluppo di TI per reti e sistemi",62
+620121,620121,"Originali di software di giochi per computer",62
+620129,620129,"Altri originali di software",62
+620210,620210,"Servizi di consulenza per installazione di elaboratori elettronici",62
+620220,620220,"Servizi di consulenza in materia di programmi e di sistemi informatici",62
+620230,620230,"Servizi di assistenza tecnica informatica",62
+620311,620311,"Servizi di gestione reti",62
+620312,620312,"Servizi di gestione di sistemi informatici",62
+620910,620910,"Servizi di installazione di elaboratori elettronici e unità periferiche",62
+620920,620920,"Altri servizi connessi alle tecnologie dell'informazione n.c.a. e all'informatica",62
+63,63,"Servizi d'informazione",
+631111,631111,"Servizi di elaborazione elettronica dell'informazione",63
+631112,631112,"Servizi di web hosting",63
+631113,631113,"Fornitura di servizi applicativi",63
+631119,631119,"Servizi di fornitura di altre infrastrutture di hosting e informatiche",63
+631121,631121,"Contenuti video trasmessi in streaming",63
+631122,631122,"Contenuti audio trasmessi in streaming",63
+631130,631130,"Spazi pubblicitari in Internet",63
+631210,631210,"Contenuto di portali web",63
+639111,639111,"Servizi forniti dalle agenzie di stampa a giornali e pubblicazioni periodiche",63
+639112,639112,"Servizi delle agenzie di stampa a mezzi di comunicazione audiovisivi",63
+639910,639910,"Servizi d'informazione n.c.a.",63
+639920,639920,"Compilazioni originali di fatti o informazioni",63
+64,64,"Servizi finanziari (escluse le assicurazioni e i fondi pensione)",
+641110,641110,"Servizi delle Banche centrali",64
+641911,641911,"Servizi di deposito a favore di imprese ed istituzioni",64
+641912,641912,"Servizi di deposito a favore di altri clienti",64
+641921,641921,"Servizi di concessione intersettoriale di credito da parte di istituti monetari",64
+641922,641922,"Servizi di concessione di credito al consumo da parte di istituti monetari",64
+641923,641923,"Servizi di concessione di credito ipotecario per abitazioni da parte di istituti monetari",64
+641924,641924,"Servizi di concessione di credito ipotecario non per abitazioni da parte di istituti monetari",64
+641925,641925,"Servizi di concessione di credito diverso da quello ipotecario a imprese da parte di istituti monetari",64
+641926,641926,"Servizi di carte di credito degli istituti monetari",64
+641929,641929,"Altri servizi di concessione di credito da parte di istituti monetari",64
+641930,641930,"Altri servizi di intermediazione monetaria n.c.a.",64
+642010,642010,"Servizi di società holding",64
+643010,643010,"Servizi connessi ai fondi e ad entità finanziarie simili",64
+649110,649110,"Servizi di leasing finanziario",64
+649211,649211,"Servizi di concessione intersettoriale di credito, diversi da quelli offerti da istituti monetari",64
+649212,649212,"Servizi di concessione di credito al consumo, diversi da quelli offerti da istituti monetari",64
+649213,649213,"Servizi di concessione di credito ipotecario per abitazioni, diversi da quelli offerti da istituti monetari",64
+649214,649214,"Servizi di concessione di credito ipotecario non per abitazioni, diversi da quelli offerti da istituti monetari",64
+649215,649215,"Servizi di concessione di credito diverso da quello ipotecario a imprese, diversi da quelli offerti da istituti monetari",64
+649216,649216,"Servizi di carte di credito, diversi da quelli offerti da istituti monetari",64
+649219,649219,"Altri servizi di credito, diversi da quelli offerti da istituti monetari, n.c.a.",64
+649911,649911,"Servizi bancari d'investimento",64
+649919,649919,"Servizi finanziari, esclusi le assicurazioni e i fondi pensione, n.c.a.",64
+65,65,"Servizi connessi alle assicurazioni, alle riassicurazioni e ai fondi pensione, escluse le assicurazioni sociali obbligatorie",
+651110,651110,"Servizi di assicurazione sulla vita",65
+651211,651211,"Servizi di assicurazione contro gli infortuni",65
+651212,651212,"Servizi di assicurazione contro la malattia",65
+651221,651221,"Servizi di assicurazione auto, responsabilità civile",65
+651229,651229,"Altri servizi di assicurazione auto",65
+651231,651231,"Servizi di assicurazione per il trasporto su materiale rotabile ferroviario",65
+651232,651232,"Servizi di assicurazione responsabilità civile del trasportatore aereo",65
+651233,651233,"Altri servizi di assicurazione per il trasporto aereo",65
+651234,651234,"Servizi di assicurazione responsabilità civile del trasportatore marittimo",65
+651235,651235,"Altri servizi di assicurazione per il trasporto marittimo",65
+651236,651236,"Servizi di assicurazione per merci trasportate",65
+651241,651241,"Servizi di assicurazione contro l'incendio",65
+651249,651249,"Altri servizi di assicurazione contro danni ai beni",65
+651250,651250,"Servizi di assicurazione contro responsabilità generali",65
+651261,651261,"Servizi di assicurazione di credito",65
+651262,651262,"Servizi di assicurazione di cauzione",65
+651271,651271,"Servizi di assicurazione per viaggi e assistenza",65
+651272,651272,"Servizi di assicurazione per spese legali",65
+651273,651273,"Servizi di assicurazione per perdite finanziarie varie",65
+651290,651290,"Altri servizi di assicurazione diversa da quella sulla vita",65
+652011,652011,"Servizi di riassicurazione sulla vita",65
+652012,652012,"Servizi di riassicurazione contro gli infortuni",65
+652013,652013,"Servizi di riassicurazione contro la malattia",65
+652021,652021,"Servizi di riassicurazione auto, responsabilità civile",65
+652022,652022,"Altri servizi di riassicurazione auto",65
+652023,652023,"Servizi di riassicurazione per il trasporto marittimo, aereo e altro",65
+652024,652024,"Servizi di riassicurazione per merci trasportate",65
+652025,652025,"Servizi di riassicurazione contro l'incendio e altri danni ai beni",65
+652031,652031,"Servizi di riassicurazione contro responsabilità generali",65
+652032,652032,"Servizi di riassicurazione di credito e di cauzione",65
+652041,652041,"Servizi di riassicurazione per spese legali",65
+652042,652042,"Servizi di riassicurazione per perdite finanziarie varie",65
+652050,652050,"Servizi di riassicurazione connessi ai servizi di fondi pensione",65
+652060,652060,"Altri servizi di riassicurazione diversa da quella sulla vita",65
+653011,653011,"Servizi di fondi pensione individuali",65
+653012,653012,"Servizi di fondi pensione collettivi",65
+66,66,"Servizi ausiliari dei servizi finanziari e dei servizi assicurativi",
+661111,661111,"Servizi operativi dei mercati finanziari",66
+661112,661112,"Servizi di controllo dei mercati finanziari",66
+661119,661119,"Altri servizi connessi all'amministrazione dei mercati finanziari",66
+661211,661211,"Servizi di mediazione di valori mobiliari",66
+661212,661212,"Servizi di mediazione di merci",66
+661213,661213,"Servizi di cambio",66
+661910,661910,"Servizi di esecuzione e compensazione delle operazioni su titoli",66
+661921,661921,"Servizi collegati a fusioni e acquisizioni",66
+661922,661922,"Servizi di finanziamento delle imprese e servizi di capitali di rischio",66
+661929,661929,"Altri servizi ausiliari collegati alle banche di investimento",66
+661931,661931,"Servizi di amministrazione fiduciaria",66
+661932,661932,"Servizi di custodia",66
+661991,661991,"Servizi di consulenza finanziaria",66
+661992,661992,"Servizi di gestione delle transazioni finanziarie e servizi di compensazione",66
+661999,661999,"Altri servizi ausiliari dei servizi finanziari, n.c.a. escluse le assicurazioni e i fondi pensione",66
+662110,662110,"Servizi di valutazione dei rischi e dei danni",66
+662210,662210,"Servizi di agenti e mediatori (broker) di assicurazioni",66
+662911,662911,"Servizi attuariali",66
+662919,662919,"Altri servizi ausiliari di assicurazione e di fondi pensione n.c.a.",66
+663011,663011,"Servizi di gestione del portafoglio titoli, esclusi i fondi pensione",66
+663012,663012,"Servizi di gestione dei fondi pensione",66
+68,68,"Servizi immobiliari",
+681011,681011,"Servizi di compravendita di edifici e terreni residenziali annessi",68
+681012,681012,"Servizi di compravendita di alloggi in multiproprietà",68
+681013,681013,"Servizi di compravendita di terreni residenziali liberi",68
+681014,681014,"Servizi di compravendita di edifici e terreni annessi non residenziali",68
+681015,681015,"Servizi di compravendita di terreni non residenziali liberi",68
+682011,682011,"Servizi di affitto e gestione di beni immobili residenziali propri o in locazione",68
+682012,682012,"Servizi di affitto e gestione di beni immobili non residenziali propri o in locazione",68
+683111,683111,"Servizi immobiliari per conto terzi di edifici e terreni annessi residenziali, esclusi gli alloggi in multiproprietà",68
+683112,683112,"Servizi immobiliari, per conto terzi, di alloggi in multiproprietà",68
+683113,683113,"Servizi immobiliari per conto terzi di terreni residenziali liberi",68
+683114,683114,"Servizi immobiliari per conto terzi di edifici e terreni annessi non residenziali",68
+683115,683115,"Servizi immobiliari per conto terzi di terreni non residenziali liberi",68
+683116,683116,"Servizi di stima di beni immobiliari per conto terzi",68
+683211,683211,"Servizi di amministrazione e gestione, per conto terzi, di beni immobili residenziali, esclusi gli alloggi in multiproprietà",68
+683212,683212,"Servizi di amministrazione e gestione, per conto terzi, di alloggi in multiproprietà",68
+683213,683213,"Servizi di amministrazione e gestione, per conto terzi, di beni immobili non residenziali",68
+69,69,"Servizi legali e contabilità",
+691011,691011,"Servizi di consulenza e rappresentanza legale nel campo del diritto penale",69
+691012,691012,"Servizi di consulenza e rappresentanza legale in procedimenti giudiziari in campo societario e commerciale",69
+691013,691013,"Servizi di consulenza e rappresentanza legale in procedimenti giudiziari nel campo del lavoro",69
+691014,691014,"Servizi di consulenza e rappresentanza legale in procedimenti giudiziari in materia civile",69
+691015,691015,"Servizi degli studi legali e notarili in materia di brevetti, diritti d'autore e altri diritti di proprietà intellettuale",69
+691016,691016,"Servizi notarili",69
+691017,691017,"Servizi di arbitrato e di conciliazione",69
+691018,691018,"Servizi legali in materia di vendite all'asta pubbliche",69
+691019,691019,"Altri servizi legali",69
+692010,692010,"Servizi di revisione finanziaria",69
+692021,692021,"Servizi di revisione dei conti",69
+692022,692022,"Servizi di stesura di rendiconti finanziari",69
+692023,692023,"Servizi di tenuta dei libri contabili",69
+692024,692024,"Servizi di gestione della contabilità del personale",69
+692029,692029,"Altri servizi di contabilità",69
+692031,692031,"Servizi di consulenza in materia fiscale per le imprese",69
+692032,692032,"Servizi di pianificazione fiscale per i privati",69
+692040,692040,"Servizi in materia di insolvenza e di amministrazione controllata",69
+70,70,"Servizi di sedi sociali",
+701010,701010,"Servizi di sedi sociali",70
+702110,702110,"Servizi di relazioni pubbliche e comunicazione",70
+702211,702211,"Servizi di consulenza in materia di gestione strategica",70
+702212,702212,"Servizi di consulenza in materia di gestione finanziaria (esclusa l'imposizione fiscale)",70
+702213,702213,"Servizi di consulenza in materia di gestione del marketing",70
+702214,702214,"Servizi di consulenza in materia di gestione delle risorse umane",70
+702215,702215,"Servizi di consulenza in materia di gestione della produzione",70
+702216,702216,"Servizi di consulenza in materia di gestione della catena d'approvvigionamento e altra consulenza amministrativo-gestionale",70
+702217,702217,"Servizi di gestione dei processi aziendali",70
+702220,702220,"Altri servizi di gestione di progetti, esclusi i servizi di gestione di progetti nel campo delle costruzioni",70
+702230,702230,"Altri servizi di consulenza commerciale",70
+702240,702240,"Marchi di fabbrica e franchising",70
+71,71,"Servizi in materia di architettura e di ingegneria",
+711110,711110,"Piani e progetti per fini architettonici",71
+711121,711121,"Servizi in materia di architettura per progetti di edilizia abitativa",71
+711122,711122,"Servizi in materia di architettura per progetti di edilizia non abitativa",71
+711123,711123,"Servizi in materia di architettura per restauro storico",71
+711124,711124,"Servizi di consulenza in materia di architettura",71
+711131,711131,"Servizi di urbanistica",71
+711132,711132,"Servizi di pianificazione del territorio rurale",71
+711133,711133,"Servizi di pianificazione dell'assetto del sito del progetto",71
+711141,711141,"Servizi di architettura del paesaggio",71
+711142,711142,"Servizi di consulenza in materia di architettura del paesaggio",71
+711211,711211,"Servizi di consulenza in materia di ingegneria",71
+711212,711212,"Servizi in materia di ingegneria per progetti nel campo della costruzione",71
+711213,711213,"Servizi in materia di ingegneria per progetti nel campo dell'energia",71
+711214,711214,"Servizi in materia di ingegneria per progetti nel campo dei trasporti",71
+711215,711215,"Servizi in materia di ingegneria per progetti nel campo del trattamento dei rifiuti (pericolosi e non pericolosi)",71
+711216,711216,"Servizi in materia di ingegneria per progetti di opere idrauliche, fognarie e di drenaggio",71
+711217,711217,"Servizi in materia di ingegneria per progetti in campo industriale e manifatturiero",71
+711218,711218,"Servizi in materia di ingegneria per progetti nel campo delle telecomunicazioni e della diffusione di programmi radiofonici e televisivi",71
+711219,711219,"Servizi in materia di ingegneria per altri progetti",71
+711220,711220,"Servizi di gestione di progetti connessi a costruzioni",71
+711231,711231,"Servizi di consulenza geologica e geofisica",71
+711232,711232,"Servizi geofisici",71
+711233,711233,"Servizi di prospezione e valutazione mineraria",71
+711234,711234,"Servizi di prospezione in superficie",71
+711235,711235,"Servizi di cartografia",71
+712011,712011,"Servizi di prova e analisi della composizione e della purezza",71
+712012,712012,"Servizi di prova e analisi delle proprietà fisiche",71
+712013,712013,"Servizi di collaudo e analisi di sistemi meccanici ed elettrici integrati",71
+712014,712014,"Servizi di controllo tecnico dei veicoli per il trasporto su strada",71
+712019,712019,"Altri servizi di prova e analisi tecniche",71
+72,72,"Servizi di ricerca e sviluppo scientifici",
+721111,721111,"Servizi di ricerca e sviluppo sperimentale nel campo delle biotecnologie collegate alla salute",72
+721112,721112,"Servizi di ricerca e sviluppo sperimentale nel campo delle biotecnologie ambientali e industriali",72
+721113,721113,"Servizi di ricerca e sviluppo sperimentale nel campo delle biotecnologie applicate all'agricoltura",72
+721120,721120,"Progetti originali di ricerca e sviluppo nel campo delle biotecnologie",72
+721911,721911,"Servizi di ricerca e sviluppo sperimentale nel campo delle scienze matematiche",72
+721912,721912,"Servizi di ricerca e sviluppo sperimentale nel campo delle scienze dell'informatica e dell'informazione",72
+721913,721913,"Servizi di ricerca e sviluppo sperimentale nel campo delle scienze fisiche",72
+721914,721914,"Servizi di ricerca e sviluppo sperimentale nel campo della chimica",72
+721915,721915,"Servizi di ricerca e sviluppo sperimentale in materia di geofisica e scienze ambientali",72
+721916,721916,"Servizi di ricerca e sviluppo sperimentale nel campo delle scienze biologiche",72
+721919,721919,"Servizi di ricerca e sviluppo sperimentale nel campo di altre scienze naturali",72
+721921,721921,"Servizi di ricerca e sviluppo sperimentale nel campo delle nanotecnologie",72
+721929,721929,"Altri servizi di ricerca e sviluppo sperimentale nel campo dell'ingegneria e della tecnologia, escluse le biotecnologie",72
+721930,721930,"Servizi di ricerca e sviluppo sperimentale nel campo delle scienze mediche",72
+721940,721940,"Servizi di ricerca e sviluppo sperimentale nel campo dell'agronomia",72
+721950,721950,"Progetti originali di ricerca e sviluppo nell'ambito delle scienze naturali e dell'ingegneria, escluse le biotecnologie",72
+722011,722011,"Servizi di ricerca e sviluppo sperimentale nel campo delle scienze economiche e commerciali",72
+722012,722012,"Servizi di ricerca e sviluppo sperimentale nel campo della psicologia",72
+722013,722013,"Servizi di ricerca e sviluppo sperimentale in campo giuridico",72
+722019,722019,"Servizi di ricerca e sviluppo sperimentale in altre scienze sociali",72
+722021,722021,"Servizi di ricerca e sviluppo sperimentale nel campo delle lingue e delle letterature",72
+722029,722029,"Altri servizi di ricerca e sviluppo sperimentale nel campo delle scienze umanistiche",72
+722030,722030,"Progetti originali di ricerca e sviluppo nel campo delle scienze sociali e umanistiche",72
+73,73,"Servizi di pubblicità e studi di mercato",
+731111,731111,"Concezione e realizzazione di servizi pubblicitari (""full service"")",73
+731112,731112,"Servizi di marketing e mailing diretti",73
+731113,731113,"Servizi di sviluppo di idee pubblicitarie e impostazione del messaggio pubblicitario",73
+731119,731119,"Altri servizi di pubblicità",73
+731211,731211,"Vendita di spazi pubblicitari per conto terzi sulla stampa",73
+731212,731212,"Vendita di spazi pubblicitari TV/radio per conto terzi",73
+731213,731213,"Vendita di spazi pubblicitari per conto terzi su Internet",73
+731214,731214,"Vendita di pubblicità in occasione di manifestazioni",73
+731219,731219,"Altra vendita di spazi pubblicitari per conto terzi",73
+731220,731220,"Rivendita di spazi pubblicitari per conto terzi",73
+732011,732011,"Servizi di studi di mercato: indagini qualitative",73
+732012,732012,"Servizi di studi di mercato: indagini quantitative mirate",73
+732013,732013,"Servizi di studi di mercato: indagini quantitative continuative e regolari",73
+732014,732014,"Servizi di studi di mercato diversi dalle indagini",73
+732019,732019,"Altri servizi di studi di mercato",73
+732020,732020,"Servizi di sondaggi di opinione",73
+74,74,"Altri servizi professionali, scientifici e tecnici",
+741011,741011,"Servizi di arredamento",74
+741012,741012,"Servizi di progettazione industriale",74
+741019,741019,"Altri servizi di design specializzato",74
+741020,741020,"Originali di modelli",74
+742011,742011,"Lastre e pellicole fotografiche, impressionate ma non sviluppate",74
+742012,742012,"Lastre e pellicole fotografiche, impressionate e sviluppate, per la riproduzione offset",74
+742019,742019,"Altre lastre e pellicole fotografiche, impressionate e sviluppate",74
+742021,742021,"Servizi di ritratti fotografici",74
+742022,742022,"Servizi fotografici pubblicitari ed altri servizi connessi",74
+742023,742023,"Servizi fotografici e servizi videografici per occasioni speciali",74
+742024,742024,"Servizi di fotografia aerea",74
+742029,742029,"Altri servizi fotografici specializzati",74
+742031,742031,"Servizi di sviluppo fotografico",74
+742032,742032,"Servizi di restauro e ritocco di fotografie",74
+742039,742039,"Altri servizi fotografici n.c.a.",74
+743011,743011,"Servizi di traduzione",74
+743012,743012,"Servizi d'interpretariato",74
+749011,749011,"Servizi di controllo delle polizze di carico e di informazione sulle tariffe di nolo",74
+749012,749012,"Servizi d'intermediazione commerciale e di valutazione, diversa da quella immobiliare e assicurativa",74
+749013,749013,"Servizi di consulenza ambientale",74
+749014,749014,"Servizi di previsioni e di informazioni meteorologiche",74
+749015,749015,"Servizi di consulenza in materia di sicurezza",74
+749019,749019,"Altri servizi di consulenza scientifica e tecnica n.c.a.",74
+749020,749020,"Altri servizi professionali, tecnici e commerciali n.c.a.",74
+75,75,"Servizi veterinari",
+750011,750011,"Servizi veterinari per animali domestici",75
+750012,750012,"Servizi veterinari per animali d'allevamento",75
+750019,750019,"Altri servizi veterinari",75
+77,77,"Servizi di locazione e leasing",
+771110,771110,"Servizi di locazione e leasing di automobili e di autoveicoli leggeri",77
+771211,771211,"Servizi di locazione e leasing di veicoli per il trasporto di merci, senza autista",77
+771219,771219,"Servizi di locazione e leasing di altri mezzi di trasporto terrestri, senza autista",77
+772110,772110,"Servizi di locazione e leasing di articoli sportivi e per il tempo libero",77
+772210,772210,"Servizi di noleggio di videocassette e dischi",77
+772911,772911,"Servizi di locazione e leasing di televisori, apparecchi radio, videoregistratori e apparecchi e accessori connessi",77
+772912,772912,"Servizi di noleggio e di locazione di mobili ed altri articoli per la casa",77
+772913,772913,"Servizi di locazione e leasing di strumenti musicali",77
+772914,772914,"Servizi di locazione e leasing di biancheria per la casa",77
+772915,772915,"Servizi di locazione e leasing di prodotti tessili, abbigliamento e calzature",77
+772916,772916,"Servizi di locazione e leasing di macchine e attrezzature per il fai da te",77
+772919,772919,"Servizi di locazione e leasing di altri beni per uso personale e domestico n.c.a.",77
+773110,773110,"Servizi di locazione e leasing di macchine e attrezzature agricole",77
+773210,773210,"Servizi di locazione e leasing di macchinari e attrezzature per lavori edili e di genio civile",77
+773311,773311,"Servizi di locazione e leasing di macchinari e attrezzature per ufficio (esclusi elaboratori elettronici)",77
+773312,773312,"Servizi di locazione e leasing di elaboratori elettronici",77
+773410,773410,"Servizi di locazione e leasing di mezzi di trasporto marittimo e fluviale",77
+773510,773510,"Servizi di locazione e leasing di mezzi di trasporto aereo",77
+773911,773911,"Servizi di locazione e leasing di veicoli ferroviari",77
+773912,773912,"Servizi di locazione e leasing di container",77
+773913,773913,"Servizi di locazione e leasing di motocicli, roulotte e camper",77
+773914,773914,"Servizi di locazione e leasing di apparecchiature per le telecomunicazioni",77
+773919,773919,"Servizi di locazione e leasing di altri macchinari e attrezzature, senza operatore, e di beni materiali n.c.a.",77
+774011,774011,"Servizi di concessione di licenze per l'utilizzo di prodotti della ricerca e dello sviluppo",77
+774012,774012,"Servizi di concessione di licenze per l'utilizzo di marchi di fabbrica e franchising",77
+774013,774013,"Servizi di concessione di licenze per l'utilizzo della prospezione e valutazione mineraria",77
+774019,774019,"Servizi di concessione di licenze per l'utilizzo di altri prodotti della proprietà intellettuale e prodotti simili, escluse le opere soggette a diritto d'autore",77
+78,78,"Servizi del lavoro",
+781011,781011,"Servizi di ricerca di personale dirigente",78
+781012,781012,"Servizi di collocamento permanente, diversi dai servizi di ricerca di personale dirigente",78
+782011,782011,"Servizi delle agenzie di lavoro interinale per la messa a disposizione di personale nel campo dell'informatica e delle telecomunicazioni",78
+782012,782012,"Servizi delle agenzie di lavoro interinale per la messa a disposizione di altro personale d'ufficio",78
+782013,782013,"Servizi delle agenzie di lavoro interinale per la messa a disposizione di operatori del settore commerciale",78
+782014,782014,"Servizi delle agenzie di lavoro interinale per la messa a disposizione di operatori dei settori dei trasporti, del magazzinaggio, della logistica e dell'industria",78
+782015,782015,"Servizi delle agenzie di lavoro interinale per la messa a disposizione di personale del settore alberghiero e della ristorazione",78
+782016,782016,"Servizi delle agenzie di lavoro interinale per la messa a disposizione di personale medico",78
+782019,782019,"Servizi delle agenzie di lavoro interinale per la messa a disposizione di altro personale",78
+783011,783011,"Altri servizi di messa a disposizione di risorse umane nel campo dell'informatica e delle telecomunicazioni",78
+783012,783012,"Altri servizi di messa a disposizione di altro personale d'ufficio",78
+783013,783013,"Altri servizi di messa a disposizione di risorse umane nel settore del commercio",78
+783014,783014,"Altri servizi di messa a disposizione di risorse umane nei settori dei trasporti, del magazzinaggio, della logistica o dell'industria",78
+783015,783015,"Altri servizi di messa a disposizione di risorse umane nel settore alberghiero e della ristorazione",78
+783016,783016,"Altri servizi di messa a disposizione di personale medico",78
+783019,783019,"Altri servizi di messa a disposizione di risorse umane n.c.a.",78
+79,79,"Servizi delle agenzie di viaggio, degli operatori turistici ed altri servizi di prenotazione e servizi connessi",
+791111,791111,"Servizi di prenotazione di voli",79
+791112,791112,"Servizi di prenotazione di viaggi in treno",79
+791113,791113,"Servizi di prenotazione di viaggi in autobus",79
+791114,791114,"Servizi di prenotazione per noleggio di autoveicoli",79
+791119,791119,"Altri servizi delle agenzie di viaggio per prenotazioni sui mezzi di trasporto",79
+791121,791121,"Servizi di prenotazione di alloggi",79
+791122,791122,"Servizi di prenotazione di crociere",79
+791123,791123,"Servizi di prenotazione di viaggi tutto compreso",79
+791211,791211,"Servizi degli operatori turistici per l'organizzazione e la preparazione di viaggi",79
+791212,791212,"Servizi degli accompagnatori turistici",79
+799011,799011,"Servizi di promozione turistica",79
+799012,799012,"Servizi di informazione turistica",79
+799020,799020,"Servizi delle guide turistiche",79
+799031,799031,"Servizi di scambio di multiproprietà",79
+799032,799032,"Servizi di prenotazione per centri convegni, congressi e sale d'esposizione",79
+799039,799039,"Servizi di prenotazione di biglietti per eventi, spettacoli ed altre attività ricreative ed altri servizi di prenotazione n.c.a.",79
+80,80,"Servizi investigativi e di vigilanza",
+801011,801011,"Servizi di veicoli blindati",80
+801012,801012,"Servizi di guardia",80
+801019,801019,"Altri servizi in materia di sicurezza",80
+802010,802010,"Servizi connessi ai sistemi di vigilanza",80
+803010,803010,"Servizi di investigazione",80
+81,81,"Servizi di manutenzione degli edifici e del paesaggio",
+811010,811010,"Servizi di supporto connessi a edifici multipli",81
+812110,812110,"Servizi di pulizia generale di edifici",81
+812211,812211,"Servizi di pulizia delle finestre",81
+812212,812212,"Servizi speciali di pulizia",81
+812213,812213,"Servizi di pulitura di camini e caminetti",81
+812911,812911,"Servizi di disinfezione e disinfestazione",81
+812912,812912,"Servizi di pulizia e di rimozione della neve",81
+812913,812913,"Altri servizi di igiene",81
+812919,812919,"Altri servizi di pulizia n.c.a.",81
+813010,813010,"Servizi paesaggistici",81
+82,82,"Servizi amministrativi e di sostegno per le funzioni d'ufficio ed altri servizi di sostegno alle imprese",
+821110,821110,"Servizi amministrativi d'ufficio combinati",82
+821911,821911,"Servizi di duplicazione",82
+821912,821912,"Servizi di compilazione di indirizzari e di spedizione",82
+821913,821913,"Preparazione di documenti e altri servizi di sostegno specializzato per funzioni d'ufficio",82
+822010,822010,"Servizi dei call center",82
+823011,823011,"Servizi di organizzazione di convegni",82
+823012,823012,"Servizi di organizzazione di fiere",82
+829111,829111,"Servizi delle agenzie di informazione commerciale",82
+829112,829112,"Servizi delle agenzie di riscossione crediti",82
+829210,829210,"Servizi di imballaggio, confezionamento",82
+829911,829911,"Servizi di trascrizione integrale e di registrazione stenografica",82
+829912,829912,"Servizi di assistenza basata sul telefono",82
+829919,829919,"Altri servizi vari di sostegno alle imprese n.c.a.",82
+84,84,"Servizi di pubblica amministrazione e difesa",
+841111,841111,"Servizi esecutivi e legislativi",84
+841112,841112,"Servizi finanziari e fiscali",84
+841113,841113,"Servizi generali di pianificazione economica e sociale e servizi statistici",84
+841114,841114,"Servizi forniti dalla pubblica amministrazione alla ricerca fondamentale",84
+841119,841119,"Altri servizi generali della pubblica amministrazione",84
+841121,841121,"Servizi generali relativi al personale della pubblica amministrazione",84
+841129,841129,"Altri servizi di supporto alla pubblica amministrazione",84
+841211,841211,"Servizi amministrativi in materia di istruzione",84
+841212,841212,"Servizi amministrativi in materia di sanità",84
+841213,841213,"Servizi amministrativi in materia di abitazioni e servizi collettivi",84
+841214,841214,"Servizi amministrativi in materia di svaghi, cultura e attività religiose",84
+841311,841311,"Servizi amministrativi connessi all'agricoltura, alla silvicoltura, alla caccia e alla pesca",84
+841312,841312,"Servizi amministrativi connessi al settore dei combustibili e dell'energia",84
+841313,841313,"Servizi amministrativi connessi all'estrazione di risorse minerarie e minerali e alle attività di fabbricazione e costruzione",84
+841314,841314,"Servizi amministrativi connessi ai trasporti e alle comunicazioni",84
+841315,841315,"Servizi amministrativi connessi alle attività di distribuzione, fornitura di pasti preparati, alberghi e ristoranti",84
+841316,841316,"Servizi amministrativi connessi al settore del turismo",84
+841317,841317,"Servizi amministrativi in materia di progetti di sviluppo ad obiettivi molteplici",84
+841318,841318,"Servizi amministrativi generali connessi agli affari economici, commerciali e del lavoro",84
+842111,842111,"Servizi amministrativi connessi agli affari esteri, servizi diplomatici e consolari all'estero",84
+842112,842112,"Servizi connessi agli aiuti economici destinati all'estero",84
+842113,842113,"Servizi connessi agli aiuti militari destinati all'estero",84
+842211,842211,"Servizi di difesa militare",84
+842212,842212,"Servizi di difesa civile",84
+842311,842311,"Servizi amministrativi connessi ai tribunali",84
+842312,842312,"Servizi amministrativi connessi all'arresto o al reinserimento di delinquenti",84
+842411,842411,"Servizi di polizia",84
+842419,842419,"Altri servizi connessi alla sicurezza nazionale e all'ordine pubblico",84
+842511,842511,"Servizi di lotta contro gli incendi e di prevenzione degli incendi",84
+842519,842519,"Altri servizi dei vigili del fuoco",84
+843011,843011,"Servizi di assicurazione sociale obbligatoria concernenti prestazioni di malattia, di maternità o di inabilità temporanea",84
+843012,843012,"Servizi di assicurazione sociale obbligatoria concernenti regimi pensionistici dei dipendenti statali; prestazioni di vecchiaia, invalidità o superstiti diverse da quelle concesse ai dipendenti statali",84
+843013,843013,"Servizi di assicurazione sociale obbligatoria concernenti sussidi di disoccupazione",84
+843014,843014,"Servizi di assicurazione sociale obbligatoria concernenti assegni familiari e per figli a carico",84
+85,85,"Servizi di istruzione",
+851010,851010,"Servizi di istruzione prescolastica",85
+852011,852011,"Servizi di istruzione primaria on line",85
+852012,852012,"Altri servizi di istruzione primaria",85
+853111,853111,"Servizi di istruzione secondaria di formazione generale on line, primo ciclo",85
+853112,853112,"Altri servizi di istruzione secondaria di formazione generale, primo ciclo",85
+853113,853113,"Servizi di istruzione secondaria di formazione generale on line, secondo ciclo",85
+853114,853114,"Altri servizi di istruzione secondaria di formazione generale, secondo ciclo",85
+853211,853211,"Servizi di istruzione secondaria di formazione tecnica e professionale on line, primo ciclo",85
+853212,853212,"Altri servizi di istruzione secondaria di formazione tecnica e professionale, primo ciclo",85
+853213,853213,"Servizi di istruzione secondaria di formazione tecnica e professionale on line, secondo ciclo",85
+853214,853214,"Altri servizi di istruzione secondaria di formazione tecnica e professionale, secondo ciclo",85
+854111,854111,"Servizi di istruzione generale post secondaria non universitaria on line",85
+854112,854112,"Altri servizi di istruzione generale post secondaria non universitaria",85
+854113,854113,"Servizi di istruzione post-secondaria non universitaria di formazione tecnica e professionale on line",85
+854114,854114,"Altri servizi di istruzione post-secondaria non universitaria di formazione tecnica e professionale",85
+854211,854211,"Servizi di istruzione superiore di livello universitario on line, primo ciclo",85
+854212,854212,"Altri servizi di istruzione superiore di livello universitario, primo ciclo",85
+854213,854213,"Servizi di istruzione superiore di livello universitario on line, secondo ciclo",85
+854214,854214,"Altri servizi di istruzione superiore di livello universitario, secondo ciclo",85
+854215,854215,"Servizi di istruzione superiore di livello universitario on line, terzo ciclo",85
+854216,854216,"Altri servizi di istruzione superiore di livello universitario, terzo ciclo",85
+855110,855110,"Servizi di educazione sportiva e attività ricreative",85
+855211,855211,"Servizi forniti dalle scuole di ballo e dagli istruttori di danza",85
+855212,855212,"Servizi delle scuole di musica e degli insegnanti di musica",85
+855213,855213,"Servizi delle scuole di belle arti e dagli insegnanti di educazione artistica",85
+855219,855219,"Servizi di educazione culturale",85
+855311,855311,"Servizi di autoscuole",85
+855312,855312,"Servizi di scuole di pilotaggio e nautiche",85
+855911,855911,"Servizi delle scuole di lingue",85
+855912,855912,"Servizi delle scuole di informatica",85
+855913,855913,"Servizi di istruzione professionale n.c.a.",85
+855919,855919,"Servizi educativi n.c.a.",85
+856010,856010,"Servizi di sostegno educativo",85
+86,86,"Servizi sanitari",
+861011,861011,"Servizi ospedalieri chirurgici",86
+861012,861012,"Servizi ospedalieri ginecologici ed ostetrici",86
+861013,861013,"Servizi ospedalieri di rieducazione",86
+861014,861014,"Servizi ospedalieri psichiatrici",86
+861015,861015,"Altri servizi ospedalieri prestati da medici",86
+861019,861019,"Altri servizi ospedalieri",86
+862110,862110,"Servizi degli ambulatori di medicina generale",86
+862211,862211,"Servizi di analisi e lettura di immagini medicali",86
+862219,862219,"Altri servizi degli ambulatori di medicina specialistica",86
+862311,862311,"Servizi di ortodonzia",86
+862319,862319,"Altri servizi degli studi odontoiatrici",86
+869011,869011,"Servizi connessi alla gravidanza",86
+869012,869012,"Servizi infermieristici",86
+869013,869013,"Servizi fisioterapici",86
+869014,869014,"Servizi delle ambulanze",86
+869015,869015,"Servizi di laboratori medici",86
+869016,869016,"Servizi delle banche del sangue, di sperma e di organi per il trapianto",86
+869017,869017,"Produzione di immagini diagnostiche senza lettura",86
+869018,869018,"Servizi di salute mentale",86
+869019,869019,"Altri servizi sanitari n.c.a.",86
+87,87,"Servizi di assistenza residenziale",
+871010,871010,"Servizi di assistenza infermieristica residenziale",87
+872011,872011,"Servizi di assistenza residenziale a minori affetti da malattie mentali, disturbi psichici e facenti uso di droghe",87
+872012,872012,"Servizi di assistenza residenziale a persone adulte affette da malattie mentali, disturbi psichici e facenti uso di droghe",87
+873011,873011,"Servizi di assistenza sociale forniti da istituti residenziali a persone anziane",87
+873012,873012,"Servizi di assistenza sociale forniti da istituti residenziali a bambini e adolescenti disabili",87
+873013,873013,"Servizi di assistenza sociale forniti da istituti residenziali ad adulti disabili",87
+879011,879011,"Altri servizi di assistenza sociale residenziale per bambini e adolescenti",87
+879012,879012,"Servizi di assistenza sociale residenziale per donne che hanno subito maltrattamenti",87
+879013,879013,"Altri servizi di assistenza sociale residenziale per adulti",87
+88,88,"Servizi di assistenza sociale non residenziale",
+881011,881011,"Servizi di visita e assistenza agli anziani",88
+881012,881012,"Servizi di assistenza diurna a persone anziane",88
+881013,881013,"Servizi di riabilitazione professionale di persone con disabilità",88
+881014,881014,"Servizi di visita e assistenza alle persone con disabilità",88
+881015,881015,"Servizi di assistenza diurna ad adulti disabili",88
+889111,889111,"Servizi di asilo nido, esclusi i servizi forniti da centri diurni per i disabili",88
+889112,889112,"Servizi forniti da centri diurni per bambini e giovani disabili",88
+889113,889113,"Servizi di custodia dei bambini (baby-sitting)",88
+889911,889911,"Servizi di orientamento e consulenza n.c.a. in materia di infanzia",88
+889912,889912,"Servizi di assistenza sociale non residenziale",88
+889913,889913,"Servizi di riabilitazione professionale dei disoccupati",88
+889919,889919,"Altri servizi di assistenza sociale non residenziale n.c.a.",88
+90,90,"Servizi creativi, artistici e d'intrattenimento",
+900110,900110,"Servizi di artisti dello spettacolo",90
+900211,900211,"Servizi di produzione e presentazione di spettacoli",90
+900212,900212,"Servizi di promozione e organizzazione di spettacoli",90
+900219,900219,"Altri servizi di supporto connessi alle arti dello spettacolo",90
+900311,900311,"Servizi forniti da autori, compositori, scultori e altri artisti, esclusi gli artisti dello spettacolo",90
+900312,900312,"Opere originali di autori, compositori e altri artisti, esclusi gli artisti dello spettacolo, pittori, grafici e scultori",90
+900313,900313,"Opere originali di pittori, grafici e scultori",90
+900410,900410,"Servizi di gestione di sale di spettacolo e servizi connessi",90
+91,91,"Servizi di biblioteche, archivi, musei ed altri servizi culturali",
+910111,910111,"Servizi di biblioteche",91
+910112,910112,"Servizi di archivi",91
+910210,910210,"Servizi di funzionamento dei musei",91
+910220,910220,"Collezioni dei musei",91
+910310,910310,"Servizi di gestione di luoghi e monumenti storici e simili attrazioni turistiche",91
+910411,910411,"Servizi degli orti botanici e dei giardini zoologici",91
+910412,910412,"Servizi delle riserve naturali, compresi i servizi di tutela della fauna e della flora protette",91
+92,92,"Servizi riguardanti il gioco d'azzardo",
+920011,920011,"Servizi riguardanti i tavoli da gioco",92
+920012,920012,"Servizi riguardanti le macchine mangiasoldi",92
+920013,920013,"Servizi riguardanti le lotterie, i giochi numerici e il gioco del bingo",92
+920014,920014,"Servizi di giochi d'azzardo on line",92
+920019,920019,"Altri servizi riguardanti il gioco",92
+920021,920021,"Servizi di scommesse on line",92
+920029,920029,"Altri servizi riguardanti le scommesse",92
+93,93,"Servizi sportivi e di intrattenimento e divertimento",
+931110,931110,"Servizi di gestione di stadi ed altri impianti sportivi",93
+931210,931210,"Servizi forniti da club sportivi",93
+931310,931310,"Servizi di palestre e centri fitness",93
+931911,931911,"Servizi di promozione di eventi sportivi e di sport non agonistici",93
+931912,931912,"Servizi forniti da atleti e sportivi",93
+931913,931913,"Servizi di supporto ad attività sportive e ricreative",93
+931919,931919,"Altri servizi di supporto ad attività sportive e di sport non agonistici",93
+932110,932110,"Servizi dei parchi di divertimento e parchi di attrazione tematici",93
+932911,932911,"Servizi ricreativi in parchi e spiagge",93
+932919,932919,"Servizi ricreativi vari n.c.a.",93
+932921,932921,"Servizi di spettacoli di fuochi d'artificio e di suoni e luci",93
+932922,932922,"Servizi di macchine da gioco funzionanti con monete",93
+932929,932929,"Servizi di intrattenimento e di spettacolo n.c.a.",93
+94,94,"Servizi forniti da organizzazioni associative",
+941110,941110,"Servizi forniti da organizzazioni associative di imprese di datori di lavoro",94
+941210,941210,"Servizi forniti da associazioni professionali",94
+942010,942010,"Servizi forniti da associazioni sindacali",94
+949110,949110,"Servizi forniti da organizzazioni religiose",94
+949210,949210,"Servizi forniti da organizzazioni politiche",94
+949911,949911,"Servizi forniti da organizzazioni per la difesa dei diritti dell'uomo",94
+949912,949912,"Servizi forniti da gruppi di difesa dell'ambiente",94
+949913,949913,"Servizi di tutela di gruppi particolari",94
+949914,949914,"Altri servizi di supporto al miglioramento delle condizioni di vita e delle strutture collettive",94
+949915,949915,"Servizi forniti dalle associazioni giovanili",94
+949916,949916,"Servizi forniti dalle associazioni culturali e ricreative",94
+949917,949917,"Servizi forniti da altre organizzazioni civili e sociali",94
+949919,949919,"Servizi forniti da altre organizzazioni associative n.c.a.",94
+949920,949920,"Servizi di sostegno finanziario da parte di organizzazioni associative",94
+95,95,"Servizi di riparazione di elaboratori elettronici e di beni per uso personale e domestico",
+951110,951110,"Servizi di riparazione di elaboratori elettronici e di unità periferiche",95
+951210,951210,"Servizi di riparazione di apparecchiature per le comunicazioni",95
+952110,952110,"Servizi di riparazione di prodotti elettronici di consumo",95
+952210,952210,"Servizi di riparazione di elettrodomestici e di attrezzature per la casa e per il giardino",95
+952310,952310,"Servizi di riparazione di calzature e di articoli in cuoio",95
+952410,952410,"Servizi di riparazione di mobili e di oggetti di arredamento",95
+952511,952511,"Servizi di riparazione di orologi",95
+952512,952512,"Servizi di riparazione di gioielli",95
+952911,952911,"Servizi di riparazione e di modifica di capi di vestiario e di articoli tessili per la casa",95
+952912,952912,"Servizi di riparazione di biciclette",95
+952913,952913,"Servizi di riparazione e manutenzione di strumenti musicali",95
+952914,952914,"Servizi di riparazione e manutenzione di attrezzature sportive",95
+952919,952919,"Servizi di riparazione di altri beni di uso personale e domestico n.c.a.",95
+96,96,"Altri servizi personali",
+960111,960111,"Servizi di lavanderia con macchine funzionanti a gettone o a monete",96
+960112,960112,"Servizi di pulitura a secco (inclusi servizi di pulitura di pellicce)",96
+960113,960113,"Servizi di stiratura",96
+960114,960114,"Servizi di tintoria",96
+960119,960119,"Altri servizi di pulizia di articoli tessili",96
+960211,960211,"Servizi dei saloni di parrucchiere per donne e ragazze",96
+960212,960212,"Servizi dei saloni di parrucchiere e di barbiere per uomini e ragazzi",96
+960213,960213,"Servizi di cure estetiche, manicure e pedicure",96
+960219,960219,"Altri servizi degli istituti di bellezza",96
+960220,960220,"Capelli umani, non lavorati",96
+960311,960311,"Servizi di cimiteri e servizi di cremazione",96
+960312,960312,"Servizi di sepoltura",96
+960410,960410,"Servizi dei centri e stabilimenti per il benessere fisico",96
+960911,960911,"Servizi di cura degli animali domestici",96
+960912,960912,"Servizi di accompagnamento",96
+960913,960913,"Servizi di macchine funzionanti a gettone o a monete n.c.a.",96
+960919,960919,"Altri servizi vari n.c.a.",96
+97,97,"Servizi di datore di lavoro per personale domestico svolti da famiglie e convivenze",
+970010,970010,"Servizi di datore di lavoro per personale domestico svolti da famiglie e convivenze",97
+98,98,"Produzione di beni e servizi per uso proprio da parte di famiglie e convivenze",
+981010,981010,"Produzione di beni per uso proprio da parte di famiglie e convivenze",98
+982010,982010,"Produzione di servizi per uso proprio da parte di famiglie e convivenze",98
+99,99,"Servizi forniti da organizzazioni ed organismi extraterritoriali",
+990010,990010,"Servizi forniti da organizzazioni ed organismi extraterritoriali",99

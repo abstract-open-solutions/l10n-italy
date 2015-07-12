@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<openerp>
+	<data>
+
+        <record id="intrastat_code_form_parent" model="ir.ui.view">
+            <field name="name">report.intrastat.code.form.parent</field>
+            <field name="model">report.intrastat.code</field>
+            <field name="inherit_id" ref="report_intrastat.view_report_intrastat_code_form"/>
+            <field name="arch" type="xml">
+              <field name="description" position="after">
+                <field name="parent_id"/>
+              </field>
+            </field>
+        </record>
+
+        <record id="intrastat_code_search" model="ir.ui.view">
+            <field name="name">report.intrastat.code.search</field>
+            <field name="model">report.intrastat.code</field>
+            <field name="arch" type="xml">
+							<search string="Search Intrastat Codes">
+                  <field name="parent_id" operator="child_of"/>
+                  <group expand="0" string="Group By">
+                      <filter name="group_by_parent_id" string="Parent Code" context="{'group_by':'parent_id'}"/>
+                  </group>
+               </search>
+            </field>
+        </record>
+
+	</data>
+</openerp>
