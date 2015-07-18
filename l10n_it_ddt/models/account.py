@@ -20,7 +20,7 @@
 ##############################################################################
 
 
-from openerp import fields, model, api
+from openerp import fields, models, api
 
 
 class AccountInvoice(models.Model):
@@ -37,7 +37,7 @@ class AccountInvoice(models.Model):
     transportation_method_id = fields.Many2one(
         'stock.picking.transportation_method',
         string='Method of Transportation')
-    parcels = fields.integer('Number of Packages')
+    parcels = fields.Integer('Number of Packages')
 
     def onchange_partner_id(
             self, type, partner_id, date_invoice=False, payment_term=False,

@@ -23,7 +23,7 @@
 from openerp import models, fields
 
 
-class ResPartner(modes.Model):
+class ResPartner(models.Model):
 
     _inherit = 'res.partner'
 
