@@ -20,23 +20,20 @@
 ##############################################################################
 
 
-from openerp.osv import orm
-from openerp.osv import fields
+from openerp import models, fields
 
 
-class res_partner(orm.Model):
+class ResPartner(modes.Model):
 
     _inherit = 'res.partner'
 
-    _columns = {
-        'carriage_condition_id': fields.many2one(
-            'stock.picking.carriage_condition', 'Carriage Condition'),
-        'goods_description_id': fields.many2one(
-            'stock.picking.goods_description', 'Description of Goods'),
-        'transportation_reason_id': fields.many2one(
-            'stock.picking.transportation_reason',
-            'Reason for Transportation'),
-        'transportation_method_id': fields.many2one(
-            'stock.picking.transportation_method',
-            'Method of Transportation'),
-    }
+    carriage_condition_id = fields.Many2one(
+        'stock.picking.carriage_condition', string='Carriage Condition')
+    goods_description_id = fields.Many2one(
+        'stock.picking.goods_description', string='Description of Goods')
+    transportation_reason_id = fields.Many2one(
+        'stock.picking.transportation_reason',
+        string='Reason for Transportation')
+    transportation_method_id = fields.Many2one(
+        'stock.picking.transportation_method',
+        string='Method of Transportation')

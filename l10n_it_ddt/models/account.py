@@ -20,37 +20,33 @@
 ##############################################################################
 
 
-from openerp.osv import fields
-from openerp.osv import orm
+from openerp import fields, model, api
 
 
-class account_invoice(orm.Model):
+class AccountInvoice(models.Model):
 
     _inherit = 'account.invoice'
 
-    _columns = {
-        'carriage_condition_id': fields.many2one(
-            'stock.picking.carriage_condition', 'Carriage Condition'),
-        'goods_description_id': fields.many2one(
-            'stock.picking.goods_description', 'Description of Goods'),
-        'transportation_reason_id': fields.many2one(
-            'stock.picking.transportation_reason',
-            'Reason for Transportation'),
-        'transportation_method_id': fields.many2one(
-            'stock.picking.transportation_method',
-            'Method of Transportation'),
-        'parcels': fields.integer('Number of Packages'),
-    }
+    carriage_condition_id = fields.Many2one(
+        'stock.picking.carriage_condition', string='Carriage Condition')
+    goods_description_id = fields.Many2one(
+        'stock.picking.goods_description', string='Description of Goods')
+    transportation_reason_id = fields.Many2one(
+        'stock.picking.transportation_reason',
+        string='Reason for Transportation')
+    transportation_method_id = fields.Many2one(
+        'stock.picking.transportation_method',
+        string='Method of Transportation')
+    parcels = fields.integer('Number of Packages')
 
     def onchange_partner_id(
-            self, cr, uid, ids, type, partner_id, date_invoice=False,
-            payment_term=False, partner_bank_id=False, company_id=False,
-            context=None):
-        result = super(account_invoice, self).onchange_partner_id(
-            cr, uid, ids, type, partner_id, date_invoice, payment_term,
-            partner_bank_id, company_id, context)
+            self, type, partner_id, date_invoice=False, payment_term=False,
+            partner_bank_id=False, company_id=False):
+        result = super(AccountInvoice, self).onchange_partner_id(
+            type, partner_id, date_invoice, payment_term, partner_bank_id,
+            company_id)
         if partner_id:
-            partner = self.pool.get('res.partner').browse(cr, uid, partner_id)
+            partner = self.env['res.partner'].browse(partner_id)
             for k in ('carriage_condition_id',
                       'goods_description_id',
                       'transportation_reason_id',
