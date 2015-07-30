@@ -32,6 +32,7 @@
     'depends': ['sale_stock', 'stock_account'],
     'data': [
         'security/ir.model.access.csv',
+        'security/rules.xml',
         'data/stock_data.xml',
         'views/account_view.xml',
         'views/partner_view.xml',

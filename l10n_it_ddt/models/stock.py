@@ -67,9 +67,9 @@ class StockDdT(models.Model):
 
     @api.multi
     def get_sequence(self):
-        # XXX: allow config of default seq per company
         return self.env['ir.sequence'].search(
-            [('code', '=', 'stock.ddt')])[0].id
+            [('code', '=', 'stock.ddt'),
+                ('company_id', '=', self.env.user.company_id.id)])[0].id
 
     @api.one
     @api.depends('picking_ids', 'picking_ids.invoice_state')
@@ -95,6 +95,8 @@ class StockDdT(models.Model):
         compute='_get_lines')
     partner_id = fields.Many2one(
         'res.partner', string='Partner', required=True)
+    delivery_address_id = fields.Many2one(
+        'res.partner', string='Delivery Address', required=False)
     carriage_condition_id = fields.Many2one(
         'stock.picking.carriage_condition', 'Carriage Condition')
     goods_description_id = fields.Many2one(
@@ -107,7 +109,9 @@ class StockDdT(models.Model):
         'Method of Transportation')
     carrier_id = fields.Many2one(
         'res.partner', string='Carrier')
-    parcels = fields.Integer()
+    parcels = fields.Integer('Parcels')
+    net_weight = fields.Float(string='Net Weight')
+    gross_weight = fields.Float(string='Gross Weight')
     note = fields.Text('Note')
     state = fields.Selection(
         [('draft', 'Draft'),
@@ -123,8 +127,15 @@ class StockDdT(models.Model):
          ("none", "Not Applicable")],
         string="Invoice Control",
         compute='_compute_invoice_state',
-        store=True
-    )
+        store=True)
+    company_id = fields.Many2one(
+        'res.company',
+        string='Company',
+        change_default=True,
+        required=True,
+        readonly=True,
+        default=lambda self: self.env['res.company']._company_default_get(
+            'account.invoice'))
 
     def _get_lines(self):
         for ddt in self:

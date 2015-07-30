@@ -29,10 +29,11 @@
                         <div class="oe_right oe_button_box" name="buttons"></div>
                         <group>
                             <group>
-                                <field name="sequence" 
+                                <field name="sequence"
                                     domain="[('code', '=', 'stock.ddt')]"
                                     widget="selection"/>
                                 <field name="partner_id"/>
+                                <field name="delivery_address_id"/>
                             </group>
                             <group>
                                 <field name="date"/>
@@ -60,6 +61,8 @@
                                         <field name="parcels" />
                                     </group>
                                     <group>
+                                        <field name="net_weight"/>
+                                        <field name="gross_weight"/>
                                         <field name="carrier_id"/>
                                     </group>
                                 </group>
