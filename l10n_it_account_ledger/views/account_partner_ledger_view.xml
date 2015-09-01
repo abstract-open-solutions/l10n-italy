@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+      <record id="account.action_report_partner_ledger"
+          model="ir.actions.report.xml">
+          <field name="paperformat_id"
+            ref="l10n_it_account.l10n_it_account_a4_portrait"/>
+      </record>
+
+      <template id="ledger_layout" inherit_id="report.layout" >
+        <xpath expr="//style" position="after">
+          <link href="/l10n_it_account_ledger/static/src/css/ledger.css" rel="stylesheet"/>
+        </xpath>
+      </template>
+
+      <template id="ledger_minimal_layout" inherit_id="report.minimal_layout" >
+        <xpath expr="//style" position="after">
+          <link href="/l10n_it_account_ledger/static/src/css/ledger.css" rel="stylesheet"/>
+        </xpath>
+      </template>
+
+      <template id="account.report_partnerledger">
+          <t t-call="report.html_container">
+              <t t-set="title" t-value="'Partner Ledger'"/>
+              <t t-call="l10n_it_account.internal_layout">
+                  <div class="page mt10">
+                      <div class="row">
+                          <div class="col-xs-2">
+                              <strong>Partner:</strong>
+                              <p t-if="docs andlen(docs)==1" t-esc="docs[0].name"/>
+                          </div>
+                          <div class="col-xs-2">
+                              <strong>Fiscal Year:</strong>
+                              <p t-esc="get_fiscalyear(data)"/>
+                          </div>
+                          <div class="col-xs-2">
+                              <strong>Partner's</strong>
+                              <p t-esc="get_partners()"/>
+                          </div>
+                          <div class="col-xs-2">
+                              <strong>Filter By:</strong>
+                              <p>
+                                  <span t-if="data['form']['filter'] == 'filter_no'">Not filtered</span>
+                                  <span t-if="data['form']['filter'] == 'filter_period'">Filtered by period</span>
+                                  <span t-if="data['form']['filter'] == 'filter_date'">Filtered by date</span>
+                                  <p t-if="data['form']['filter'] == 'filter_period'">
+                                      Start Period: <span t-esc="get_start_period(data)"/>
+                                      End Period: <span t-esc="get_end_period(data)"/>
+                                  </p>
+                                  <p t-if="data['form']['filter'] == 'filter_date'">
+                                      Date from : <span t-esc="formatLang(get_start_date(data), date=True)"/><br />
+                                      Date to : <span t-esc="formatLang(get_end_date(data), date=True)"/>
+                                  </p>
+                              </p>
+                          </div>
+                          <div class="col-xs-2">
+                              <strong>Target Moves:</strong>
+                              <p t-esc="get_target_move(data)"/>
+                          </div>
+                      </div>
+
+                      <table class="table table-condensed" id="content">
+                          <thead>
+                              <tr>
+                                  <th t-if="include_row_number()">No.</th>
+                                  <th>Date</th>
+                                  <th t-if="include_journal()">JRNL</th>
+                                  <th>Ref</th>
+                                  <th t-if="include_account()">Account</th>
+                                  <th t-if="include_counterparts()">Counterparts</th>
+                                  <th t-if="include_entry_name()">Entry Label</th>
+                                  <th class="text-right">Debit</th>
+                                  <th class="text-right">Credit</th>
+                                  <th class="text-right">Balance</th>
+                                  <th t-if="amount_currency">Currency</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <t t-foreach="docs" t-as="partner">
+                              <tr t-if="len(docs)>1">
+                                  <td colspan="5">
+                                          <strong t-esc="partner.ref"/>
+                                          - <strong t-esc="partner.name"/>
+                                  </td>
+                                  <td class="text-right">
+                                      <strong t-esc="sum_debit_partner(partner)"/>
+                                  </td>
+                                  <td class="text-right">
+                                      <strong t-esc="sum_credit_partner(partner)"/>
+                                  </td>
+                                  <td class="text-right">
+                                      <strong t-esc="formatLang((sum_debit_partner(partner) - sum_credit_partner(partner)), currency_obj=res_company.currency_id)"/>
+                                  </td>
+                              </tr>
+                              <tr t-if="display_initial_balance">
+                                  <td t-att-colspan="colspan()">Initial Balance</td>
+                                  <td class="text-right">
+                                      <span t-esc="formatLang(get_intial_balance(partner)[0][0])"/>
+                                  </td>
+                                  <td class="text-right">
+                                      <span t-esc="formatLang(get_intial_balance(partner)[0][1])"/>
+                                  </td>
+                                  <td class="text-right">
+                                      <span t-esc="formatLang(get_intial_balance(partner)[0][2], currency_obj=res_company.currency_id)"/>
+                                  </td>
+                              </tr>
+                              <tr t-foreach="lines(partner)" t-as="line">
+                                  <td t-if="include_row_number()">
+                                      <span t-esc="lines(partner).index(line)+1"/>
+                                  </td>
+                                  <td>
+                                      <span t-esc="formatLang(line['date'], date=True)"/>
+                                  </td>
+                                  <td t-if="include_journal()">
+                                      <span t-esc="line['code']"/>
+                                  </td>
+                                  <td>
+                                      <span t-esc="line['move_name']"/>
+                                  </td>
+                                  <td t-if="include_account()">
+                                      <span t-esc="line['a_code']"/> - <span t-esc="line['a_name']"/>
+                                  </td>
+                                  <td t-if="include_counterparts()">
+                                      <span t-esc="display_counterparts(line)"/>
+                                  </td>
+                                  <td t-if="include_entry_name()">
+                                      <span t-esc="line['name']"/>
+                                  </td>
+                                  <td class="text-right">
+                                      <span t-esc="formatLang((line['debit']))"/>
+                                  </td>
+                                  <td class="text-right">
+                                      <span t-esc="formatLang((line['credit']))"/>
+                                  </td>
+                                  <td class="text-right">
+                                      <span t-esc="formatLang(line['progress'], currency_obj=res_company.currency_id)"/>
+                                  </td>
+                                  <td t-if="amount_currency">
+                                      <span t-esc="formatLang(line['amount_currency'])"/>&amp;nbsp;<span t-esc="line['currency_code']"/>
+                                  </td>
+                              </tr>
+                              </t>
+                          </tbody>
+                      </table>
+                  </div>
+              </t>
+          </t>
+      </template>
+
+    </data>
+</openerp>

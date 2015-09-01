@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+      <record id="account_partner_ledger_form" model="ir.ui.view">
+          <field name="name">account.partner.ledger.form</field>
+          <field name="model">account.partner.ledger</field>
+          <field name="inherit_id" ref="account.account_partner_ledger_view" />
+          <field name="arch" type="xml">
+            <field name="initial_balance" position="after">
+              <field name="include_journal"/>
+              <field name="include_account"/>
+              <field name="include_counterparts"/>
+              <field name="include_entry_name"/>
+              <field name="include_row_number"/>
+            </field>
+          </field>
+      </record>
+
+    </data>
+</openerp>
