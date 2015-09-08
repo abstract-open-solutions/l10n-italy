@@ -46,8 +46,8 @@ class res_company(models.Model):
     ### default values sale section
     intrastat_sale_statistic_amount = fields.Boolean(
         string='Force Statistic Amount Euro')
-    intrastat_sale_transation_nature_id = fields.Many2one(
-        'account.intrastat.transation.nature', string='Transation Nature')
+    intrastat_sale_transaction_nature_id = fields.Many2one(
+        'account.intrastat.transaction.nature', string='Transaction Nature')
     intrastat_sale_delivery_code_id = fields.Many2one(
         'stock.incoterms', string='Delivery')
     intrastat_sale_transport_code_id = fields.Many2one(
@@ -58,8 +58,8 @@ class res_company(models.Model):
     ### default values purchase section
     intrastat_purchase_statistic_amount = fields.Boolean(
         string='Force Statistic Amount Euro')
-    intrastat_purchase_transation_nature_id = fields.Many2one(
-        'account.intrastat.transation.nature', string='Transation Nature')
+    intrastat_purchase_transaction_nature_id = fields.Many2one(
+        'account.intrastat.transaction.nature', string='Transaction Nature')
     intrastat_purchase_delivery_code_id = fields.Many2one(
         'stock.incoterms', string='Delivery')
     intrastat_purchase_transport_code_id = fields.Many2one(

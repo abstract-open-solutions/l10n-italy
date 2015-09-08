@@ -353,8 +353,8 @@ class account_invoice_intrastat(models.Model):
         digits=dp.get_precision('Account'), store=True, readonly=True)
     amount_currency = fields.Float(
         string='Amount Currency', digits=dp.get_precision('Account'))
-    transation_nature_id = fields.Many2one('account.intrastat.transation.nature',
-                                        string='Transation Nature')
+    transaction_nature_id = fields.Many2one('account.intrastat.transaction.nature',
+                                        string='Transaction Nature')
     weight_kg = fields.Float(string='Weight kg')
     additional_units = fields.Float(string='Additional Units')
     statistic_amount_euro = fields.Float(string='Statistic Amount Euro',

@@ -85,10 +85,10 @@ msgstr "Account INTRASTAT - Statement - Sale Section 3"
 msgid "Account INTRASTAT - Statement - Sale Section 4"
 msgstr "Account INTRASTAT - Statement - Sale Section 4"
 
-#: model:ir.model,name:l10n_it_intrastat.model_account_intrastat_transation_nature
+#: model:ir.model,name:l10n_it_intrastat.model_account_intrastat_transaction_nature
 #. module: l10n_it_intrastat
-msgid "Account INTRASTAT - Transation Nature"
-msgstr "Account INTRASTAT - Transation Nature"
+msgid "Account INTRASTAT - Transaction Nature"
+msgstr "Account INTRASTAT - Transaction Nature"
 
 #: model:ir.model,name:l10n_it_intrastat.model_account_intrastat_transport
 #. module: l10n_it_intrastat
@@ -177,7 +177,7 @@ msgid "Close"
 msgstr "Chiudi"
 
 #: field:account.intrastat.custom,code:0
-#: field:account.intrastat.transation.nature,code:0
+#: field:account.intrastat.transaction.nature,code:0
 #: field:account.intrastat.transport,code:0
 #. module: l10n_it_intrastat
 msgid "Code"
@@ -274,7 +274,7 @@ msgstr "Nazione pagamento"
 #: field:account.intrastat.statement.sale.section2,create_uid:0
 #: field:account.intrastat.statement.sale.section3,create_uid:0
 #: field:account.intrastat.statement.sale.section4,create_uid:0
-#: field:account.intrastat.transation.nature,create_uid:0
+#: field:account.intrastat.transaction.nature,create_uid:0
 #: field:account.intrastat.transport,create_uid:0
 #: field:account.invoice.intrastat,create_uid:0
 #. module: l10n_it_intrastat
@@ -292,7 +292,7 @@ msgstr "Created by"
 #: field:account.intrastat.statement.sale.section2,create_date:0
 #: field:account.intrastat.statement.sale.section3,create_date:0
 #: field:account.intrastat.statement.sale.section4,create_date:0
-#: field:account.intrastat.transation.nature,create_date:0
+#: field:account.intrastat.transaction.nature,create_date:0
 #: field:account.intrastat.transport,create_date:0
 #: field:account.invoice.intrastat,create_date:0
 #. module: l10n_it_intrastat
@@ -504,7 +504,7 @@ msgstr "Ecco il file esportato:"
 #: field:account.intrastat.statement.sale.section2,id:0
 #: field:account.intrastat.statement.sale.section3,id:0
 #: field:account.intrastat.statement.sale.section4,id:0
-#: field:account.intrastat.transation.nature,id:0
+#: field:account.intrastat.transaction.nature,id:0
 #: field:account.intrastat.transport,id:0
 #: field:account.invoice.intrastat,id:0
 #. module: l10n_it_intrastat
@@ -640,7 +640,7 @@ msgstr "Sezionale"
 #: field:account.intrastat.statement.sale.section2,write_uid:0
 #: field:account.intrastat.statement.sale.section3,write_uid:0
 #: field:account.intrastat.statement.sale.section4,write_uid:0
-#: field:account.intrastat.transation.nature,write_uid:0
+#: field:account.intrastat.transaction.nature,write_uid:0
 #: field:account.intrastat.transport,write_uid:0
 #: field:account.invoice.intrastat,write_uid:0
 #. module: l10n_it_intrastat
@@ -658,7 +658,7 @@ msgstr "Last Updated by"
 #: field:account.intrastat.statement.sale.section2,write_date:0
 #: field:account.intrastat.statement.sale.section3,write_date:0
 #: field:account.intrastat.statement.sale.section4,write_date:0
-#: field:account.intrastat.transation.nature,write_date:0
+#: field:account.intrastat.transaction.nature,write_date:0
 #: field:account.intrastat.transport,write_date:0
 #: field:account.invoice.intrastat,write_date:0
 #. module: l10n_it_intrastat
@@ -683,7 +683,7 @@ msgid "Month Ref of Refund"
 msgstr "Mese di riferimento del riepilogo da rettificare"
 
 #: field:account.intrastat.custom,name:0
-#: field:account.intrastat.transation.nature,name:0
+#: field:account.intrastat.transaction.nature,name:0
 #: field:account.intrastat.transport,name:0
 #. module: l10n_it_intrastat
 msgid "Name"
@@ -1095,20 +1095,20 @@ msgstr "Totale"
 msgid "Total Intrastat must be ugual to                    Total Invoice Untaxed"
 msgstr "Total Intrastat must be ugual to                    Total Invoice Untaxed"
 
-#: field:account.intrastat.statement.purchase.section1,transation_nature_id:0
-#: field:account.intrastat.statement.purchase.section2,transation_nature_id:0
-#: field:account.intrastat.statement.sale.section1,transation_nature_id:0
-#: field:account.intrastat.statement.sale.section2,transation_nature_id:0
-#: view:account.intrastat.transation.nature:l10n_it_intrastat.account_intrastat_transation_nature_view_form
-#: view:account.intrastat.transation.nature:l10n_it_intrastat.account_intrastat_transation_nature_view_tree
-#: field:account.invoice.intrastat,transation_nature_id:0
-#: model:ir.actions.act_window,name:l10n_it_intrastat.action_account_intrastat_transation_nature_transport
-#: model:ir.ui.menu,name:l10n_it_intrastat.menu_account_transation_nature
-#: field:res.company,intrastat_purchase_transation_nature_id:0
-#: field:res.company,intrastat_sale_transation_nature_id:0
+#: field:account.intrastat.statement.purchase.section1,transaction_nature_id:0
+#: field:account.intrastat.statement.purchase.section2,transaction_nature_id:0
+#: field:account.intrastat.statement.sale.section1,transaction_nature_id:0
+#: field:account.intrastat.statement.sale.section2,transaction_nature_id:0
+#: view:account.intrastat.transaction.nature:l10n_it_intrastat.account_intrastat_transaction_nature_view_form
+#: view:account.intrastat.transaction.nature:l10n_it_intrastat.account_intrastat_transaction_nature_view_tree
+#: field:account.invoice.intrastat,transaction_nature_id:0
+#: model:ir.actions.act_window,name:l10n_it_intrastat.action_account_intrastat_transaction_nature_transport
+#: model:ir.ui.menu,name:l10n_it_intrastat.menu_account_transaction_nature
+#: field:res.company,intrastat_purchase_transaction_nature_id:0
+#: field:res.company,intrastat_sale_transaction_nature_id:0
 #. module: l10n_it_intrastat
-msgid "Transation Nature"
-msgstr "Transation Nature"
+msgid "Transaction Nature"
+msgstr "Transaction Nature"
 
 #: selection:account.intrastat.statement.purchase.section3,payment_method:0
 #: selection:account.intrastat.statement.purchase.section4,payment_method:0
