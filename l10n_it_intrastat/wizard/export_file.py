@@ -30,11 +30,11 @@ from openerp.tools.misc import get_iso_codes
 
 class account_intrastat_export_file(models.TransientModel):
     _name = "account.intrastat.export.file"
-    
+
     name = fields.Char(string='File Name', readonly=True)
     data = fields.Binary(string='File', readonly=True)
-    state = fields.Selection([('choose', 'choose'), 
-                              ('get', 'get')], 
+    state = fields.Selection([('choose', 'choose'),
+                              ('get', 'get')],
                              string='State', default='choose')
 
     @api.multi
@@ -46,11 +46,11 @@ class account_intrastat_export_file(models.TransientModel):
         # file = self.env['account.intrastat.statement'].\
         #     browse(statement_id).generate_file_export()
         out = base64.encodestring(file)
-        
+
         view = self.env['ir.model.data'].get_object_reference(
             'l10n_it_intrastat', 'wizard_account_intrastat_export_file')
         view_id = view[1] or False
-            
+
         # name = "%s.%s" % (filename, extension)
         self.write({ 'state': 'get', 'data': out, 'name': filename })
         return {

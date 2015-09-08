@@ -36,7 +36,7 @@ class account_fiscal_position(models.Model):
 
 class account_invoice_line(models.Model):
     _inherit = "account.invoice.line"
-    
+
     def _prepare_intrastat_line(self):
         res = {
             'intrastat_code_id' : False,
@@ -125,7 +125,7 @@ class account_invoice_line(models.Model):
         res.update({'country_good_origin_id': country_good_origin_id})
         # Province Origin
         province_origin_id = False
-        if self.invoice_id.type in ('out_invoice', 'out_refund'):    
+        if self.invoice_id.type in ('out_invoice', 'out_refund'):
             province_origin_id = \
                 self.invoice_id.partner_id.state_id.id
         elif self.invoice_id.type in ('in_invoice', 'in_refund'):
@@ -137,7 +137,7 @@ class account_invoice_line(models.Model):
         # ---------
         # Country Destination
         country_destination_id = False
-        if self.invoice_id.type in ('out_invoice', 'out_refund'):    
+        if self.invoice_id.type in ('out_invoice', 'out_refund'):
             country_destination_id = \
                 self.invoice_id.partner_id.country_id.id
         elif self.invoice_id.type in ('in_invoice', 'in_refund'):
@@ -146,7 +146,7 @@ class account_invoice_line(models.Model):
         res.update({'country_destination_id': country_destination_id})
         # Province Destination
         province_destination_id = False
-        if self.invoice_id.type in ('out_invoice', 'out_refund'):    
+        if self.invoice_id.type in ('out_invoice', 'out_refund'):
             province_destination_id = \
                 self.invoice_id.partner_id.state_id.id
         elif self.invoice_id.type in ('in_invoice', 'in_refund'):
@@ -177,7 +177,7 @@ class account_invoice_line(models.Model):
                 self.invoice_id.company_id.partner_id.country_id.id
         res.update({'country_payment_id': country_payment_id})
         return res
-    
+
 
 class account_invoice(models.Model):
     _inherit = "account.invoice"
@@ -187,7 +187,7 @@ class account_invoice(models.Model):
     intrastat_line_ids = fields.One2many(
         'account.invoice.intrastat', 'invoice_id', string='Intrastat',
         readonly=True, states={'draft': [('readonly', False)]}, copy=True)
-    
+
     @api.onchange('fiscal_position')
     def change_fiscal_position(self):
         self.intrastat = self.fiscal_position.intrastat
@@ -201,7 +201,7 @@ class account_invoice(models.Model):
             if not total_amount == invoice.amount_untaxed:
                 raise Warning(_('Total Intrastat must be ugual to\
                     Total Invoice Untaxed'))
-    
+
     @api.one
     def compute_intrastat_lines(self):
         intrastat_lines = []
@@ -224,7 +224,7 @@ class account_invoice(models.Model):
             if intrastat_data['intrastat_code_id'] == 'misc':
                 lines_to_split.append(line)
                 continue
-            
+
             # Group by intrastat code
             intra_line = line._prepare_intrastat_line()
             if intra_line['intrastat_code_id'] in i_line_by_code:
@@ -245,7 +245,7 @@ class account_invoice(models.Model):
                             invoice_type=self.type).\
                         _get_statement_section()
                 i_line_by_code[intra_line['intrastat_code_id']] = intra_line
-           
+
         for key, val in i_line_by_code.iteritems():
             intrastat_lines.append((0,0,val))
         if intrastat_lines:
@@ -261,12 +261,12 @@ class account_invoice_intrastat(models.Model):
         company_currency = self.invoice_id.company_id.currency_id
         self.amount_euro = company_currency.compute(self.amount_currency,
                                                     company_currency)
-        
+
     @api.one
     @api.depends('invoice_id.partner_id')
     def _compute_partner_data(self):
         self.country_partner_id = self.invoice_id.partner_id.country_id.id
-    
+
     def _get_statement_section(self):
         '''
         Compute where the invoice intrastat data will be computed.
@@ -304,7 +304,7 @@ class account_invoice_intrastat(models.Model):
                 else:
                     section = 'sale_s4'
         return section
-    
+
     #-------------
     # Defaults
     #-------------
@@ -314,7 +314,7 @@ class account_invoice_intrastat(models.Model):
             return self.invoice_id.company_id.partner_id.state_id
         else:
             return False
-    
+
     @api.model
     def _default_country_destination(self):
         if self.invoice_id.partner_id.country_id:
@@ -347,7 +347,7 @@ class account_invoice_intrastat(models.Model):
         ('purchase_s4', 'Purchase s4'),
         ], 'Statement Section', default=_get_statement_section
         )
-    
+
     amount_euro = fields.Float(
         string='Amount Euro', compute='_compute_amount_euro',
         digits=dp.get_precision('Account'), store=True, readonly=True)
@@ -360,7 +360,7 @@ class account_invoice_intrastat(models.Model):
     statistic_amount_euro = fields.Float(string='Statistic Amount Euro',
         digits=dp.get_precision('Account'))
     country_partner_id = fields.Many2one(
-        'res.country', string='Country Partner', 
+        'res.country', string='Country Partner',
         compute='_compute_partner_data', store=True, readonly=True)
     ## Origin ##
     province_origin_id = fields.Many2one(
@@ -391,22 +391,22 @@ class account_invoice_intrastat(models.Model):
         ('X', 'Other'),
         ], 'Payment Method')
     country_payment_id= fields.Many2one('res.country', 'Country Payment')
-                                
+
     @api.onchange('weight_kg')
     def change_weight_kg(self):
         if self.invoice_id.company_id.intrastat_additional_unit_from_weight:
             self.additional_units = self.weight_kg
-    
+
     @api.onchange('amount_euro')
     def change_amount_euro(self):
-        self.statistic_amount_euro = self.amount_euro 
-        
+        self.statistic_amount_euro = self.amount_euro
+
     @api.onchange('intrastat_code_type')
     def change_intrastat_code_type(self):
         self.statement_section = self._get_statement_section()
         self.intrastat_code_id = False
-    
-    
+
+
 class account_payment_term(models.Model):
     _inherit = 'account.payment.term'
 
