@@ -1,0 +1,57 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* l10n_it_boe
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-15 13:56+0000\n"
+"PO-Revision-Date: 2015-04-15 13:56+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_it_boe
+#: view:account.config.settings:l10n_it_boe.view_account_config_settings
+msgid "Bill of Entry"
+msgstr "Bolla doganale"
+
+#. module: l10n_it_boe
+#: field:res.company,boe_account_id:0
+msgid "Bill of Entry Account"
+msgstr "Conto bolla doganale"
+
+#. module: l10n_it_boe
+#: model:ir.model,name:l10n_it_boe.model_res_company
+msgid "Companies"
+msgstr "Aziende"
+
+#. module: l10n_it_boe
+#: field:account.invoice,boe_doc_type:0
+msgid "Customs Document Type"
+msgstr "Tipo documento doganale"
+
+#. module: l10n_it_boe
+#: field:res.company,boe_partner_id:0
+msgid "Customs Partner"
+msgstr "Partner dogana"
+
+#. module: l10n_it_boe
+#: selection:account.invoice,boe_doc_type:0
+msgid "Forwarder Invoice"
+msgstr "Fattura spedizioniere"
+
+#. module: l10n_it_boe
+#: model:ir.model,name:l10n_it_boe.model_account_invoice
+msgid "Invoice"
+msgstr "Fattura"
+
+#. module: l10n_it_boe
+#: selection:account.invoice,boe_doc_type:0
+msgid "Supplier Invoice"
+msgstr "Fattura fornitore"
+

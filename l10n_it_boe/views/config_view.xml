@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="view_account_config_settings" model="ir.ui.view">
+            <field name="name">view_account_config_settings</field>
+            <field name="model">account.config.settings</field>
+            <field name="inherit_id" ref="account.view_account_config_settings"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/group[6]" position="after">
+                    <separator string="Bill of Entry"/>
+                    <group name="advance_payment_settings">
+                        <label for="id" string="Bill of Entry"/>
+                        <div>
+                            <div>
+                                <label for="boe_account_id"/>
+                                <field name="boe_account_id" 
+                                    class="oe_inline"/>
+                            </div>
+                            <div>
+                                <label for="boe_partner_id"/>
+                                <field name="boe_partner_id" 
+                                    class="oe_inline"/>
+                            </div>
+                        </div>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+	</data>
+</openerp>
