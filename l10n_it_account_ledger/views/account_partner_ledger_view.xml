@@ -25,7 +25,7 @@
               <t t-set="title" t-value="'Partner Ledger'"/>
               <t t-call="l10n_it_account.internal_layout">
                   <div class="page mt10">
-                      <div class="row">
+                      <div class="row filters">
                           <div class="col-xs-2">
                               <strong>Partner:</strong>
                               <p t-if="docs andlen(docs)==1" t-esc="docs[0].name"/>
@@ -68,11 +68,11 @@
                               <tr>
                                   <th t-if="include_row_number()">No.</th>
                                   <th>Date</th>
-                                  <th t-if="include_journal()">JRNL</th>
+                                  <th t-if="include_journal()">Journal</th>
                                   <th>Ref</th>
                                   <th t-if="include_account()">Account</th>
                                   <th t-if="include_counterparts()">Counterparts</th>
-                                  <th t-if="include_entry_name()">Entry Label</th>
+                                  <th t-if="include_entry_name()">Entry Reference</th>
                                   <th class="text-right">Debit</th>
                                   <th class="text-right">Credit</th>
                                   <th class="text-right">Balance</th>
