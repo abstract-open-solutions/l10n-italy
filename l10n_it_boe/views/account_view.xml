@@ -10,6 +10,16 @@
                 <xpath expr="//field[@name='journal_id']" position="after">
                     <field name="boe_doc_type" attrs="{'readonly': ['|',('state', '!=', 'draft')]}"/>
                 </xpath>
+                <xpath expr="//field[@name='period_id']" position="after">
+                    <field name="forwarder_boe_invoice_id"
+                        domain="[('boe_doc_type', 'in', ['forwarder_invoice']),
+                            ('supplier_boe_invoice_id', '=', False)]"
+                        attrs="{'invisible': [('boe_doc_type', 'in', ['forwarder_invoice'])]}"/>
+                    <field name="supplier_boe_invoice_id"
+                        domain="[('boe_doc_type', 'in', ['supplier_invoice']),
+                            ('forwarder_boe_invoice_id', '=', False)]"
+                        attrs="{'invisible': [('boe_doc_type', 'in', ['supplier_invoice'])]}"/>
+                </xpath>
              </field>
         </record>
 

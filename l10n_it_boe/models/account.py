@@ -26,17 +26,25 @@ class AccountInvoice(models.Model):
     _inherit = 'account.invoice'
 
     boe_doc_type = fields.Selection(
-        [
-            ('supplier_invoice', 'Supplier Invoice'),
+        [('supplier_invoice', 'Supplier Invoice'),
             ('forwarder_invoice', 'Forwarder Invoice')],
         'Customs Document Type', readonly=True)
+    forwarder_boe_invoice_id = fields.Many2one(
+        'account.invoice',
+        string='Forwarder Invoice (BoE)',
+        copy=False)
+
+    supplier_boe_invoice_id = fields.Many2one(
+        'account.invoice',
+        string='Supplier Invoice (BoE)',
+        copy=False)
 
     @api.multi
     def action_move_create(self):
         res = super(AccountInvoice, self).action_move_create()
         company = self.env.user.company_id
         if self.boe_doc_type and self.boe_doc_type == 'supplier_invoice':
-            self.move_id.button_cancel()
+            #self.move_id.button_cancel()
             for line in self.move_id.line_id:
                 tot_debit = 0
                 if line.debit:
@@ -45,9 +53,33 @@ class AccountInvoice(models.Model):
             for line in self.move_id.line_id:
                 if line.credit:
                     orig_credit = line.credit
-                    line.credit = line.credit - (line.credit - tot_debit)
+                    line.write(
+                        {'credit': line.credit - (line.credit - tot_debit)},
+                        update_check=False)
                     supplier_line = line.copy()
-                    supplier_line.account_id = company.boe_account_id.id
-                    supplier_line.partner_id = company.boe_partner_id.id
-                    supplier_line.credit = orig_credit - tot_debit
+                    supplier_line.write(
+                        {'account_id': company.boe_account_id.id},
+                        update_check=False)
+                    supplier_line.write(
+                        {'partner_id': company.boe_partner_id.id},
+                        update_check=False)
+                    supplier_line.write(
+                        {'credit': orig_credit - tot_debit},
+                        update_check=False)
+        return res
+
+    @api.multi
+    def write(self, vals):
+        res = super(AccountInvoice, self).write(vals)
+        if vals.get('supplier_boe_invoice_id', False):
+            supplier_boe_invoice = self.browse(
+                vals.get('supplier_boe_invoice_id'))
+            if not supplier_boe_invoice.forwarder_boe_invoice_id:
+                supplier_boe_invoice.forwarder_boe_invoice_id = self.id
+
+        if vals.get('forwarder_boe_invoice_id', False):
+            forwarder_boe_invoice = self.browse(
+                vals.get('forwarder_boe_invoice_id'))
+            if not forwarder_boe_invoice.supplier_boe_invoice_id:
+                forwarder_boe_invoice.supplier_boe_invoice_id = self.id
         return res
