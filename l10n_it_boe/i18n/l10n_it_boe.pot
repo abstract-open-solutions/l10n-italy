@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-15 13:55+0000\n"
-"PO-Revision-Date: 2015-04-15 13:55+0000\n"
+"POT-Creation-Date: 2015-10-16 15:23+0000\n"
+"PO-Revision-Date: 2015-10-16 15:23+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -46,6 +46,11 @@ msgid "Forwarder Invoice"
 msgstr ""
 
 #. module: l10n_it_boe
+#: field:account.invoice,forwarder_boe_invoice_id:0
+msgid "Forwarder Invoice (BoE)"
+msgstr ""
+
+#. module: l10n_it_boe
 #: model:ir.model,name:l10n_it_boe.model_account_invoice
 msgid "Invoice"
 msgstr ""
@@ -53,5 +58,10 @@ msgstr ""
 #. module: l10n_it_boe
 #: selection:account.invoice,boe_doc_type:0
 msgid "Supplier Invoice"
+msgstr ""
+
+#. module: l10n_it_boe
+#: field:account.invoice,supplier_boe_invoice_id:0
+msgid "Supplier Invoice (BoE)"
 msgstr ""
 
