@@ -29,7 +29,7 @@
     'author': 'Abstract',
     'website': 'http://www.abstract.it',
     'depends': [
-        'account', 'base', 'account_cancel'],
+        'account', 'base', 'account_cancel', 'account_custom_exchange_rate'],
     'data': [
         'views/account_view.xml',
         'views/config_view.xml',

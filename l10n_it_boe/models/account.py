@@ -66,6 +66,15 @@ class AccountInvoice(models.Model):
                     supplier_line.write(
                         {'credit': orig_credit - tot_debit},
                         update_check=False)
+                    rate = self.custom_exchange_rate
+                    amount_currency = line.currency_id.with_context(
+                        custom_exchange_rate=1/rate).compute(
+                        orig_credit - tot_debit,
+                        line.company_id.currency_id)
+                    supplier_line.write(
+                        {'amount_currency': -(amount_currency)},
+                        update_check=False)
+
         return res
 
     @api.multi
