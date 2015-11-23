@@ -67,13 +67,14 @@ class AccountInvoice(models.Model):
                         {'credit': orig_credit - tot_debit},
                         update_check=False)
                     rate = self.custom_exchange_rate
-                    amount_currency = line.currency_id.with_context(
-                        custom_exchange_rate=1/rate).compute(
-                        orig_credit - tot_debit,
-                        line.company_id.currency_id)
-                    supplier_line.write(
-                        {'amount_currency': -(amount_currency)},
-                        update_check=False)
+                    if self.currency_id != self.company_id.currency_id:
+                        amount_currency = line.currency_id.with_context(
+                            custom_exchange_rate=1/rate).compute(
+                            orig_credit - tot_debit,
+                            line.company_id.currency_id)
+                        supplier_line.write(
+                            {'amount_currency': -(amount_currency)},
+                            update_check=False)
 
         return res
 
