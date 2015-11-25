@@ -17,11 +17,6 @@
                                 <field name="boe_account_id" 
                                     class="oe_inline"/>
                             </div>
-                            <div>
-                                <label for="boe_partner_id"/>
-                                <field name="boe_partner_id" 
-                                    class="oe_inline"/>
-                            </div>
                         </div>
                     </group>
                 </xpath>

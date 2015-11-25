@@ -61,7 +61,7 @@ class AccountInvoice(models.Model):
                         {'account_id': company.boe_account_id.id},
                         update_check=False)
                     supplier_line.write(
-                        {'partner_id': company.boe_partner_id.id},
+                        {'partner_id': self.partner_id.id},
                         update_check=False)
                     supplier_line.write(
                         {'credit': orig_credit - tot_debit},
