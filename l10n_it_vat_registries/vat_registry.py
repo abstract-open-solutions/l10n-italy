@@ -229,7 +229,8 @@ class Parser(report_sxw.rml_parse):
                 ('price_include', '=', False),
             ])
             for tax in obj_tax.browse(self.cr, self.uid, child_tax_ids):
-                if tax.parent_id:
+                if (tax.parent_id and tax.parent_id.tax_code_id or
+                        tax.parent_id.base_code_id):
                     if tax.parent_id.id not in tax_ids:
                         tax_ids.append(tax.parent_id.id)
                 else:
