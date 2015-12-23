@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 ##############################################################################
 #
-#    Copyright (C) 2014 Associazione Odoo Italia
+#    Copyright (C) 2015 Associazione Odoo Italia
 #    (<http://www.odoo-italia.org>).
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -18,6 +18,7 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
+
 {
     'name': 'Check invoice date consistency',
     'version': '8.0.0.1.0',
@@ -38,4 +39,5 @@ Functionalities:
     "active": False,
     'installable': True
 }
+
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
