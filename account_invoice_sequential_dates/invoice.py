@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
-#    
+#
 #    Copyright (C) 2010 Associazione OpenERP Italia
-#    (<http://www.openerp-italia.org>). 
+#    (<http://www.openerp-italia.org>).
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
@@ -19,11 +19,13 @@
 #
 ##############################################################################
 
-import netsvc
-import pooler, tools
+from openerp import netsvc
+from openerp import pooler
+from openerp import tools
+from openerp.osv import fields
+from openerp.osv import orm
+from openerp.tools.translate import _
 
-from openerp.osv import fields, orm
-from tools.translate import _
 
 class account_invoice(orm.Model):
     _inherit = 'account.invoice'
@@ -37,7 +39,7 @@ class account_invoice(orm.Model):
             number = obj_inv.number
             date_invoice = obj_inv.date_invoice
             journal = obj_inv.journal_id.id
-            res = self.search(cr, uid, [('type','=',inv_type),('date_invoice','>',date_invoice), 
+            res = self.search(cr, uid, [('type','=',inv_type),('date_invoice','>',date_invoice),
                 ('number', '<', number), ('journal_id','=',journal)], context=context)
             if res:
                 raise orm.except_orm(_('Date Inconsistency'),
