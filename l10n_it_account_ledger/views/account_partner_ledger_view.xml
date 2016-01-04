@@ -20,17 +20,15 @@
         </xpath>
       </template>
 
-      <template id="account.report_partnerledger">
+      <template id="report_partnerledger_document">
           <t t-call="report.html_container">
-              <t t-set="title" t-value="'Partner Ledger'"/>
+              <t t-set="title" t-value="'Scheda Contabile'"/>
               <t t-call="l10n_it_account.internal_layout">
                   <div class="page mt10">
                       <div class="row filters">
                           <div class="col-xs-2">
-                            <t t-if="docs and len(docs)==1">
                               <strong>Partner:</strong>
-                              <p t-esc="docs[0].name"/>
-                            </t>
+                              <p t-esc="get_partner_name()"/>
                           </div>
                           <div class="col-xs-2">
                               <strong>Fiscal Year:</strong>
@@ -152,6 +150,14 @@
               </t>
           </t>
       </template>
+
+      <template id="account.report_partnerledger">
+        <t t-call="report.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="l10n_it_account_ledger.report_partnerledger_document" t-lang="doc.partner_id.lang"/>
+            </t>
+        </t>
+    </template>
 
     </data>
 </openerp>

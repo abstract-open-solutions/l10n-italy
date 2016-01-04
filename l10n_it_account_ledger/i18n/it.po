@@ -18,7 +18,7 @@ msgstr ""
 #. module: l10n_it_account_ledger
 #: model:ir.model,name:l10n_it_account_ledger.model_account_partner_ledger
 msgid "Account Partner Ledger"
-msgstr "Mastrino  partner"
+msgstr "Mastrino partner"
 
 #. module: l10n_it_account_ledger
 #: field:account.partner.ledger,include_account:0
@@ -45,3 +45,12 @@ msgstr "Include Journal"
 msgid "Include Row Number"
 msgstr "Include Row Number"
 
+#. module: account
+#: view:website:account.report_partnerledgerother
+msgid "Entry Reference"
+msgstr "Descrizione"
+
+#. module: l10n_it_account_ledger
+#: view:website:account.report_partnerledgerother
+msgid "Entry Reference"
+msgstr "Descrizione"

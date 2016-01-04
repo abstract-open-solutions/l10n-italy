@@ -20,7 +20,6 @@
 
 from openerp.addons.account.report import account_partner_ledger
 from openerp.osv import osv
-from openerp import _
 
 
 class ThirdPartyLedger(account_partner_ledger.third_party_ledger):
@@ -38,7 +37,24 @@ class ThirdPartyLedger(account_partner_ledger.third_party_ledger):
             'get_colspan': self._get_colspan,
             'include_row_number': self._include_row_number,
             'colspan': self._get_colspan,
+            'debug': self._debug,
+            'get_partner_name': self._get_partner_name,
             })
+
+    def _debug(self, arg):
+        import ipdb;ipdb.set_trace()
+
+    def _get_partner_name(self):
+        partner_model = self.pool['res.partner']
+        names = []
+        partner_ids = self.localcontext['active_ids']
+        for partner_id in partner_ids:
+            partner = partner_model.browse(self.cr, self.uid, partner_id)
+            names.append(partner.name)
+        if names:
+            return ', '.join(names)
+        else:
+            return ''
 
     def _include_journal(self):
         if self.localcontext['data']['form']['include_journal']:

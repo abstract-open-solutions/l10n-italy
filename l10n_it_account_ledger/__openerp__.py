@@ -20,7 +20,7 @@
 
 {
     'name': 'Account Ledger',
-    'version': '1.0',
+    'version': '1.1',
     'category': 'Localization/Italy',
     'summary': 'Account Ledger',
     'author': 'Davide Corio, Odoo Community Association (OCA)',
