@@ -34,11 +34,13 @@ import Italian regions
     'depends': [
         'base',
         'base_location_geonames_import',
-        'l10n_it_base_location_geonames_import'],
+        'l10n_it_base_location_geonames_import',
+    ],
     'data': [
         'security/ir.model.access.csv',
         'views/partner_view.xml',
-        'views/region_view.xml'],
+        'views/region_view.xml'
+    ],
     'installable': True,
     'active': False,
 }

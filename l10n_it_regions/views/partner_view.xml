@@ -7,10 +7,8 @@
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="base.view_partner_form" />
             <field name="arch" type="xml">
-                <field name="zip" position="after">
-                    <field name="region_id" placeholder="Region"
-                        attrs="{'readonly': [('use_parent_address','=',True)]}"
-                        options="{&quot;no_open&quot;: True}"/>
+                <field name="website" position="before">
+                    <field name="region_id" placeholder="Region" />
                 </field>
             </field>
         </record>
