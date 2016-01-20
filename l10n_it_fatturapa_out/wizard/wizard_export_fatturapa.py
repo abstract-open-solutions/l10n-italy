@@ -21,8 +21,12 @@
 
 import base64
 from unidecode import unidecode
+
 from pyxb.exceptions_ import SimpleFacetValueError, SimpleTypeValueError
+
 from openerp.osv import orm
+from openerp.tools.translate import _
+
 from openerp.addons.l10n_it_fatturapa.bindings.fatturapa_v_1_1 import (
     FatturaElettronica,
     FatturaElettronicaHeaderType,
@@ -50,7 +54,6 @@ from openerp.addons.l10n_it_fatturapa.bindings.fatturapa_v_1_1 import (
 )
 from openerp.addons.l10n_it_fatturapa.models.account import (
     RELATED_DOCUMENT_TYPES)
-from openerp.tools.translate import _
 
 
 class WizardExportFatturapa(orm.TransientModel):
@@ -463,12 +466,15 @@ class WizardExportFatturapa(orm.TransientModel):
         TipoDocumento = 'TD01'
         if invoice.type == 'out_refund':
             TipoDocumento = 'TD04'
+        ImportoTotaleDocumento = invoice.amount_total
+        if invoice.split_payment:
+            ImportoTotaleDocumento += invoice.amount_sp
         body.DatiGenerali.DatiGeneraliDocumento = DatiGeneraliDocumentoType(
             TipoDocumento=TipoDocumento,
             Divisa=invoice.currency_id.name,
             Data=invoice.date_invoice,
             Numero=invoice.number,
-            ImportoTotaleDocumento='%.2f' % invoice.amount_total)
+            ImportoTotaleDocumento='%.2f' % ImportoTotaleDocumento)
 
         # TODO: DatiRitenuta, DatiBollo, DatiCassaPrevidenziale,
         # ScontoMaggiorazione, Arrotondamento,
