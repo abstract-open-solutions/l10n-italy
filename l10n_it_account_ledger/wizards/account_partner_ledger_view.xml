@@ -13,6 +13,7 @@
               <field name="include_counterparts"/>
               <field name="include_entry_name"/>
               <field name="include_row_number"/>
+              <field name="include_supplier_invoice"/>
             </field>
           </field>
       </record>

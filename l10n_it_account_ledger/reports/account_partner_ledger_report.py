@@ -30,10 +30,12 @@ class ThirdPartyLedger(account_partner_ledger.third_party_ledger):
 
         self.localcontext.update({
             'display_counterparts': self._display_counterparts,
+            'display_supplier_invoice': self._display_supplier_invoice,
             'include_account': self._include_account,
             'include_journal': self._include_journal,
             'include_counterparts': self._include_counterparts,
             'include_entry_name': self._include_entry_name,
+            'include_supplier_invoice': self._include_supplier_invoice,
             'get_colspan': self._get_colspan,
             'include_row_number': self._include_row_number,
             'colspan': self._get_colspan,
@@ -58,6 +60,11 @@ class ThirdPartyLedger(account_partner_ledger.third_party_ledger):
 
     def _include_journal(self):
         if self.localcontext['data']['form']['include_journal']:
+            return True
+        return False
+
+    def _include_supplier_invoice(self):
+        if self.localcontext['data']['form']['include_supplier_invoice']:
             return True
         return False
 
@@ -93,6 +100,8 @@ class ThirdPartyLedger(account_partner_ledger.third_party_ledger):
             colspan += 1
         if self.localcontext['data']['form']['include_row_number']:
             colspan += 1
+        if self.localcontext['data']['form']['include_supplier_invoice']:
+            colspan += 1
         return colspan
 
     def _display_counterparts(self, line):
@@ -101,6 +110,18 @@ class ThirdPartyLedger(account_partner_ledger.third_party_ledger):
         codes = ["%s - %s" % (l.account_id.code, l.account_id.name) for l in
                  line.move_id.line_id if l.account_id != line.account_id]
         return ', '.join(set(codes))
+
+    def _display_supplier_invoice(self, line):
+        line_model = self.pool['account.move.line']
+        invoice_model = self.pool['account.invoice']
+        line = line_model.browse(self.cr, self.uid, line['id'])
+        invoice_id = invoice_model.search(
+            self.cr, self.uid, [('move_id', '=', line.move_id.id)])
+        if invoice_id:
+            invoice = invoice_model.browse(self.cr, self.uid, invoice_id)
+            return invoice.supplier_invoice_number or ''
+        else:
+            return ''
 
 
 class report_partnerledger(osv.AbstractModel):

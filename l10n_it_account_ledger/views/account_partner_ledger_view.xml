@@ -73,6 +73,7 @@
                                   <th t-if="include_account()">Account</th>
                                   <th t-if="include_counterparts()">Counterparts</th>
                                   <th t-if="include_entry_name()">Entry Reference</th>
+                                  <th t-if="include_supplier_invoice()">Supplier Invoice</th>
                                   <th class="text-right">Debit</th>
                                   <th class="text-right">Credit</th>
                                   <th class="text-right">Balance</th>
@@ -129,6 +130,9 @@
                                   </td>
                                   <td t-if="include_entry_name()">
                                       <span t-esc="line['name']"/>
+                                  </td>
+                                  <td t-if="include_supplier_invoice()">
+                                      <span t-esc="display_supplier_invoice(line)"/>
                                   </td>
                                   <td class="text-right">
                                       <span t-esc="formatLang((line['debit']))"/>

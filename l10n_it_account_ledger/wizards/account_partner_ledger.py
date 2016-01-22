@@ -30,6 +30,7 @@ class AccountPartnerLedger(models.TransientModel):
     include_counterparts = fields.Boolean('Include Counterparts')
     include_entry_name = fields.Boolean('Include Entry Name')
     include_row_number = fields.Boolean('Include Row Number')
+    include_supplier_invoice = fields.Boolean('Include Supplier Invoice')
 
     def _print_report(self, cr, uid, ids, data, context=None):
         filters = [
@@ -37,7 +38,8 @@ class AccountPartnerLedger(models.TransientModel):
             'include_account',
             'include_counterparts',
             'include_row_number',
-            'include_entry_name']
+            'include_entry_name',
+            'include_supplier_invoice']
         data['form'].update(self.read(cr, uid, ids, filters)[0])
         return super(AccountPartnerLedger, self)._print_report(
             cr, uid, ids, data, context)
