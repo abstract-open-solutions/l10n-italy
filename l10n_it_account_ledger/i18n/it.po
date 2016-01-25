@@ -30,6 +30,16 @@ msgstr "Conto"
 msgid "Account Partner Ledger"
 msgstr "Mastrino  partner"
 
+#. module: account
+#: model:ir.actions.act_window,name:account.action_account_partner_ledger
+#: model:ir.actions.report.xml,name:account.action_report_partner_ledger
+#: model:ir.actions.report.xml,name:account.action_report_partner_ledger_other
+#: model:ir.ui.menu,name:account.menu_account_partner_ledger
+#: view:website:account.report_partnerledger
+#: view:website:account.report_partnerledgerother
+msgid "Partner Ledger"
+msgstr "Scheda contabile"
+
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
 msgid "Balance"
