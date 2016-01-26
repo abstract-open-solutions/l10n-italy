@@ -195,3 +195,7 @@ msgstr "Fattura fornitore"
 msgid "Target Moves:"
 msgstr "Movimenti Obiettivo:"
 
+#. module: l10n_it_account_ledger
+#: view:website:l10n_it_account_ledger.report_partnerledger_document
+msgid "Final Balance"
+msgstr "Saldo finale"

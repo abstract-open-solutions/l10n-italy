@@ -20,6 +20,7 @@
 
 from openerp.addons.account.report import account_partner_ledger
 from openerp.osv import osv
+from openerp import api
 
 
 class ThirdPartyLedger(account_partner_ledger.third_party_ledger):
@@ -36,7 +37,9 @@ class ThirdPartyLedger(account_partner_ledger.third_party_ledger):
             'include_counterparts': self._include_counterparts,
             'include_entry_name': self._include_entry_name,
             'include_supplier_invoice': self._include_supplier_invoice,
+            'include_initial_balance': self._include_initial_balance,
             'get_colspan': self._get_colspan,
+            'get_final_balance': self._get_final_balance,
             'include_row_number': self._include_row_number,
             'colspan': self._get_colspan,
             'debug': self._debug,
@@ -45,6 +48,48 @@ class ThirdPartyLedger(account_partner_ledger.third_party_ledger):
 
     def _debug(self, arg):
         import ipdb;ipdb.set_trace()
+
+    def set_context(self, objects, data, ids, report_type=None):
+        res = super(ThirdPartyLedger, self).set_context(
+            objects, data, ids, report_type=report_type)
+        obj_move = self.pool.get('account.move.line')
+        ctx2 = data['form'].get('used_context',{}).copy()
+        self.final_query = obj_move._query_get(self.cr, self.uid, obj='l', context=ctx2)
+        return res
+
+    def _get_final_balance(self, partner):
+        move_state = ['draft','posted']
+        if self.target_move == 'posted':
+            move_state = ['posted']
+        if self.reconcil:
+            RECONCILE_TAG = " "
+        else:
+            RECONCILE_TAG = "AND l.reconcile_id IS NULL"
+
+        self.cr.execute(
+            "SELECT COALESCE(SUM(l.debit),0.0), COALESCE(SUM(l.credit),0.0), COALESCE(sum(debit-credit), 0.0) "
+            "FROM account_move_line AS l,  "
+            "account_move AS m "
+            "WHERE l.partner_id = %s "
+            "AND m.id = l.move_id "
+            "AND m.state IN %s "
+            "AND account_id IN %s"
+            " " + RECONCILE_TAG + " "
+            "AND " + self.final_query + "  ",
+            (partner.id, tuple(move_state), tuple(self.account_ids)))
+        res = self.cr.fetchall()
+        self.final_bal_sum = self.init_bal_sum + res[0][2]
+        if self.initial_balance:
+            initial_balance = self._get_intial_balance(partner)
+            res = tuple([
+                i1 + i2 for i1, i2 in zip(initial_balance[0], res[0])])
+            res = [res,]
+        return res
+
+    def _include_initial_balance(self):
+        if self.localcontext['data']['form']['initial_balance']:
+            return True
+        return False
 
     def _get_partner_name(self):
         partner_model = self.pool['res.partner']
