@@ -3,7 +3,7 @@
    :alt: License: AGPL-3
 
 ========================
-{l10n_it_account_ledger}
+l10n_it_account_ledger
 ========================
 
 This module override the default Partner Ledger
