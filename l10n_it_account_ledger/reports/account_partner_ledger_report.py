@@ -18,9 +18,10 @@
 #
 ##############################################################################
 
+from collections import OrderedDict
+
 from openerp.addons.account.report import account_partner_ledger
 from openerp.osv import osv
-from openerp import api
 
 
 class ThirdPartyLedger(account_partner_ledger.third_party_ledger):
@@ -85,6 +86,28 @@ class ThirdPartyLedger(account_partner_ledger.third_party_ledger):
                 i1 + i2 for i1, i2 in zip(initial_balance[0], res[0])])
             res = [res,]
         return res
+
+    def lines(self, partner):
+        """ this override will group all the account_move_lines by move_name
+        """
+        lines = super(ThirdPartyLedger, self).lines(partner)
+        lines_groups = OrderedDict()
+        for l in lines:
+            move_name = l['move_name']
+            if move_name in lines_groups:
+                old_line = lines_groups[move_name]
+                l['debit'] += old_line['debit']
+                l['credit'] += old_line['credit']
+            lines_groups[move_name] = l
+        new_res = lines_groups.values()
+        # ...and now we have to update the progresses
+        sum = 0.0
+        if self.initial_balance:
+            sum = self.init_bal_sum
+        for r in new_res:
+            sum += r['debit'] - r['credit']
+            r['progress'] = sum
+        return new_res
 
     def _include_initial_balance(self):
         if self.localcontext['data']['form']['initial_balance']:
