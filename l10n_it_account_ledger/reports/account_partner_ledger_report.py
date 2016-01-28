@@ -23,6 +23,7 @@ from collections import OrderedDict
 from openerp.addons.account.report import account_partner_ledger
 from openerp.osv import osv
 from openerp.exceptions import Warning
+from openerp import _
 
 
 class ThirdPartyLedger(account_partner_ledger.third_party_ledger):
@@ -58,12 +59,11 @@ class ThirdPartyLedger(account_partner_ledger.third_party_ledger):
         ctx2 = data['form'].get('used_context',{}).copy()
         self.final_query = obj_move._query_get(self.cr, self.uid, obj='l', context=ctx2)
         if not self.lines(objects):
-            raise Warning(
+            raise Warning(_(
                 'No account lines has been found for this partner'
-                ' with the selected filter',
-                'Maybe the partner doesn\'t have'
+                ' with the selected filter. Maybe the partner doesn\'t have'
                 ' any move line that matches the selected filters, or even'
-                ' doesn\'t have any move line at all'
+                ' doesn\'t have any move line at all')
             )
         return res
 
