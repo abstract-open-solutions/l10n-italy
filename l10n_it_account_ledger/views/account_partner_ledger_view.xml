@@ -81,9 +81,9 @@
                               </tr>
                           </thead>
                           <tbody>
-                              <t t-foreach="docs" t-as="partner">
+                            <t t-foreach="docs" t-as="partner">
                               <tr t-if="len(docs)>1">
-                                  <td colspan="5">
+                                  <td colspan="2">
                                           <strong t-esc="partner.ref"/>
                                           - <strong t-esc="partner.name"/>
                                   </td>
@@ -159,7 +159,7 @@
                                       <span t-esc="formatLang(get_final_balance(partner)[0][2], currency_obj=res_company.currency_id)"/>
                                   </td>
                               </tr>
-                              </t>
+                            </t>
                           </tbody>
                       </table>
                   </div>

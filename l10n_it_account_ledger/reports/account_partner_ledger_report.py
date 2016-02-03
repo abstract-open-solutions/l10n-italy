@@ -58,7 +58,10 @@ class ThirdPartyLedger(account_partner_ledger.third_party_ledger):
         obj_move = self.pool.get('account.move.line')
         ctx2 = data['form'].get('used_context',{}).copy()
         self.final_query = obj_move._query_get(self.cr, self.uid, obj='l', context=ctx2)
-        if not self.lines(objects):
+        lines = 0
+        for partner in objects:
+            lines += len(self.lines(partner))
+        if not lines:
             raise Warning(_(
                 'No account lines has been found for this partner'
                 ' with the selected filter. Maybe the partner doesn\'t have'
