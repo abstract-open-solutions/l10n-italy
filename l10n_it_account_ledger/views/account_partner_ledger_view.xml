@@ -25,7 +25,7 @@
               <t t-set="title" t-value="'Scheda Contabile'"/>
               <t t-call="l10n_it_account.internal_layout">
                   <div class="page mt10">
-                      <div class="row filters">
+                      <div class="row filters" id='filters'>
                           <div class="col-xs-2">
                               <strong>Partner:</strong>
                               <p t-esc="get_partner_name()"/>
