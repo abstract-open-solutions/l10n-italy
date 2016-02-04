@@ -2,32 +2,22 @@
 <openerp>
     <data>
 
-      <record id="account.action_report_partner_ledger"
+      <record id="account.action_report_partner_ledger_other"
           model="ir.actions.report.xml">
           <field name="paperformat_id"
             ref="l10n_it_account.l10n_it_account_a4_portrait"/>
       </record>
 
-      <template id="ledger_layout" inherit_id="report.layout" >
-        <xpath expr="//style" position="after">
-          <link href="/l10n_it_account_ledger/static/src/css/ledger.css" rel="stylesheet"/>
-        </xpath>
-      </template>
-
-      <template id="ledger_minimal_layout" inherit_id="report.minimal_layout" >
-        <xpath expr="//style" position="after">
-          <link href="/l10n_it_account_ledger/static/src/css/ledger.css" rel="stylesheet"/>
-        </xpath>
-      </template>
-
-      <template id="report_partnerledger_document">
+      <template id="report_partnerledgerother_document">
               <t t-set="title" t-value="'Scheda Contabile'"/>
+              <!-- <t t&#45;set="doc" t&#45;value="doc.with_context({'lang':doc.partner_id.lang})" /> -->
+              <!-- <t t&#45;set='partner' t&#45;value="o" /> -->
               <t t-call="l10n_it_account.internal_layout">
                   <div class="page mt10">
                       <div class="row filters" id='filters'>
                           <div class="col-xs-2">
                               <strong>Partner:</strong>
-                              <p t-esc="get_partner_name()"/>
+                              <p t-esc="partner.name"/>
                           </div>
                           <div class="col-xs-2">
                               <strong>Fiscal Year:</strong>
@@ -80,22 +70,6 @@
                               </tr>
                           </thead>
                           <tbody>
-                            <t t-foreach="docs" t-as="partner">
-                              <tr t-if="len(docs)>1">
-                                  <td colspan="2">
-                                          <strong t-esc="partner.ref"/>
-                                          - <strong t-esc="partner.name"/>
-                                  </td>
-                                  <td class="text-right">
-                                      <strong t-esc="sum_debit_partner(partner)"/>
-                                  </td>
-                                  <td class="text-right">
-                                      <strong t-esc="sum_credit_partner(partner)"/>
-                                  </td>
-                                  <td class="text-right">
-                                      <strong t-esc="formatLang((sum_debit_partner(partner) - sum_credit_partner(partner)), currency_obj=res_company.currency_id)"/>
-                                  </td>
-                              </tr>
                               <tr t-if="include_initial_balance()">
                                   <td t-att-colspan="colspan()">Initial Balance</td>
                                   <td class="text-right">
@@ -158,19 +132,22 @@
                                       <span t-esc="formatLang(get_final_balance(partner)[0][2], currency_obj=res_company.currency_id)"/>
                                   </td>
                               </tr>
-                            </t>
                           </tbody>
                       </table>
                   </div>
               </t>
       </template>
 
-      <template id="account.report_partnerledger">
-        <t t-call="report.html_container">
-            <t t-set='doc' t-value="docs[0]" />
-            <t t-call="l10n_it_account_ledger.report_partnerledger_document" t-lang="doc.partner_id.lang"/>
-        </t>
-    </template>
+      <template id="account.report_partnerledgerother">
+          <t t-call="report.html_container">
+            <!-- <t t&#45;foreach="doc_ids" t&#45;as="doc_id"> -->
+            <!--   <t t&#45;raw="translate_doc(doc_id, doc_model, 'lang', 'l10n_it_account_ledger.report_partnerledgerother_document')"/> -->
+            <!-- </t> -->
+            <t t-foreach="docs" t-as="partner">
+              <t t-call="l10n_it_account_ledger.report_partnerledgerother_document" t-lang='partner.lang'/>
+            </t>
+          </t>
+      </template>
 
     </data>
 </openerp>

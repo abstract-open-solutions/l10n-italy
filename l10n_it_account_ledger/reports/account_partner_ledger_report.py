@@ -50,7 +50,7 @@ class ThirdPartyLedger(account_partner_ledger.third_party_ledger):
             })
 
     def _debug(self, arg):
-        import ipdb;ipdb.set_trace()
+        import pdb;pdb.set_trace()
 
     def set_context(self, objects, data, ids, report_type=None):
         res = super(ThirdPartyLedger, self).set_context(
@@ -208,4 +208,9 @@ class ThirdPartyLedger(account_partner_ledger.third_party_ledger):
 
 class report_partnerledger(osv.AbstractModel):
     _inherit = 'report.account.report_partnerledger'
+    _wrapped_report_class = ThirdPartyLedger
+
+
+class report_partnerledgerother(osv.AbstractModel):
+    _inherit = 'report.account.report_partnerledgerother'
     _wrapped_report_class = ThirdPartyLedger

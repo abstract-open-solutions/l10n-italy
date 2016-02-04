@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-25 16:35+0000\n"
-"PO-Revision-Date: 2016-01-25 16:35+0000\n"
+"POT-Creation-Date: 2016-02-04 12:24+0000\n"
+"PO-Revision-Date: 2016-02-04 12:24+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -17,11 +17,13 @@ msgstr ""
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "&nbsp;"
 msgstr "&nbsp;"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Account"
 msgstr "Conto"
 
@@ -42,76 +44,97 @@ msgstr "Scheda contabile"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Balance"
 msgstr "Saldo"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Counterparts"
 msgstr "Controparti"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Credit"
 msgstr "Avere"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Currency"
 msgstr "Valuta"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Date"
 msgstr "Data"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Date from :"
 msgstr "Data da :"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Date to :"
 msgstr "Data a :"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Debit"
 msgstr "Dare"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "End Period:"
 msgstr "Fine Periodo:"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Entry Reference"
 msgstr "Descrizione"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Filter By:"
 msgstr "Filtra per:"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Filter Params:"
 msgstr "Filtri:"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Filtered by date"
 msgstr "Filtrato per data"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Filtered by period"
 msgstr "Filtrato per periodo"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
+msgid "Final Balance"
+msgstr "Saldo finale"
+
+#. module: l10n_it_account_ledger
+#: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Fiscal Year:"
 msgstr "Anno Fiscale:"
 
@@ -147,62 +170,67 @@ msgstr "Includi la fattura fornitore"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Initial Balance"
 msgstr "Saldo iniziale"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Journal"
 msgstr "Sezionale"
 
 #. module: l10n_it_account_ledger
-#: code:addons/l10n_it_account_ledger/reports/account_partner_ledger_report.py:62
+#: code:addons/l10n_it_account_ledger/reports/account_partner_ledger_report.py:65
 #, python-format
 msgid "No account lines has been found for this partner with the selected filter. Maybe the partner doesn't have any move line that matches the selected filters, or even doesn't have any move line at all"
 msgstr "Nessuna registrazione contabile è stata trovata per questo partner, con i filtri selezionati. Probabilmente nessuna registrazione corrisponde ai filtri selezionati, oppure non esistono ancora registrazioni per il partner selezionato."
 
-
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "No."
 msgstr "No."
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Not filtered"
 msgstr "Non filtrato"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Partner's"
 msgstr "Del partner"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Partner:"
 msgstr "Partner:"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Ref"
 msgstr "Rif."
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Start Period:"
 msgstr "Periodo Inizio:"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Supplier Invoice"
 msgstr "Fattura fornitore"
 
 #. module: l10n_it_account_ledger
 #: view:website:l10n_it_account_ledger.report_partnerledger_document
+#: view:website:l10n_it_account_ledger.report_partnerledgerother_document
 msgid "Target Moves:"
 msgstr "Movimenti Obiettivo:"
 
-#. module: l10n_it_account_ledger
-#: view:website:l10n_it_account_ledger.report_partnerledger_document
-msgid "Final Balance"
-msgstr "Saldo finale"

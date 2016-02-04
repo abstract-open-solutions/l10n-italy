@@ -28,6 +28,7 @@
     'depends': ['account', 'l10n_it_account'],
     'data': [
         'views/account_partner_ledger_view.xml',
+        'views/account_partner_ledgerother_view.xml',
         'wizards/account_partner_ledger_view.xml',
     ],
     'test': [],
