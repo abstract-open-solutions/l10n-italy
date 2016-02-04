@@ -59,15 +59,16 @@ class ThirdPartyLedger(account_partner_ledger.third_party_ledger):
         ctx2 = data['form'].get('used_context',{}).copy()
         self.final_query = obj_move._query_get(self.cr, self.uid, obj='l', context=ctx2)
         lines = 0
-        for partner in objects:
-            lines += len(self.lines(partner))
-        if not lines:
-            raise Warning(_(
-                'No account lines has been found for this partner'
-                ' with the selected filter. Maybe the partner doesn\'t have'
-                ' any move line that matches the selected filters, or even'
-                ' doesn\'t have any move line at all')
-            )
+        if objects._name == 'res.partner':
+            for partner in objects:
+                lines += len(self.lines(partner))
+            if not lines:
+                raise Warning(_(
+                    'No account lines has been found for this partner'
+                    ' with the selected filter. Maybe the partner doesn\'t have'
+                    ' any move line that matches the selected filters, or even'
+                    ' doesn\'t have any move line at all')
+                )
         return res
 
     def _get_final_balance(self, partner):
