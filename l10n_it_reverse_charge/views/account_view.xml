@@ -112,6 +112,18 @@
             </field>
         </record>
 
+        <record model="ir.ui.view" id="invoice_line_form_rc">
+            <field name="name">account.invoice.line.form.rc</field>
+            <field name="model">account.invoice.line</field>
+            <field name="inherit_id" ref="account.view_invoice_line_form"/>
+            <field name="arch" type="xml">
+                <field name="account_id" position="after">
+                    <field name="rc"
+                        invisible="context.get('type') not in ['in_invoice','in_refund']"/>
+                </field>
+            </field>
+        </record>
+
         <record id="view_invoice_form_rc" model="ir.ui.view">
              <field name="name">account.invoice.form.rc</field>
              <field name="model">account.invoice</field>
