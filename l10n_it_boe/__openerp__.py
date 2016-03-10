@@ -21,7 +21,7 @@
 
 {
     'name': 'Bill of Entry',
-    'version': '1.0',
+    'version': '8.0.1.0.1',
     'category': 'Localization/Italy',
     'summary': 'Bill of Entry (Simplified)',
     'description': """Simplified version

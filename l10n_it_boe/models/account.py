@@ -43,18 +43,17 @@ class AccountInvoice(models.Model):
     def action_move_create(self):
         res = super(AccountInvoice, self).action_move_create()
         company = self.env.user.company_id
+        boe_accounts = company.boe_cost_account_ids
         if self.boe_doc_type and self.boe_doc_type == 'supplier_invoice':
-            #self.move_id.button_cancel()
+            tot_debit = 0
             for line in self.move_id.line_id:
-                tot_debit = 0
-                if line.debit:
+                if line.account_id in boe_accounts:
                     tot_debit += line.debit
-
             for line in self.move_id.line_id:
                 if line.credit:
                     orig_credit = line.credit
                     line.write(
-                        {'credit': line.credit - (line.credit - tot_debit)},
+                        {'credit': line.credit - tot_debit},
                         update_check=False)
                     supplier_line = line.copy()
                     supplier_line.write(
@@ -64,7 +63,7 @@ class AccountInvoice(models.Model):
                         {'partner_id': self.partner_id.id},
                         update_check=False)
                     supplier_line.write(
-                        {'credit': orig_credit - tot_debit},
+                        {'credit': tot_debit},
                         update_check=False)
                     rate = self.custom_exchange_rate
                     if self.currency_id != self.company_id.currency_id:

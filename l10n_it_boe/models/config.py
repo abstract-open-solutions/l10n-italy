@@ -28,6 +28,9 @@ class ResCompany(models.Model):
     boe_account_id = fields.Many2one(
         'account.account',
         string='Bill of Entry Account')
+    boe_cost_account_ids = fields.Many2many(
+        'account.account',
+        string='BoE Cost Accounts')
 
 
 class AccountConfigSettings(models.TransientModel):
@@ -37,6 +40,10 @@ class AccountConfigSettings(models.TransientModel):
         'account.account',
         string='Customs Account',
         related='company_id.boe_account_id')
+    boe_cost_account_ids = fields.Many2many(
+        'account.account',
+        related='company_id.boe_cost_account_ids',
+        string='BoE Cost Accounts')
 
     def onchange_company_id(self, cr, uid, ids, company_id, context=None):
         res = super(AccountConfigSettings, self).onchange_company_id(
@@ -46,9 +53,11 @@ class AccountConfigSettings(models.TransientModel):
                 cr, uid, company_id, context=context)
             res['value'].update({
                 'boe_account_id': company.boe_account_id,
+                'boe_cost_account_ids': company.boe_cost_account_ids,
                 })
         else:
             res['value'].update({
                 'boe_account_id': False,
+                'boe_cost_account_ids': False,
                 })
         return res

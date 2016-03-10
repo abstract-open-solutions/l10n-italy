@@ -17,6 +17,11 @@
                                 <field name="boe_account_id" 
                                     class="oe_inline"/>
                             </div>
+                            <div>
+                                <label for="boe_cost_account_ids"/>
+                                <field name="boe_cost_account_ids" 
+                                    class="oe_inline"/>
+                            </div>
                         </div>
                     </group>
                 </xpath>
