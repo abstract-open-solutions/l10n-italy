@@ -21,7 +21,7 @@
 
 {
     'name': 'Reverse Charge',
-    'version': '9.0.1.0.1',
+    'version': '8.0.1.0.1',
     'category': 'Localization/Italy',
     'summary': 'Reverse Charge for Italy',
     'description': """
