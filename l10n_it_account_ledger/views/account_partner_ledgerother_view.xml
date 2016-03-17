@@ -15,40 +15,19 @@
               <t t-call="l10n_it_account.internal_layout">
                   <div class="page mt10">
                       <div class="row filters" id='filters'>
-                          <div class="col-xs-2">
-                              <strong>Partner:</strong>
-                              <p t-esc="partner.name"/>
-                          </div>
-                          <div class="col-xs-2">
-                              <strong>Fiscal Year:</strong>
-                              <p t-esc="get_fiscalyear(data)"/>
-                          </div>
-                          <div class="col-xs-2">
-                              <strong>Partner's</strong>
-                              <p t-esc="get_partners()"/>
-                          </div>
-                          <div class="col-xs-2">
-                              <strong>Filter By:</strong>
-                              <p>
-                                  <span t-if="data['form']['filter'] == 'filter_no'">Not filtered</span>
-                                  <span t-if="data['form']['filter'] == 'filter_period'">Filtered by period</span>
-                                  <span t-if="data['form']['filter'] == 'filter_date'">Filtered by date</span>
-                              </p>
-                          </div>
-                          <div class="col-xs-2" t-if="data['form']['filter'] != 'filter_no'">
-                              <strong>Filter Params:</strong>
-                              <p t-if="data['form']['filter'] == 'filter_period'">
-                                 Start Period: <span t-esc="get_start_period(data)"/><br />
-                                 End Period: <span t-esc="get_end_period(data)"/>
-                              </p>
-                              <p t-if="data['form']['filter'] == 'filter_date'">
-                                 Date from : <span t-esc="formatLang(get_start_date(data), date=True)"/><br />
-                                 Date to : <span t-esc="formatLang(get_end_date(data), date=True)"/>
-                              </p>
-                          </div>
-                          <div class="col-xs-2">
-                              <strong>Target Moves:</strong>
-                              <p t-esc="get_target_move(data)"/>
+                          <div class="row filters">
+                              <div class="col-xs-6">
+                                  <strong>Partner:</strong>
+                                  <p t-esc="partner.name"/>
+                              </div>
+                              <div class="col-xs-2">
+                                  <strong>Fiscal Year:</strong>
+                                  <p t-esc="get_fiscalyear(data)"/>
+                              </div>
+                              <div class="col-xs-4">
+                                  <strong>Partner's</strong>
+                                  <p t-esc="get_partners()"/>
+                              </div>
                           </div>
                       </div>
 
