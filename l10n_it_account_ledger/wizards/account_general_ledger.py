@@ -18,21 +18,26 @@
 #
 ##############################################################################
 
-{
-    'name': 'Account Ledger',
-    'version': '1.2',
-    'category': 'Localization/Italy',
-    'summary': 'Account Ledger',
-    'author': 'Davide Corio, Odoo Community Association (OCA)',
-    'license': 'AGPL-3',
-    'depends': ['account', 'l10n_it_account'],
-    'data': [
-        'views/account_general_ledger_view.xml',
-        'views/account_partner_ledger_view.xml',
-        'views/account_partner_ledgerother_view.xml',
-        'wizards/account_partner_ledger_view.xml',
-        'wizards/account_general_ledger_view.xml',
-    ],
-    'test': [],
-    'installable': True,
-}
+from openerp import models, fields
+
+
+class AccountReportGeneralLedger(models.TransientModel):
+
+    _inherit = 'account.report.general.ledger'
+
+    include_journal = fields.Boolean('Include Journal')
+    include_counterparts = fields.Boolean('Include Counterparts')
+    include_entry_name = fields.Boolean('Include Entry Name')
+    include_row_number = fields.Boolean('Include Row Number')
+    include_supplier_invoice = fields.Boolean('Include Supplier Invoice')
+
+    def _print_report(self, cr, uid, ids, data, context=None):
+        filters = [
+            'include_journal',
+            'include_counterparts',
+            'include_row_number',
+            'include_entry_name',
+            'include_supplier_invoice']
+        data['form'].update(self.read(cr, uid, ids, filters)[0])
+        return super(AccountReportGeneralLedger, self)._print_report(
+            cr, uid, ids, data, context)
