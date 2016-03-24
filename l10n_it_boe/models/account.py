@@ -51,6 +51,8 @@ class AccountInvoice(models.Model):
                     tot_debit += line.debit
             for line in self.move_id.line_id:
                 if line.credit:
+                    import ipdb;ipdb.set_trace()
+                    rate = self.custom_exchange_rate
                     orig_credit = line.credit
                     line.write(
                         {'credit': line.credit - tot_debit},
@@ -65,21 +67,20 @@ class AccountInvoice(models.Model):
                     supplier_line.write(
                         {'credit': tot_debit},
                         update_check=False)
-                    rate = self.custom_exchange_rate
                     if self.currency_id != self.company_id.currency_id:
-                        supp_amount_currency = line.currency_id.with_context(
+                        line_currency = line.currency_id.with_context(
                             custom_exchange_rate=1/rate).compute(
                             orig_credit - tot_debit,
                             line.company_id.currency_id)
-                        supplier_line.write(
-                            {'amount_currency': -(supp_amount_currency)},
+                        line.write(
+                            {'amount_currency': -(line_currency)},
                             update_check=False)
-                        line_amount_currency = line.currency_id.with_context(
+                        supplier_line_amount_currency = line.currency_id.with_context(
                             custom_exchange_rate=1/rate).compute(
                             line.credit - (line.credit - tot_debit),
                             line.company_id.currency_id)
-                        line.write(
-                            {'amount_currency': -(line_amount_currency)},
+                        supplier_line.write(
+                            {'amount_currency': -(supplier_line_amount_currency)},
                             update_check=False)
 
         return res
