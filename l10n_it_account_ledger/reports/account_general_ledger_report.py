@@ -116,7 +116,7 @@ class GeneralLedger(account_general_ledger.general_ledger):
         new_res = lines_groups.values()
         # ...and now we have to update the progresses
         sum = 0.0
-        if self.initial_balance:
+        if self.init_balance:
             sum = self.init_bal_sum
         for r in new_res:
             sum += r['debit'] - r['credit']
@@ -181,7 +181,7 @@ class GeneralLedger(account_general_ledger.general_ledger):
 
     def _display_counterparts(self, line):
         line_model = self.pool['account.move.line']
-        line = line_model.browse(self.cr, self.uid, line['id'])
+        line = line_model.browse(self.cr, self.uid, line['lid'])
         codes = ["%s - %s" % (l.account_id.code, l.account_id.name) for l in
                  line.move_id.line_id if l.account_id != line.account_id]
         return ', '.join(set(codes))
@@ -189,7 +189,7 @@ class GeneralLedger(account_general_ledger.general_ledger):
     def _display_supplier_invoice(self, line):
         line_model = self.pool['account.move.line']
         invoice_model = self.pool['account.invoice']
-        line = line_model.browse(self.cr, self.uid, line['id'])
+        line = line_model.browse(self.cr, self.uid, line['lid'])
         invoice_id = invoice_model.search(
             self.cr, self.uid, [('move_id', '=', line.move_id.id)])
         if invoice_id:

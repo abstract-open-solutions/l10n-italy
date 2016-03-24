@@ -58,7 +58,7 @@
                               </tr>
                           </thead>
                           <tbody>
-                            <t t-foreach="get_children_accounts(o)" t-as="childrenaccount">
+                            <t t-foreach="get_children_accounts(doc)" t-as="childrenaccount">
                               <t t-if="len(childrenaccount)>1">
                                 <tr style="font-weight: bold;">
                                     <td colspan="7">
