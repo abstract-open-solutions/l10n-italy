@@ -51,7 +51,6 @@ class AccountInvoice(models.Model):
                     tot_debit += line.debit
             for line in self.move_id.line_id:
                 if line.credit:
-                    import ipdb;ipdb.set_trace()
                     rate = self.custom_exchange_rate
                     orig_credit = line.credit
                     line.write(
