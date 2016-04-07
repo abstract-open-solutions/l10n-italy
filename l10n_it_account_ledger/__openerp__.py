@@ -32,6 +32,7 @@
         'views/account_partner_ledgerother_view.xml',
         'wizards/account_partner_ledger_view.xml',
         'wizards/account_general_ledger_view.xml',
+        'paperformat.xml',
     ],
     'test': [],
     'installable': True,

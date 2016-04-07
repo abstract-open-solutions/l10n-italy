@@ -61,18 +61,9 @@
                           <tbody>
                             <t t-foreach="docs" t-as="partner">
                               <tr t-if="len(docs)>1">
-                                  <td colspan="2">
+                                  <td t-att-colspan="colspan()+3">
                                           <strong t-esc="partner.ref"/>
                                           - <strong t-esc="partner.name"/>
-                                  </td>
-                                  <td class="text-right">
-                                      <strong t-esc="sum_debit_partner(partner)"/>
-                                  </td>
-                                  <td class="text-right">
-                                      <strong t-esc="sum_credit_partner(partner)"/>
-                                  </td>
-                                  <td class="text-right">
-                                      <strong t-esc="formatLang((sum_debit_partner(partner) - sum_credit_partner(partner)), currency_obj=res_company.currency_id)"/>
                                   </td>
                               </tr>
                               <tr t-if="include_initial_balance()">
