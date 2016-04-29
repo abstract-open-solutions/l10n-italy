@@ -135,7 +135,8 @@ class ThirdPartyLedger(account_partner_ledger.third_party_ledger):
         partner_ids = self.localcontext['active_ids']
         for partner_id in partner_ids:
             partner = partner_model.browse(self.cr, self.uid, partner_id)
-            names.append(partner.name)
+            if partner:
+                names.append(partner.name)
         if names:
             return ', '.join(names)
         else:
