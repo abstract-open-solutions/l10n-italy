@@ -32,7 +32,7 @@ class DdTFromPickings(models.TransientModel):
             'goods_description_id': False,
             'transportation_reason_id': False,
             'transportation_method_id': False
-            }
+        }
         partner = False
         for picking in self.picking_ids:
             if partner and partner != picking.partner_id:
@@ -70,8 +70,8 @@ class DdTFromPickings(models.TransientModel):
         for picking in self.picking_ids:
             if picking.sale_id and picking.sale_id.goods_description_id:
                 if goods_description_id and (
-                    goods_description_id != (
-                        picking.sale_id.goods_description_id)):
+                        goods_description_id != (
+                            picking.sale_id.goods_description_id)):
                     raise UserError(
                         _("Selected Pickings have "
                           "different goods description"))
@@ -87,7 +87,7 @@ class DdTFromPickings(models.TransientModel):
                             picking.sale_id.transportation_reason_id)):
                     raise UserError(
                         _("Selected Pickings have"
-                            " different transportation reason"))
+                          " different transportation reason"))
                 transportation_reason_id = (
                     picking.sale_id.transportation_reason_id)
                 values['transportation_reason_id'] = (
@@ -97,8 +97,8 @@ class DdTFromPickings(models.TransientModel):
             if picking.sale_id and (
                     picking.sale_id.transportation_method_id):
                 if transportation_method_id and (
-                    transportation_method_id != (
-                        picking.sale_id.transportation_method_id)):
+                        transportation_method_id != (
+                            picking.sale_id.transportation_method_id)):
                     raise UserError(
                         _("Selected Pickings have"
                           " different transportation reason"))
@@ -109,7 +109,7 @@ class DdTFromPickings(models.TransientModel):
         picking_ids = [p.id for p in self.picking_ids]
         values.update({
             'picking_ids': [(6, 0, picking_ids)]
-            })
+        })
         ddt = self.env['stock.picking.package.preparation'].create(values)
         # ----- Show new ddt
         ir_model_data = self.env['ir.model.data']
