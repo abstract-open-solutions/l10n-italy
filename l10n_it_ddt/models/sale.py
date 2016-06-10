@@ -41,7 +41,7 @@ class SaleOrder(models.Model):
     parcels = fields.Integer()
     ddt_ids = fields.Many2many(
         'stock.picking.package.preparation',
-        string='Related DdTs',
+        string='Related DDTs',
         compute='_get_ddt_ids')
     create_ddt = fields.Boolean('Automatically create the DDT')
 
