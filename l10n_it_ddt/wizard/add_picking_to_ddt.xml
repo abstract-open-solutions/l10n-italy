@@ -16,7 +16,7 @@
                         </p>
                     </div>
                     <group name="ddt" cols="4"
-                           attrs="{'invisible':[('has_ddt_msg', '!=', '')]}">
+                           attrs="{'invisible':[('has_ddt_msg', '!=', False)]}">
                         <separator string="DDT" />
                         <field name="ddt_id" nolabel="1"
                                domain="[('state', 'in', ['draft', 'confirmed'])]"
