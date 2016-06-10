@@ -17,6 +17,7 @@ from openerp.exceptions import Warning as UserError
 class AddPickingToDdt(models.TransientModel):
 
     _name = "add.pickings.to.ddt"
+    _inherit = "ddt.check.mixin"
 
     ddt_id = fields.Many2one('stock.picking.package.preparation')
 

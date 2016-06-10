@@ -4,6 +4,7 @@
 #    Author: Francesco Apruzzese <f.apruzzese@apuliasoftware.it>
 #    Copyright (C) Francesco Apruzzese
 #    Copyright (C) 2014-2015 Agile Business Group (http://www.agilebg.com)
+#    Copyright (C) 2016 Abstract (http://www.abstract.it)
 #
 #    License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 #
@@ -17,6 +18,7 @@ from openerp.exceptions import Warning as UserError
 class DdTFromPickings(models.TransientModel):
 
     _name = "ddt.from.pickings"
+    _inherit = "ddt.check.mixin"
 
     picking_ids = fields.Many2many(
         'stock.picking',
@@ -25,7 +27,9 @@ class DdTFromPickings(models.TransientModel):
 
     @api.model
     def _get_picking_ids(self):
-        return self.env['stock.picking'].browse(self.env.context['active_ids'])
+        pickings = self.env['stock.picking'].browse(
+            self.env.context['active_ids'])
+        return pickings
 
     @api.multi
     def create_ddt(self):

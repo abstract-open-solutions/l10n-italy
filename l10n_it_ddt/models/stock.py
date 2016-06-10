@@ -25,6 +25,19 @@ class StockPicking(models.Model):
         string='DdT',
         copy=False, )
 
+    has_ddt = fields.Boolean(
+        string="Has DdT?",
+        readonly=True,
+        compute='_compute_has_ddt'
+    )
+
+    @api.multi
+    @api.depends('ddt_ids')
+    def _compute_has_ddt(self):
+        """True if any DdT is assigned to the picking."""
+        for item in self:
+            item.has_ddt = bool(item.ddt_ids)
+
     @api.multi
     def write(self, values):
         pack_to_update = None
@@ -53,3 +66,20 @@ class StockPicking(models.Model):
         if picking.ddt_ids:
             picking.ddt_ids._update_line_ids()
         return picking
+
+    @api.multi
+    def open_related_ddt(self):
+        """Action to open tree view of the sections of the committee."""
+        self.ensure_one()
+        domain = [
+            ('id', '=', self.ddt_ids.ids),
+        ]
+        return {
+            'name': 'DdT',
+            'type': 'ir.actions.act_window',
+            'res_model': 'stock.picking.package.preparation',
+            'target': 'current',
+            'view_type': 'form',
+            'view_mode': 'tree,form',
+            'domain': domain,
+        }

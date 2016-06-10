@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="ddt_stock_picking_form" model="ir.ui.view">
+        <field name="name">ddt.stock.picking.form</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+
+            <div name="button_box" position="inside">
+                <field name="has_ddt" invisible="1" />
+                <button
+                    class="oe_stat_button"
+                    name="open_related_ddt"
+                    type="object"
+                    icon="fa-list"
+                    attrs="{'invisible':[('has_ddt','=',False)]}"
+                    string="Related DdT" />
+            </div>
+
+        </field>
+    </record>
+
+    <record id="ddt_stock_picking_tree" model="ir.ui.view">
+        <field name="name">ddt.stock.picking.tree</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.vpicktree"/>
+        <field name="arch" type="xml">
+            <field name="state" position="after">
+                <field string="Related DdT" name="has_ddt" />
+            </field>
+        </field>
+    </record>
+
+
+
+</odoo>

@@ -9,5 +9,6 @@
 ##############################################################################
 
 
+from . import mixin
 from . import add_picking_to_ddt
 from . import ddt_from_picking

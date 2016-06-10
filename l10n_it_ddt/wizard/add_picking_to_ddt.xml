@@ -7,11 +7,27 @@
             <field name="model">add.pickings.to.ddt</field>
             <field name="arch" type="xml">
                 <form string="Add Pickings to DDT">
-                    <separator string="DDT" />
-                    <field name="ddt_id" domain="[('state', 'in', ['draft', 'confirmed'])]"/>
+                    <div class="alert alert-warning" role="alert"
+                         attrs="{'invisible':[('has_ddt_msg','=','')]}">
+                        <p>
+                            <strong>Warning:</strong>
+                            <field name="has_ddt_msg" readonly="1"
+                                   class="on_inline" nolabel="1" />
+                        </p>
+                    </div>
+                    <group name="ddt" cols="4"
+                           attrs="{'invisible':[('has_ddt_msg', '!=', '')]}">
+                        <separator string="DDT" />
+                        <field name="ddt_id" nolabel="1"
+                               domain="[('state', 'in', ['draft', 'confirmed'])]"
+                               />
+                    </group>
                     <footer>
-                        <button name="add_to_ddt" string="Add to DDT" type="object" class="oe_highlight"/>
-                        or
+                        <span attrs="{'invisible':[('has_ddt_msg', '!=', '')]}">
+                            <button name="add_to_ddt" string="Add to DDT"
+                                    type="object" class="oe_highlight"/>
+                            or
+                        </span>
                         <button string="Cancel" class="oe_link" special="cancel" />
                     </footer>
                 </form>
