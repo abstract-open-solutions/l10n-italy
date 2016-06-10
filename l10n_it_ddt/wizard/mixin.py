@@ -24,7 +24,6 @@ class DdTCheckMixin(models.AbstractModel):
     def _get_has_ddt_msg(self):
         if not self.env.context.get('active_ids'):
             return ''
-        print self.env.context.get('active_ids')
         pickings = self.env['stock.picking'].browse(
             self.env.context.get('active_ids'))
         return self.check(pickings)
@@ -52,6 +51,18 @@ class DdTCheckMixin(models.AbstractModel):
                 msg = self.have_ddt_single_err_msg
             else:
                 msg = self.have_ddt_multi_err_msg % ', '.join(have_ddt)
+        if msg:
             if raise_exc:
                 raise UserError(msg)
+            else:
+                msg = self.translate(msg)
         return msg
+
+    @api.model
+    def translate(self, term):
+        """Load `term` translation."""
+        translations = self.env['ir.translation']
+        name = ''  # can ben empty since we are passing the source = term
+        _type = 'code'
+        lang = self.env.context.get('lang')
+        return translations._get_source(name, _type, lang, source=term)
