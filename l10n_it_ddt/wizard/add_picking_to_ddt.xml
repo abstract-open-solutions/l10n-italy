@@ -8,7 +8,7 @@
             <field name="arch" type="xml">
                 <form string="Add Pickings to DDT">
                     <div class="alert alert-warning" role="alert"
-                         attrs="{'invisible':[('has_ddt_msg','=','')]}">
+                         attrs="{'invisible':[('has_ddt_msg','=',False)]}">
                         <p>
                             <strong>Warning:</strong>
                             <field name="has_ddt_msg" readonly="1"
@@ -23,7 +23,7 @@
                                />
                     </group>
                     <footer>
-                        <span attrs="{'invisible':[('has_ddt_msg', '!=', '')]}">
+                        <span attrs="{'invisible':[('has_ddt_msg', '!=', False)]}">
                             <button name="add_to_ddt" string="Add to DDT"
                                     type="object" class="oe_highlight"/>
                             or
