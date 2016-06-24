@@ -4,14 +4,16 @@
 # 
 # Translators:
 # Paolo Valier, 2016
+# Matjaž Mozetič <m.mozetic@matmoz.si>, 2016
+# Paolo Valier, 2016
 # Paolo Valier, 2016
 # Stefano <stefano.sforzi@agilebg.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: l10n-italy (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-10 09:57+0000\n"
-"PO-Revision-Date: 2016-03-10 09:57+0000\n"
+"POT-Creation-Date: 2016-04-29 09:52+0000\n"
+"PO-Revision-Date: 2016-04-29 19:56+0000\n"
 "Last-Translator: Paolo Valier\n"
 "Language-Team: Italian (http://www.transifex.com/oca/OCA-l10n-italy-8-0/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -40,7 +42,7 @@ msgstr ""
 #: code:addons/l10n_it_vat_registries/vat_registry.py:183
 #, python-format
 msgid "Can't compute base amount for tax %s"
-msgstr ""
+msgstr "Non è possibile calcolare l'importo base per l'imposta %s"
 
 #. module: l10n_it_vat_registries
 #: view:wizard.registro.iva:l10n_it_vat_registries.wizard_registro_iva
@@ -100,6 +102,13 @@ msgid "Detraibile"
 msgstr ""
 
 #. module: l10n_it_vat_registries
+#: field:account.tax.registry,display_name:0
+#: field:report.l10n_it_vat_registries.report_registro_iva,display_name:0
+#: field:wizard.registro.iva,display_name:0
+msgid "Display Name"
+msgstr "Nome da visualizzare"
+
+#. module: l10n_it_vat_registries
 #: field:account.tax.code,exclude_from_registries:0
 msgid "Exclude from VAT registries"
 msgstr "Escluse dal registro IVA"
@@ -145,10 +154,17 @@ msgid "Journals"
 msgstr "Sezionali"
 
 #. module: l10n_it_vat_registries
+#: field:account.tax.registry,__last_update:0
+#: field:report.l10n_it_vat_registries.report_registro_iva,__last_update:0
+#: field:wizard.registro.iva,__last_update:0
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: l10n_it_vat_registries
 #: field:account.tax.registry,write_uid:0
 #: field:wizard.registro.iva,write_uid:0
 msgid "Last Updated by"
-msgstr "Ultima Modifica da"
+msgstr "Ultima Modifica di"
 
 #. module: l10n_it_vat_registries
 #: field:account.tax.registry,write_date:0
@@ -166,7 +182,7 @@ msgstr "Ultima pagina stampata"
 #: view:wizard.registro.iva:l10n_it_vat_registries.wizard_registro_iva
 #: field:wizard.registro.iva,type:0
 msgid "Layout"
-msgstr ""
+msgstr "Layout"
 
 #. module: l10n_it_vat_registries
 #: field:wizard.registro.iva,message:0
@@ -259,7 +275,7 @@ msgstr "Sezionale imposta"
 #. module: l10n_it_vat_registries
 #: field:wizard.registro.iva,tax_sign:0
 msgid "Tax amount sign"
-msgstr ""
+msgstr "Segno importo fiscale"
 
 #. module: l10n_it_vat_registries
 #: code:addons/l10n_it_vat_registries/vat_registry.py:240
@@ -316,7 +332,7 @@ msgstr "Registro IVA"
 msgid ""
 "You can group several journals within 1 registry. In printing wizard, you "
 "will be able to select the registry in order to load that group of journals"
-msgstr ""
+msgstr "È possibile raggruppare più giornali in un unico registro. Nella procedura guidata di stampa è possibile selezionare un registro per caricare quel dato gruppo di giornali."
 
 #. module: l10n_it_vat_registries
 #: view:wizard.registro.iva:l10n_it_vat_registries.wizard_registro_iva

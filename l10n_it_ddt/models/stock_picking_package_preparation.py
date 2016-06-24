@@ -61,6 +61,9 @@ class StockDdtType(models.Model):
     name = fields.Char(required=True)
     sequence_id = fields.Many2one('ir.sequence', required=True)
     note = fields.Text(string='Note')
+    company_id = fields.Many2one(
+        'res.company', string='Company',
+        default=lambda self: self.env.user.company_id, )
 
 
 class StockPickingPackagePreparation(models.Model):
@@ -150,6 +153,31 @@ class StockPickingPackagePreparation(models.Model):
             name = u'{partner} of {date}'.format(partner=self.partner_id.name,
                                                  date=self.date)
         self.display_name = name
+
+    @api.multi
+    def create_invoice(self):
+        # ----- Check if sale order related to ddt are invoiced. Show them.
+        invoiced_sale = [
+            picking.sale_id.id
+            for picking in self.picking_ids
+            if picking.sale_id and picking.sale_id.invoice_ids]
+        if invoiced_sale:
+            return {
+                'type': 'ir.actions.act_window',
+                'view_type': 'form',
+                'view_mode': 'tree,form',
+                'res_model': 'sale.order',
+                'target': 'current',
+                'domain': '[("id", "in", {ids})]'.format(ids=invoiced_sale),
+                }
+        # ----- Open wizard to create invoices
+        return {
+            'type': 'ir.actions.act_window',
+            'view_type': 'form',
+            'view_mode': 'form',
+            'res_model': 'ddt.create.invoice',
+            'target': 'new',
+            }
 
 
 class StockPickingPackagePreparationLine(models.Model):
