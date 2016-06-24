@@ -14,4 +14,3 @@
         ],
     'installable': True
 }
->>>>>>> oca/8.0
