@@ -198,12 +198,12 @@ class AccountInvoice(models.Model):
             for line in self.invoice_line_ids:
                 if line.rc:
                     rc_invoice_line = self.rc_inv_line_vals(line)
-                    line_tax = line.invoice_line_tax_id
+                    line_tax = line.invoice_line_tax_ids
                     for tax_mapping in rc_type.tax_ids:
                         if tax_mapping.tax_src_id == line_tax[0]:
                             tax_code_id = tax_mapping.tax_dest_id.id
                     if line_tax:
-                        rc_invoice_line['invoice_line_tax_id'] = [
+                        rc_invoice_line['invoice_line_tax_ids'] = [
                             (6, False, [tax_code_id])]
                     rc_invoice_line[
                         'account_id'] = rc_type.transitory_account_id.id
