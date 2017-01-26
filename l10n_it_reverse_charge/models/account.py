@@ -192,7 +192,7 @@ class AccountInvoice(models.Model):
                 rc_partner = rc_type.partner_id
             else:
                 rc_partner = self.partner_id
-            rc_account = rc_partner.property_account_receivable
+            rc_account = rc_partner.property_account_receivable_id
 
             rc_invoice_lines = []
             for line in self.invoice_line:
