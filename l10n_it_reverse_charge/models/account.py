@@ -105,7 +105,7 @@ class AccountInvoice(models.Model):
             'type': 'out_invoice',
             'account_id': account.id,
             'journal_id': rc_type.journal_id.id,
-            'invoice_line': lines,
+            'invoice_line_ids': lines,
             'date_invoice': self.date,
             'date': self.date,
             'origin': self.number,
@@ -195,7 +195,7 @@ class AccountInvoice(models.Model):
             rc_account = rc_partner.property_account_receivable_id
 
             rc_invoice_lines = []
-            for line in self.invoice_line:
+            for line in self.invoice_line_ids:
                 if line.rc:
                     rc_invoice_line = self.rc_inv_line_vals(line)
                     line_tax = line.invoice_line_tax_id
