@@ -127,7 +127,6 @@ class AccountInvoice(models.Model):
     def rc_payment_vals(self, rc_type):
         return {
             'journal_id': rc_type.payment_journal_id.id,
-            'period_id': self.period_id.id,
             'date': self.date,
             }
 
@@ -153,7 +152,6 @@ class AccountInvoice(models.Model):
     def rc_invoice_payment_vals(self, rc_type):
         return {
             'journal_id': rc_type.payment_journal_id.id,
-            'period_id': self.period_id.id,
             'date': self.date,
             }
 
