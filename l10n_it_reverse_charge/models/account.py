@@ -94,7 +94,7 @@ class AccountInvoice(models.Model):
         return {
             'product_id': line.product_id.id,
             'name': line.name,
-            'uom_id': line.uos_id.id,
+            'uom_id': line.product_id.uom_id.id,
             'price_unit': line.price_unit,
             'quantity': line.quantity,
             }
